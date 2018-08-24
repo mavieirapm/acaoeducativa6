@@ -1,0 +1,1065 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formação na EJA</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+	
+body, html {
+  height: 100%;
+  width: 100%;
+
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 120px;
+}
+	
+	
+.cabecalho{
+	  min-height: 80px;
+	  background-color: #fff;
+	  color: #000;
+	  width: 100%;
+	  float: left;
+	  position: fixed;
+	  z-index: 1;
+	  margin:0;
+	  padding:0;
+	}	
+	
+.logo {
+	width:50%;
+	height: 80px;
+	padding-left: 30px;
+	padding-top: 10px;
+	float: left;
+	}
+	
+.busca {
+	width:50%;
+	height: 80px;
+	margin-left:-51px;
+	padding-top: 10px;
+	padding-right: 20px;
+	float: right;
+	text-align: right;
+	}
+	
+.busca_int{
+	vertical-align: baseline;
+	padding-top: 46px;
+	}
+	
+.b1 {
+
+background: #008580;
+color: white;
+border-style:none;
+height: 21px;
+width: 72px;
+font: bold 12px arial, sans-serif;
+text-shadow:none;
+
+}		
+	
+.textos{
+	    color: #535353;
+		padding: 0px 200px;
+		text-align: justify;
+		font-family: "Arial";
+		font-size: 14px;
+		line-height: 32px;
+	    word-wrap: break-word;
+	}
+	
+	
+.textos p{
+	padding-bottom: 16px;
+	word-wrap: break-word;
+	}
+	
+.textos2{
+	    color: #535353;
+		padding: 0px 200px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 20px;
+	    word-wrap: break-word;
+	}
+.textos2 p{
+	word-wrap: break-word;		
+	}
+	
+
+.citacao{
+	    padding: 30px 300px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+	
+.citacao2{
+	    padding: 30px 150px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 11px;
+		line-height: 20px;
+	}
+
+.capa {
+	float: left;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	width: 100%;
+	}	
+	
+.capa_tit {
+	float: left;
+	margin-top: 140px;
+	margin-bottom: 20px;
+	width: 100%;
+	background-image: url('imagens/eixo2_img1.png');
+	background-repeat: no-repeat;
+	background-size:auto;
+	display: block;
+	padding-top: 60px
+	}
+	
+.textos_capa{
+	    color: #535353;
+		padding: 30px 200px 60px 50%;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 30px;
+		float: left;
+		word-wrap: break-word;
+	}
+
+.modulos{
+	width: 100%;
+	float: left;
+	word-wrap: break-word;
+	
+	}
+
+
+.bgimg-2 {
+  background-image: url("imagens/sapatos.jpg");
+  min-height: 500px;
+}
+.bgimg-3 {
+  background-image: url("imagens/img_parallax3_v2.jpg");
+  min-height: 400px;
+}
+	
+	
+@font-face{
+font-family: Caecilia;
+src: url('fonts/Caecilia-Heavy.otf');
+
+src: url('fonts/Caecilia-Heavy.otf?#iefix') format('embedded-opentype'),
+url('fonts/Caecilia-Heavy.otf') format('woff'), url('fonts/Caecilia-Heavy.otf') format('truetype'), url('fonts/Caecilia-Heavy.otf#Caecilia') format('svg');
+}
+	
+h1 {
+  font: 120px "Caecilia";
+  color: #676767;
+  padding-bottom: 12px;
+  
+}
+h3 {
+  font: 36px "Caecilia";
+  color: #676767;
+  padding-bottom: 12px;
+  padding-top: 26px;
+
+}	
+
+
+h2 {
+  font: 24px "Caecilia";
+  color: #e37222;
+  padding-bottom: 16px;
+
+}
+	
+
+	
+
+	
+.barra_logos{
+  background-color: #DFDFDF;
+  font-size: 12px;
+  color:#000;
+  padding: 12px;
+  clear:both;
+  height: 120px;
+  font-family: "Verdana";
+  margin-top: 60px;
+	}
+	
+.rodape{
+  background-color: #bb133e;;
+  font-size: 14px;
+  color:#fff;
+  padding: 12px;
+  clear:both;
+	}
+	
+.tit_bloco {
+  background: #e37222; 
+  color: #fff; 
+  margin: 0px 200px;
+  padding: 10px 50px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 16px;
+	}	
+	
+.tit_bloco2 {
+  background: #e37222; 
+  color: #fff; 
+  margin: 2px 200px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 14px;
+	}
+
+.collapse {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  word-wrap: break-word;
+	}
+	
+.collapse2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  word-wrap: break-word;
+	}
+	
+	
+	
+video{
+  border-style: solid;
+  border-color: #e37222;
+  border-width: 4px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+	
+	
+.video{
+	width:50%;
+	}
+
+
+hr {
+	border-color: #e37222;
+	border-width: 1px;
+	border-style: solid;
+
+		
+	}
+blockquote {
+	margin-left: 60px;
+	margin-right: 60px;
+	background-color: #DDDDDD;
+	border-radius: 16px;
+	word-wrap: break-word;
+	}	
+
+	
+	
+	
+.mobile-menu {
+  display:block;
+  width:100%;
+  background: #ecb11f;
+  line-height: 1.6em;
+  font-size: 13px;
+  text-align:center;
+  position: relative;
+  margin:0 auto;
+  float: right;
+  vertical-align: middle;
+}
+	
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+  list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:right;
+  width:100%;
+  position: absolute;
+  background-color: #ecb11f;
+}
+	
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	min-width:130px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #ecb11f;
+	text-decoration: none;
+    margin-left:-5px;
+    padding: 10px 8px; 
+	border-width: 1px;
+	border-style: solid;
+	
+}
+
+body #eixo3 a#ativo {
+	background-color: #e37222;
+	color: #fff;
+	}
+
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #ffffff;
+  background-color:#747678;
+}
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #747678;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+}
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #ecb11f;
+}
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #ecb11f;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+	
+
+.audio{
+  text-align: center;
+  }
+	
+.audio audio{
+  border-style: solid;
+  border-color: #e37222;
+  border-width: 6px;
+  box-shadow: 2px 2px 5px grey;
+  width: 580px;
+  margin-bottom: 30px;
+	}	
+	
+	
+
+
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/*Responsive Styles*/
+@media screen and (max-width : 720px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8; 
+    border-top: 5px solid #f8f8f8; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display:block;
+	}
+	.textos{
+		padding:20px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  width: 100%;
+	
+}
+.bgimg-1, .bgimg-2, .bgimg-3 img {
+  width: auto;
+min-height: 300px;
+	
+}
+
+
+.logo {
+	width:100%;
+	height: 0px;
+	padding-top: 0px;
+	float: left;
+	}
+	
+	
+.busca {
+	width:100%;
+	height: 60px;
+	margin-left:0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	float: right;
+	text-align: right;
+	}
+	
+.busca_int{
+	vertical-align: baseline;
+	padding-top: 20px;
+	}
+	
+
+	
+.capa {
+	float: left;
+	margin-top: 40px;
+	margin-bottom: -60px;
+	}	
+	
+	
+.textos_capa{
+	color: #535353;
+	padding: 10px 10px;
+	text-align: justify;
+	font-family: "Verdana";
+	font-size: 12px;
+	line-height: 18px;
+	float: left;
+	
+	}	
+	
+	
+
+h1 {
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font: 30px "Caecilia";
+}
+h3 {
+  letter-spacing: 0px;
+  font: 14px "Caecilia";
+  padding-top: 14px;
+}	
+	
+
+
+	
+.capa img{
+	max-width: 100%;		
+	}
+	
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+}
+
+
+	
+.bgimg-2 {
+  background-image: url("imagens/sapatos.jpg");
+  min-height:auto;
+}
+
+
+	
+video{
+  border-style: solid;
+  border-color: #e37222;
+  border-width: 4px;
+  width: 100%;
+}
+	
+.video{
+	width:85%;
+	}
+		
+	
+.audio{
+  text-align: center;
+  }
+	
+.audio audio{
+  border-style: solid;
+  border-color: #E37222;
+  border-width: 5px;
+  width: 100%;
+	}
+
+	
+.tit_bloco {
+  color: #fff; 
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 12px;
+  text-align: center
+	}	
+	
+.tit_bloco2 {
+  color: #fff; 
+  margin: 0px;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 12px;
+  text-align: center
+	}	
+	
+.collapse {
+  margin-bottom: 20px;
+  margin-top: 20px;
+	}
+	
+.collapse2 {
+  margin-bottom: 2px;
+  margin-top: 0px;
+	}
+	
+#img_tit{
+	width: 60%;	
+	}
+	
+.citacao{
+	    padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+	
+.citacao2{
+	    padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 11px;
+		line-height: 16px;
+
+	}
+	
+	
+.textos{
+	    color: #535353;
+		padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 12px;
+		line-height: 18px;
+	}	
+.textos img{
+	max-width: 100%;
+		
+	}
+	
+.textos2{
+	    color: #535353;
+		padding: 5px 0px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 12px;
+		line-height: 18px;
+	}	
+.textos2 img{
+	max-width: 100%;
+		
+	}
+	
+blockquote {
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #DDDDDD;
+	border-radius: 12px;
+	}
+
+	
+	
+}
+
+</style>	
+	
+	
+</head>
+	
+	
+
+<script src="code/jquery-3.3.1.min.js"></script>
+
+	
+<script>// <![CDATA[
+$(document).ready(function() {
+  // Hides all paragraphs
+  $(".conteudobloco").hide();
+  // Optional for showing the first paragraph. For animation use .slideDown(200) instead of .show()
+  //$(".conteudobloco").first().show();
+
+  $(".tit_bloco").click(function()
+  {
+    // Toggles the paragraph under the header that is clicked. .slideToggle(200) can be changed to .slideDown(200) to make sure one paragraph is shown at all times.
+    $(this).next(".conteudobloco").slideToggle(200);
+    // Makes other pararaphes that is not under the current clicked heading dissapear
+    $(this).siblings().next(".conteudobloco").slideUp(200);
+	$('video').each(function() 
+{
+    $(this)[0].pause();
+});
+	$('audio').each(function() 
+{
+    $(this)[0].pause();
+});
+	  
+	  
+	  
+	  
+  });
+	
+	
+	
+});
+
+
+	
+	
+// ]]></script>
+	
+	
+
+	
+
+	
+
+<script>// <![CDATA[
+$(document).ready(function() {
+  $(".conteudobloco2").hide();
+  
+
+  $(".tit_bloco2").click(function()
+  {
+    $(this).next(".conteudobloco2").slideToggle(200);
+    $(this).siblings().next(".conteudobloco2").slideUp(200);
+  });
+});
+// ]]></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<script>
+$(document).ready(function(){
+ $("#braca").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#braca").click(function(){
+ $("#raca").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#betnia").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#betnia").click(function(){
+ $("#etnia").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#bracis").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#bracis").click(function(){
+ $("#racismo").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#bprec").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#bprec").click(function(){
+ $("#preconceito").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#bdisc").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#bdisc").click(function(){
+ $("#discriminacao").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#fecharraca").click(function(){
+ $("#raca").hide();
+ });
+ $("#fecharraca").click(function(){
+ $("#menuraca").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#fecharetnia").click(function(){
+ $("#etnia").hide();
+ });
+ $("#fecharetnia").click(function(){
+ $("#menuraca").show();
+ });
+});
+$(document).ready(function(){
+ $("#fecharracis").click(function(){
+ $("#racismo").hide();
+ });
+ $("#fecharracis").click(function(){
+ $("#menuraca").show();
+ });
+});
+$(document).ready(function(){
+ $("#fecharprec").click(function(){
+ $("#preconceito").hide();
+ });
+ $("#fecharprec").click(function(){
+ $("#menuraca").show();
+ });
+});
+$(document).ready(function(){
+ $("#fechardisc").click(function(){
+ $("#discriminacao").hide();
+ });
+ $("#fechardisc").click(function(){
+ $("#menuraca").show();
+ });
+});
+</script>
+	
+	
+
+
+<body id="eixo3">
+
+	
+	
+<div class="cabecalho">
+  <div class="logo">
+	
+  </div>
+  <div class="busca">
+	 <div class="busca_int">
+	<form name="f1" action="" 
+    onSubmit="if(this.t1.value!=null && this.t1.value!='')
+    findString(this.t1.value);return false"
+    >
+	<input type="text" name=t1 value="" size=20>
+	<input type="submit" class=b1 value="Pesquisar">
+	</form>
+	</div>
+  </div>
+	<nav class="mobile-menu">
+	<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu"><b>
+		<li><a href="index.html">Início<br><br></a></li>
+		<li><a href="#">Fundamentos<br>da EJA</a></li>
+		<li><a href="eixo2.html">Diversidade: gênero<br>e raça na EJA</a></li>
+		<li><a href="#" id="ativo">Na sala de<br>aula de EJA</a></li>
+		<li><a href="#">Educação<br>profissional</a></li>
+		<li><a href="#">Cidades, mobilidade<br>e sustentabilidade</a></li></b>
+	</ul>
+</nav>
+  
+</div>
+
+	
+<div class="capa" style="padding-top: 60px">
+	<img src="imagens/eixo3_img1.png" width="100%" align="center" style="margin-bottom: 80px">
+
+</div>	
+	
+<div class="textos">
+<p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut suscipit urna. Vivamus nec ante a ligula pharetra ultrices. Morbi et urna posuere, luctus lacus sed, semper dui. Nunc eu mattis orci, vel placerat tortor. Quisque id tincidunt odio. Sed posuere consequat enim ut lobortis. Quisque at elit leo. In hac habitasse platea dictumst. </p>
+<p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut suscipit urna. Vivamus nec ante a ligula pharetra ultrices. Morbi et urna posuere, luctus lacus sed, semper dui. Nunc eu mattis orci, vel placerat tortor. Quisque id tincidunt odio. Sed posuere consequat enim ut lobortis. Quisque at elit leo. In hac habitasse platea dictumst. </p>
+</div>
+	
+
+
+
+<div class="modulos">
+<div class="textos">
+<h3>Módulos</h3>
+<p>Clique nos itens abaixo para visualizar os módulos.</p>
+</div>
+	
+
+<div class="collapse">
+
+<div class="tit_bloco"><strong>a) A especificidade curricular da EJA</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+<p>Não se pode entrar em uma sala de aula com um programa de curso que não considere a especificidade dos aprendizes. É evidente que não podemos pensar em conteúdos e metodologias propostas para o ensino médio em salas de aula das séries iniciais do ensino fundamental. Do mesmo modo, não podemos desenvolver uma proposta de trabalho para a educação de jovens e adultos sem considerar primeiramente quem são os estudantes.</p>
+<p>Uma das principais marcas da Educação de jovens e adultos em todos os lugares é a existência de uma grande diversidade de sujeitos. Vamos encontrar pessoas em uma sala de educação de jovens e adultos com diferentes idades, trajetórias profissionais e experiências pessoais. Além disso, ainda estarão presentes pessoas que por diversas razões foram privadas do direito à educação na sua infância ou adolescência. São pessoas que foram expulsas da escola devido ao preconceito, por possuírem alguma deficiência ou ainda por terem frequentado escolas que não foram capazes de atender às suas necessidades.
+</p>
+<p>Com isso, muitos professores precisam se perguntar como definir propostas de trabalho em sala de aula para conjuntos tão diversos. Deve-se considerar também que jovens e adultos não aprendem do mesmo modo que uma criança e, assim, a escola de EJA deve estar preparada para colocar em prática um currículo específico para as necessidades de aprendizagens de seus sujeitos, tornando-se cada vez mais autônoma dos modelos definidos para crianças e adolescentes. </p>
+</div>	
+
+
+<div class="capa">
+	<img src="imagens/eixo3_img2.jpg" align="center">
+</div>
+	
+<div class="textos" >
+<p>Ainda com relação à diversidade, vale analisarmos a questão específica da diversidade etária. Na rede municipal de São Paulo, em 2016, por exemplo, a diversidade etária estava presente de diferentes modos, níveis e formas de atendimento. 
+	
+<p>Considerando o total dos estudantes, 51% dos estudantes da EJA tinham entre 15 e 29 anos e somente 17% tinham 50 anos ou mais.</p>
+	
+<p>Mas quando nos referimos às turmas de alfabetização, evidencia-se que 33% tinham 50 anos ou mais e apenas 9% tinham entre 15 e 29 anos, ou seja, existem mais alunos de maior idade nas séries iniciais da EJA e mais alunos jovens nas séries finais do ensino fundamental e ensino médio. Os dados indicam a diversidade etária presente até mesmo dentro das diferentes etapas, ampliando ainda mais o desafio de se pensar a EJA como um currículo que precisa considerar a diversidade.</p>
+
+<p>Para lidar com essa diversidade, é necessário criar uma escola original, criativa e, principalmente, adequada aos tempos e condições de vida de diferentes jovens e adultos. O material didático, o espaço da sala de aula, a estratégia, as propostas de trabalho, nada deve ser igual ao que se faz com as crianças. Precisamos nos colocar o desafio de criar uma outra escola onde jovens e adultos se sintam protagonistas de sua aprendizagem e não pessoas envergonhadas e culpadas por não terem concluído os estudos na chamada “idade própria”. Não podemos esquecer que estudar é um direito do sujeito em qualquer momento da vida.</p>
+</div>	
+
+<div class="bgimg-2">
+	
+</div>
+	
+<div class="citacao">
+	<p><img src="imagens/aspas.jpg" align="left" style="padding-right:6px;">Não é possível imaginar que este espaço infantilizado seja adequado para o trabalho com jovens e adultos. Muitas vezes até mesmo as carteiras tem tamanhos inadequados para receber adultos. Os espaços de lazer, biblioteca e refeitório também muitas vezes posuem instalações inadequadas para este público. Não é por acaso que se diz que a EJA, em muitas redes, é como a "inquilina" da escola, ou seja, ocupa espaço que não é dela."</p>
+	<hr align="center" style="margin-top: 10px">
+</div>
+	
+
+<div class="textos" >
+<p>No que se refere ao desenvolvimento das propostas de aula, é necessário ter sensibilidade e capacidade de descobrir o que pode fazer sentido para este grupo de sujeitos ou ainda saber como as diferentes trajetórias e experiências de vida desses pode contribuir para que os conhecimentos escolares possam ser desenvolvidos em sala de aula fazendo sentido para todos e todas.</p>
+	
+<p>Para tanto, torna-se necessário fazer uma seleção de temas e conceitos a serem trabalhados que, mais uma vez, não segue a mesma trajetória proposta para crianças. Um adulto precisa aprender aquilo que fizer sentido para sua melhor participação na vida social, seja para avançar nos estudos, no trabalho ou nas tarefas da vida social que exigem o uso de uma cultura letrada.</p>
+	
+<p>Outro elemento central, mas muitas vezes esquecido, da especificidade da educação de jovens e adultos é a experiência negativa que a escola representa na maioria das trajetórias escolares vividas por esses sujeitos. Grande parte deles foram em algum momento expulsos da escola, seja porque foram reprovados sucessivas vezes, para trabalhar, pela gravidez, por preconceito ou pela simples ausência da escola. Sofrem com o estigma de terem abandonado a escola, que aquilo não deu certo para ele. Assim, voltar para a escola quando adulto é ter de reviver o que já não deu certo, que é uma relação traumática. Dessa forma, quando consegue voltar, logo que alguma dificuldade ocorre, é comum ver estes alunos abandonarem mais uma vez a escola. </p>
+	
+<p>Para que isto não ocorra é essencial ter como premissa de uma escola de educação de adultos o acolhimento. Professores e gestores de uma escola de adultos têm que estar preparados para receber alunos diversos e também pessoas para quem a escola foi traumática no passado. Nesse sentido, é preciso pensar em estratégias que devolvam a este sujeito o prazer de aprender, mostrando que ele tem capacidade para seguir adiante.</p>
+
+
+
+	
+<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
+<h3><img src="imagens/e3book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão: </h3>
+	<p>CATELLI Jr, Roberto; ESCOURA, Michele et al. Proposições de organização curricular na educação de jovens e adultos. Cadernos Cenpec, São Paulo, v.3, n.2, p.162-186, jun. 2013. Disponível em:
+	<br><a href="http://cadernos.cenpec.org.br/cadernos/index.php/cadernos/article/view/231/266" target="_blank">http://cadernos.cenpec.org.br/cadernos/index.php/cadernos/article/view/231/266</a></p>
+
+
+	<div class="audio">
+	<audio width="600" controls>
+	  <source src="imagens/audio_eja.mp3" type="audio/mpeg">
+	Seu navegador não suporta esse formato de áudio.
+	</audio>
+	</div>
+</blockquote>	
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	
+	
+
+
+
+
+<p><img src="imagens/atencao2.jpg"></p>
+<hr align="center">
+
+<p>Consulte o quadro a seguir para saber qual a diversidade etária em seu estado.</p>
+<p>&nbsp;</p>
+
+	
+<p align="center"><img src="imagens/tabela.jpg" style="display: block"></p>
+	
+	
+	
+	
+</div>	
+
+
+</div>
+	
+</div>	
+
+</div>
+	
+
+
+
+	
+<div class="barra_logos">
+<p align="center" style="vertical-align: middle";><strong>Iniciativa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apoio</strong></p>
+<p align="center" style="vertical-align: middle";>
+<img src="imagens/logo_fund_vale.png" width="200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagens/logo_ght.png">
+</p>
+</div>
+
+
+
+
+<div class="rodape">
+<p align="center" style="vertical-align: middle";>Fundação Vale @ 2018 Todos os direitos reservados</p>
+</div>
+
+	
+	
+	
+	
+<script language="JavaScript">
+<!--
+var TRange=null
+
+function findString (str) {
+if (parseInt(navigator.appVersion)<4) return;
+var strFound;
+if (window.find) {
+
+// CODE FOR BROWSERS THAT SUPPORT window.find
+
+strFound=self.find(str);
+if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+strFound=self.find(str)
+}
+if (!strFound) {
+strFound=self.find(str,0,1)
+while (self.find(str,0,1)) continue
+}
+}
+else if (navigator.appName.indexOf("Microsoft")!=-1) {
+
+// EXPLORER-SPECIFIC CODE
+
+if (TRange!=null) {
+TRange.collapse(false)
+strFound=TRange.findText(str)
+if (strFound) TRange.select()
+}
+if (TRange==null || strFound==0) {
+TRange=self.document.body.createTextRange()
+strFound=TRange.findText(str)
+if (strFound) TRange.select()
+}
+}
+else if (navigator.appName=="Opera") {
+alert ("Opera browsers not supported, sorry...")
+return;
+}
+if (!strFound) alert ("String '"+str+"' not found!")
+return;
+}
+//-->
+</script>
+	
+</body>
+</html>
