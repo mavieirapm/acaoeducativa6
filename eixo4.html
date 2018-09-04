@@ -1,0 +1,1327 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Percursos didáticos para jovens e adultos</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+	
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 120px;
+}
+	
+	
+.cabecalho{
+	  min-height: 80px;
+	  background-color: #fff;
+	  color: #000;
+	  width: 100%;
+	  float: left;
+	  position: fixed;
+	  z-index: 1;
+	  margin:0;
+	  padding:0;
+	}	
+	
+.logo {
+	width:50%;
+	height: 80px;
+	padding-left: 30px;
+	padding-top: 10px;
+	float: left;
+	}
+	
+.busca {
+	width:50%;
+	height: 80px;
+	margin-left:-51px;
+	padding-top: 10px;
+	padding-right: 20px;
+	float: right;
+	text-align: right;
+	}
+	
+.busca_int{
+	vertical-align: baseline;
+	padding-top: 46px;
+	}
+	
+.b1 {
+background: #008580;
+color: white;
+border-style:none;
+height: 21px;
+width: 72px;
+font: bold 12px arial, sans-serif;
+text-shadow:none;
+}		
+	
+.textos{
+	    color: #535353;
+		padding: 0px 200px;
+		text-align: justify;
+		font-family: "Arial";
+		font-size: 14px;
+		line-height: 32px;
+	    word-wrap: break-word;
+	}
+	
+	
+.textos p{
+	padding-bottom: 16px;
+	word-wrap: break-word;
+	}
+	
+.textos2{
+	    color: #535353;
+		padding: 0px 200px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 20px;
+	    word-wrap: break-word;
+	}
+.textos2 p{
+	word-wrap: break-word;		
+	}
+	
+.citacao{
+	    padding: 30px 300px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+	
+.citacao2{
+	    padding: 30px 150px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 13px;
+		line-height: 20px;
+	}
+.capa {
+	float: left;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	width: 100%;
+	}	
+	
+.capa_tit {
+	float: left;
+	margin-top: 140px;
+	margin-bottom: 20px;
+	width: 100%;
+	background-image: url('imagens/eixo4_img1.png');
+	background-repeat: no-repeat;
+	background-size:auto;
+	display: block;
+	padding-top: 60px
+	}
+	
+.textos_capa{
+	    color: #535353;
+		padding: 30px 200px 60px 50%;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 30px;
+		float: left;
+		word-wrap: break-word;
+	}
+.modulos{
+	width: 100%;
+	float: left;
+	word-wrap: break-word;
+	
+	}
+.bgimg-2 {
+  background-image: url("imagens/sapatos.jpg");
+  min-height: 500px;
+}
+.bgimg-3 {
+  background-image: url("imagens/img_parallax3_v2.jpg");
+  min-height: 400px;
+}
+	
+	
+@font-face{
+font-family: Caecilia;
+src: url('fonts/Caecilia-Heavy.otf');
+src: url('fonts/Caecilia-Heavy.otf?#iefix') format('embedded-opentype'),
+url('fonts/Caecilia-Heavy.otf') format('woff'), url('fonts/Caecilia-Heavy.otf') format('truetype'), url('fonts/Caecilia-Heavy.otf#Caecilia') format('svg');
+}
+	
+h1 {
+  font: 120px "Caecilia";
+  color: #BB133E;
+  padding-bottom: 12px;
+  
+}
+h3 {
+  font: 36px "Caecilia";
+  color: #BB133E;
+  padding-bottom: 12px;
+  padding-top: 26px;
+}	
+h2 {
+  font: 24px "Caecilia";
+  color: #BB133E;
+  padding-bottom: 16px;
+}
+	
+	
+	
+.barra_logos{
+  background-color: #DFDFDF;
+  font-size: 12px;
+  color:#000;
+  padding: 12px;
+  clear:both;
+  height: 120px;
+  font-family: "Verdana";
+  margin-top: 60px;
+	}
+	
+.rodape{
+  background-color: #bb133e;;
+  font-size: 14px;
+  color:#fff;
+  padding: 12px;
+  clear:both;
+	}
+	
+.tit_bloco {
+  background: #BB133E; 
+  color: #fff; 
+  margin: 0px 200px;
+  padding: 10px 50px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 16px;
+	}	
+	
+.tit_bloco2 {
+  background: #BB133E; 
+  color: #fff; 
+  margin: 2px 200px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 14px;
+	}
+.collapse {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  word-wrap: break-word;
+	}
+	
+.collapse2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  word-wrap: break-word;
+	}
+	
+	
+	
+video{
+  border-style: solid;
+  border-color: #BB133E;
+  border-width: 4px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+	
+	
+.video{
+	width:50%;
+	}
+hr {
+	border-color: #BB133E;
+	border-width: 1px;
+	border-style: solid;
+		
+	}
+blockquote {
+	margin-left: 60px;
+	margin-right: 60px;
+	background-color: #DDDDDD;
+	border-radius: 16px;
+	word-wrap: break-word;
+	}	
+	
+	
+	
+.mobile-menu {
+  display:block;
+  width:100%;
+  background: #007e7a;
+  line-height: 1.6em;
+  font-size: 13px;
+  text-align:center;
+  position: relative;
+  margin:0 auto;
+  float: right;
+  vertical-align: middle;
+}
+	
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+  list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:right;
+  width:100%;
+  position: absolute;
+  background-color: #ECB11F;
+}
+	
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	min-width:130px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #ECB11F;
+	text-decoration: none;
+    margin-left:-5px;
+    padding: 10px 8px; 
+	border-width: 1px;
+	border-style: solid;
+	
+}
+body #eixo3 a#ativo {
+	background-color: #ecb11f;
+	color: #fff;
+	}
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #ffffff;
+  background-color:#747678;
+}
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #747678;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+}
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #ecb11f;
+}
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #ecb11f;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+	
+.audio{
+  text-align: center;
+  }
+	
+.audio audio{
+  border-style: solid;
+  border-color: #BB133E;
+  border-width: 6px;
+  box-shadow: 2px 2px 5px grey;
+  width: 580px;
+  margin-bottom: 30px;
+	}	
+	
+	
+.flip {
+  position: relative;
+  width: 400px;
+  float: right;
+  cursor: pointer;
+
+}
+
+.imageflip {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(187,19,62,0.90);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.flip:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Caecilia;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}	
+	
+.text a{
+	color: #ecb11f;
+	}
+	
+	
+.myButton {
+	background-color:#bb133d;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 30px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#5F031A;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/*Responsive Styles*/
+@media screen and (max-width : 720px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8; 
+    border-top: 5px solid #f8f8f8; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display:block;
+	}
+	.textos{
+		padding:20px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  width: 100%;
+	
+}
+.bgimg-1, .bgimg-2, .bgimg-3 img {
+  width: auto;
+min-height: 300px;
+	
+}
+.logo {
+	width:100%;
+	height: 0px;
+	padding-top: 0px;
+	float: left;
+	}
+	
+	
+.busca {
+	width:100%;
+	height: 60px;
+	margin-left:0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	float: right;
+	text-align: right;
+	}
+	
+.busca_int{
+	vertical-align: baseline;
+	padding-top: 20px;
+	}
+	
+	
+.capa {
+	float: left;
+	margin-top: 40px;
+	margin-bottom: -60px;
+	}	
+	
+	
+.textos_capa{
+	color: #535353;
+	padding: 10px 10px;
+	text-align: justify;
+	font-family: "Verdana";
+	font-size: 12px;
+	line-height: 18px;
+	float: left;
+	
+	}	
+	
+	
+h1 {
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font: 30px "Caecilia";
+}
+h3 {
+  letter-spacing: 0px;
+  font: 14px "Caecilia";
+  padding-top: 14px;
+}	
+	
+	
+.capa img{
+	max-width: 100%;		
+	}
+	
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+}
+	
+.bgimg-2 {
+  background-image: url("imagens/sapatos.jpg");
+  min-height:auto;
+}
+	
+video{
+  border-style: solid;
+  border-color: #ECB11F;
+  border-width: 4px;
+  width: 100%;
+}
+	
+.video{
+	width:85%;
+	}
+		
+	
+.audio{
+  text-align: center;
+  }
+	
+.audio audio{
+  border-style: solid;
+  border-color: #E37222;
+  border-width: 5px;
+  width: 100%;
+	}
+	
+.tit_bloco {
+  color: #fff; 
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 12px;
+  text-align: center
+	}	
+	
+.tit_bloco2 {
+  color: #fff; 
+  margin: 0px;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 12px;
+  text-align: center
+	}	
+	
+.collapse {
+  margin-bottom: 20px;
+  margin-top: 20px;
+	}
+	
+.collapse2 {
+  margin-bottom: 2px;
+  margin-top: 0px;
+	}
+	
+#img_tit{
+	width: 60%;	
+	}
+	
+.citacao{
+	    padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+	
+.citacao2{
+	    padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 11px;
+		line-height: 16px;
+	}
+	
+	
+.textos{
+	    color: #535353;
+		padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 12px;
+		line-height: 18px;
+	}	
+.textos img{
+	max-width: 100%;
+		
+	}
+	
+.textos2{
+	    color: #535353;
+		padding: 5px 0px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 12px;
+		line-height: 18px;
+	}	
+.textos2 img{
+	max-width: 100%;
+		
+	}
+	
+blockquote {
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #DDDDDD;
+	border-radius: 12px;
+	}
+	
+	
+.flip {
+  position: relative;
+  width: 350px;
+  float: right;
+
+}
+
+.imageflip {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(187,19,62,0.90);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.flip:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Caecilia;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}	
+	
+	
+}
+</style>	
+	
+	
+</head>
+	
+	
+
+<script src="code/jquery-3.3.1.min.js"></script>
+
+	
+<script>// <![CDATA[
+$(document).ready(function() {
+  // Hides all paragraphs
+  $(".conteudobloco").hide();
+  // Optional for showing the first paragraph. For animation use .slideDown(200) instead of .show()
+  //$(".conteudobloco").first().show();
+  $(".tit_bloco").click(function()
+  {
+    // Toggles the paragraph under the header that is clicked. .slideToggle(200) can be changed to .slideDown(200) to make sure one paragraph is shown at all times.
+    $(this).next(".conteudobloco").slideToggle(200);
+    // Makes other pararaphes that is not under the current clicked heading dissapear
+    $(this).siblings().next(".conteudobloco").slideUp(200);
+	$('video').each(function() 
+{
+    $(this)[0].pause();
+});
+	$('audio').each(function() 
+{
+    $(this)[0].pause();
+});
+	  
+	  
+	  
+	  
+  });
+	
+	
+	
+});
+	
+	
+// ]]></script>
+	
+	
+
+	
+
+	
+
+<script>// <![CDATA[
+$(document).ready(function() {
+  $(".conteudobloco2").hide();
+  
+  $(".tit_bloco2").click(function()
+  {
+    $(this).next(".conteudobloco2").slideToggle(200);
+    $(this).siblings().next(".conteudobloco2").slideUp(200);
+  });
+});
+// ]]></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<script>
+$(document).ready(function(){
+ $("#braca").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#braca").click(function(){
+ $("#raca").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#betnia").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#betnia").click(function(){
+ $("#etnia").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#bracis").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#bracis").click(function(){
+ $("#racismo").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#bprec").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#bprec").click(function(){
+ $("#preconceito").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#bdisc").click(function(){
+ $("#menuraca").hide();
+ });
+ $("#bdisc").click(function(){
+ $("#discriminacao").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#fecharraca").click(function(){
+ $("#raca").hide();
+ });
+ $("#fecharraca").click(function(){
+ $("#menuraca").show();
+ });
+});
+	
+$(document).ready(function(){
+ $("#fecharetnia").click(function(){
+ $("#etnia").hide();
+ });
+ $("#fecharetnia").click(function(){
+ $("#menuraca").show();
+ });
+});
+$(document).ready(function(){
+ $("#fecharracis").click(function(){
+ $("#racismo").hide();
+ });
+ $("#fecharracis").click(function(){
+ $("#menuraca").show();
+ });
+});
+$(document).ready(function(){
+ $("#fecharprec").click(function(){
+ $("#preconceito").hide();
+ });
+ $("#fecharprec").click(function(){
+ $("#menuraca").show();
+ });
+});
+$(document).ready(function(){
+ $("#fechardisc").click(function(){
+ $("#discriminacao").hide();
+ });
+ $("#fechardisc").click(function(){
+ $("#menuraca").show();
+ });
+});
+</script>
+	
+	
+
+	
+	
+
+
+<body id="eixo3">
+
+	
+	
+<div class="cabecalho">
+  <div class="logo">
+	
+  </div>
+  <div class="busca">
+	 <div class="busca_int">
+	<form name="f1" action="" 
+    onSubmit="if(this.t1.value!=null && this.t1.value!='')
+    findString(this.t1.value);return false"
+    >
+	<input type="text" name="t1" value="" size="20">
+	<input type="submit" class="b1" value="Pesquisar">
+	</form>
+	</div>
+  </div>
+	<nav class="mobile-menu">
+	<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu"><b>
+		<li><a href="index.html">Início<br><br></a></li>
+		<li><a href="#">Fundamentos<br>da EJA</a></li>
+		<li><a href="#">Diversidade: gênero<br>e raça na EJA</a></li>
+		<li><a href="eixo3.html" id="ativo">Na sala de<br>aula de EJA</a></li>
+		<li><a href="#" id="ativo">Educação<br>profissional</a></li>
+		<li><a href="#">Cidades, mobilidade<br>e sustentabilidade</a></li></b>
+	</ul>
+</nav>
+  
+</div>
+	
+
+<div class="capa" style="padding-top: 60px">
+	<img src="imagens/eixo4_img1.png" width="100%" align="center" style="margin-bottom: 80px">
+
+</div>
+	
+
+	
+<div class="textos">
+	
+<div class="flip">
+  <img src="imagens/eixo4_img2.jpg" alt="Avatar" class="imageflip">
+  <div class="overlay">
+    <div class="text">A falta de trabalho atinge mais de 27 milhões de pessoas no país, segundo <a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/22218-pnad-continua-tri-taxa-de-subutilizacao-da-forca-de-trabalho-e-de-24-6-no-segundo-trimestre-de-2018.html" target="_blank">dados do IBGE.</a></div>
+  </div>
+</div>
+	
+<p align="left">O trabalho é um tema altamente relevante para pessoas que retornam à escola em programas de Educação de Jovens e Adultos (EJA). A maior parte delas traz experiências de trabalho pouco qualificados em seu repertório. Assim como os jovens que buscam o primeiro emprego, costumam ter a expectativa de que a escola contribua de algum modo para sua formação profissional. Frequentemente, essa busca é o principal motivo para voltar a estudar.</p>
+</div>
+	
+<div class="textos">
+<p align="left">Em tempos recentes, o papel de formação profissional da EJA ganhou força. O contexto de instabilidade econômica, marcado por processos de exclusão social, tem se manifestado por fenômenos como o desemprego estrutural e a precarização do trabalho. Ao mesmo tempo, a incorporação da tecnologia tem provocado uma reestruturação da produção e dos serviços, tornando ainda mais vulneráveis aqueles que têm baixa escolaridade e pouca qualificação.</p>
+	
+<p align="left">Nesse cenário, é indispensável que o currículo da EJA assuma um compromisso com a educação profissional, contribuindo para a participação dos educandos no mundo do trabalho e, finalmente, para a configuração de uma sociedade mais justa.</p>
+</div>
+
+<div style="width: 100%;text-align: center;float: left;margin-bottom: 40px;">	
+<div class="video" style="margin: 0 auto;">
+<video controls>
+  <source src="imagens/Fernando2.mp4" type="video/mp4">
+Seu navegador não suporta esse formato de vídeo.
+</video>
+
+</div>
+</div>	
+
+
+
+<div class="modulos">
+<div class="textos">
+<h2><br>Módulos</h2>
+<p>Clique nos itens abaixo para visualizar os módulos.</p>
+</div>
+	
+
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 1 - Concepções de educação profissional </strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+<p><br>A articulação da EJA à Educação profissional tem uma história recente entre as propostas curriculares e políticas públicas em nosso país. Se, por um lado, a demora se deve ao lugar marginal ocupado pela EJA, por outro reflete o predomínio histórico da separação entre educação e trabalho. Ela deixou marcas sobre as concepções de educação profissional que chegaram aos dias de hoje.</p>
+<p>O distanciamento entre educação e formação profissional tem heranças no Brasil Colonial, quando o trabalho, atividade pouco prestigiosa, era realizado por uma mão-de-obra escrava, que servia à elite. No início do século XX, esta divisão de classes transferiu-se à educação, configurando duas modalidades formativas: uma escola voltada às elites, que valorizava as atividades intelectuais, separada da formação para o trabalho, destinada às classes mais pobres da população.</p>
+<p>Essa separação entre ações formativas para o saber e para o fazer foi acentuada pelas políticas educacionais brasileiras até o início deste século.</p>
+	
+
+	
+<p>Mas, além da comparação entre os dados, quando olhamos para números como esses precisamos também nos perguntar: como essas desigualdades impactam as condições de vida das brasileiras? Que tipo de sonhos, expectativas ou realidades nossa sociedade permite que elas vivam? E quais lhes são tiradas? Quais os efeitos das desigualdades de gênero entre os homens? E como essas desigualdades ameaçam o direito à educação?</p>
+
+<blockquote style="padding: 20px;">
+	<p>No Brasil, a Lei de Diretrizes e Bases da Educação Nacional (Lei nº 9.394/96) estabelece que o Ensino Médio, última etapa da educação básica, tem a preparação para o trabalho como uma de suas finalidades.</p>
+	<p>No ano seguinte, no entanto, veio a determinação de que a educação profissional assumisse uma organização curricular independente do Ensino Médio (Decreto 2.208/97).</p>
+	<p>O princípio da formação unitária foi resgatado, em 2004, pela instituição do Ensino Médio integrado a educação profissional técnica de nível médio (Decreto 5.154/04).</p>
+	<p>A integração da EJA com a educação profissional ganhou impulso em 2005 com o Programa Nacional de Integração da Educação Profissional com o Ensino Médio na modalida de de Educação de Jovens e Adultos (Proeja), cuja abgrangência foi ampliada ao Ensino fundamental no ano seguinte.</p>
+</blockquote>
+
+	
+<p><br>Apesar de medidas normativas e programáticas visando articulação entre formação geral e formação profissional, sua separação ainda marca o espírito de muitas propostas pedagógicas. A integração entre os dois propósitos formativos requer uma mudança de paradigma sobre aquilo que possa ser formação para o trabalho.</p>
+	
+<div style="float:right;width: 350px;margin-left:12px;background-color:#BB133E; ">
+<img src="imagens/eixo4_img2.jpg" align="right" style="width:350px;display: inline-block;padding-bottom: 10px;">
+<p style="font-size:13px;line-height: 100%;color:#fff;padding: 12px;">Propostas pedagógicas da EJA voltadas à educação profissional não precisam assumir uma finalidade meramente prática, mas podem envolver situações de pesquisa e debate, que normalmente fazem parte das situações escolares e podem abranger temas relacionados ao trabalho (ver Módulo 3).</p>
+</div>
+	
+<p>O dualismo histórico entre as modalidades formativas acabou por consolidar uma concepção de educação profissional restrita ao desenvolvimento de habilidades e competências que adequasse os sujeitos às demandas do mercado. Essa perspectiva mercantil da educação traz implícita uma ideia de ser humano: alguém reduzido à condição de recurso empregável ao mercado de trabalho. </p>
+	
+<p>Aqui, temos o propósito de pensar uma EJA em que a educação profissional não assuma um sentido exclusivamente utilitário. O emprego, evidentemente, faz parte da expectativa dos educandos e deve orientar as ações formativas. Acreditamos, porém, que o trabalho, para além da prática, deva ser considerado objeto do conhecimento, assim ingressando no mundo do saber.</p>
+	
+<p>É importante que o trabalho seja considerado em sua dimensão da ciência, da tecnologia, da cultura e da cidadania. Abre-se então a possibilidade do trabalhador situar-se historicamente, refletir sobre a natureza de sua participação social e reconhecer o trabalho como promotor de sua própria transformação. A educação profissional assume então seu compromisso com a formação integral dos sujeitos.</p>
+	
+<p>Essa mudança de concepção sobre a educação profissional é acompanhada por uma transformação do horizonte formativo. Deixamos de pensar o trabalho como exercício produtivo e passamos a pensá-lo como mote para o desenvolvimento da cidadania. É quando a formação profissional deixa de apenas mirar o mercado e lança luz sobre o mundo do trabalho.</p>
+	
+
+<p><br> </p>
+	
+<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #BB133E;">
+<h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Texto para discussão: </h3>
+<p style="padding-left:20px;">SAVIANI, Dermeval. <strong>Trabalho e educação: fundamentos ontológicos e históricos</strong>. Revista Brasileira de Educação. Rio de Janeiro, volume 12, número 34, pp. 152-180, jan/abr 2007. Disponível <a href="http://www.scielo.br/pdf/%0D/rbedu/v12n34/a12v1234.pdf" target="_blank">clicando aqui</a>.</p>
+<p style="padding-left:20px;"><em>O artigo faz uma retrospectiva histórica das relações entre educação e trabalho, mostrando sua separação por um longo período e as tentativas de reestabelecimento de vínculos no mundo contemporâneo.</em></p>
+</blockquote>
+
+<p><br> </p>
+	
+</div>	
+
+
+</div>
+	
+</div>	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 2 - A definição de um programa de formação</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+
+<p><br>A diversidade do público da EJA e de contextos nos quais a oferta desse segmento é relevante desafia gestores e educadores a planejar projetos pedagógicos diferenciados e específicos, inclusive no que diz respeito aos modelos de integração com a Educação Profissional.  </p>
+	
+<p>Um desses modelos é a EJA integrada à Educação Profissional. Nesse caso, os alunos cursam disciplinas da base comum e disciplinas voltadas à formação para o trabalho em uma determinada área ocupacional. Essa integração pode se dar por meio de duas propostas formativas, conforme a seguir.</p>
+	
+<p style="padding-left: 20px"><strong>a)</strong> Ensino fundamental e médio da EJA integrados à Formação Integral Continuada (EJA-FIC): oferece a base comum curricular e disciplinas de uma determinada área profissional, oferecendo uma certificação final.</p>
+<p style="padding-left: 20px"><strong>b)</strong> Ensino Médio da EJA articulado à Educação Profissional Técnica de Nível Médio: também oferece a base comum curricular e as disciplinas do curso técnico em uma determinada área.</p>
+
+<p align="center"><img src="imagens/eixo4_img2.png" style="width: 100%; display: inline-block" align="center"></p>
+	
+<p align="center"><a href="http://www.observatoriodopne.org.br/metas-pne/10-eja-integrada-a-educacao-profissional" class="myButton">Clique para mais informações</a></p>
+	
+<p>Outro modelo de integração da EJA com a Educação profissional é aquele em que o ensino fundamental e o médio assumem o trabalho como eixo condutor do currículo das disciplinas convencionais (ver Módulo 3). Nesse caso existe uma certificação da formação geral, mas não da habilitação profissional. </p>
+	
+<p>A definição de um programa de formação que integre os conhecimentos gerais com os específicos do mundo do trabalho deve ser criteriosa, considerando as características do público e o contexto em que vive.</p>
+	
+<p>Os cursos podem ser planejados tendo em vista as demandas, por exemplo, de populações da periferia de grandes centros urbanos, comunidades itinerantes, rurais, indígenas, quilombolas ou privadas de liberdade. Para cada caso deve-se pensar como a escola pode contribuir para o desenvolvimento da cidadania e a ampliação das oportunidades profissionais dos educandos.</p>
+	
+<p>A identificação das demandas formativas do público atendido pela escola precisa levar em conta sua trajetória profissional, as condições de trabalho que experimentam e seus projetos para o mundo do trabalho. Também é importante considerar a situação de desemprego e de procura de um primeiro emprego, como ocorre com os jovens que acedem à EJA.</p>
+	
+<p>O planejamento deve ainda compreender um estudo do desenvolvimento econômico local, buscando conhecer as condições de vida da população e a esfera do trabalho, o que inclui as atividades econômicas e a oferta de ocupações na região.</p>
+	
+<p>Dependendo do perfil dos sujeitos e das condições locais, o currículo pode oferecer itinerários formativos para determinados arcos profissionais. Eles consistem em conjuntos de ocupações que fazem parte de um mesmo setor da economia e possuem base técnica comum, podendo abranger as esferas da produção, da circulação de bens e da prestação de serviços. A formação por arcos profissionais inclui atividades teóricas e práticas, podendo contribuir para atender as “demandas de sobrevivência” de uma comunidade, pois amplia a gama de possibilidades de inserção ocupacional dos educandos como assalariados, autônomos ou em atividades da economia solidária.</p>
+	
+
+<strong>Infográfico apresentando exemplos de arcos profissionais e ocupações que fazem parte de cada um deles. 
+A relação de arcos profissionais e suas respectivas ocupações está disponível nas páginas 25 a 32 do Catálogo Nacional de Aprendizagem (Conap) do Ministério do Trabalho em: </strong>
+	
+<p><strong>AÇÃO EDUCATIVA - AGUARDANDO CURADORIA DE INFORMACOES PARA O INFOGRAFICO</strong> </p>	
+	
+<p align="center"><a href="http://www.trabalho.gov.br/images/Documentos/Aprendizagem/AnexoI_Catalogo_Nacional_de_programas_de_Aprendizagem.pdf" class="myButton">Confira a lista completa</a></p>
+	
+	
+	
+<p><strong>AÇÃO EDUCATIVA - AGUARDANDO AUDIO PARA INSERIR AQUI</strong> </p>
+
+<p>Como outro exemplo, podemos supor uma escola frequentada por muitos estudantes que sejam trabalhadores da construção civil. Nesse caso, o currículo poderia reservar espaço para o trabalho com medidas, técnicas de edificações empregadas historicamente e os movimentos artísticos aos quais estão relacionadas, direitos da categoria, história da organização sindical e saúde do trabalhador.</p>
+	
+<p>O passo seguinte à definição do programa de formação que se pretende ofertar é a elaboração de um currículo que integre a formação profissional às ações educativas. Essa construção deve ser um ato colaborativo e permanente entre os docentes, visando planejar ações que articulem as diferentes disciplinas sob o principio da formação humana integral. </p>
+	
+<p><strong>AÇÃO EDUCATIVA - AGUARDANDO VIDEO PARA INSERIR AQUI </strong></p>
+	
+<p><br> </p>
+	
+</div>	
+
+
+</div>
+	
+</div>		
+	
+
+	
+
+	
+	
+	
+	
+	
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 3 - O trabalho no currículo da EJA</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+
+<p><br>No modelo da EJA integrada à Educação Profissional, espera-se que a articulação entre a formação geral e a formação para o trabalho não se resuma à justaposição das disciplinas convencionais e específicas na grade curricular. Um currículo verdadeiramente integrado pressupõe que os professores da base comum aproximem-se da temática do trabalho por meio, por exemplo, dos eixos da ciência, da tecnologia, da cultura e da cidadania. O mesmo se espera em cursos do ensino fundamental e médio de EJA que, ainda que não integrados à Educação Profissional, tenham a formação para o trabalho como um de seus objetivos. </p>
+	
+<p>Nesses casos, as áreas de Linguagens, Matemática, Ciências Humanas e da Natureza e das Ciências Humanas podem tratar o trabalho como <a href="http://portal.mec.gov.br/seb/arquivos/pdf/livro081.pdf" target="_blank">tema transversal</a>. Trata-se, afinal, de uma temática que está presente em diferentes campos do conhecimento, não existindo uma área que pudesse ser suficiente para abordá-la. Para além da habilitação técnica, a formação profissional deve atravessar diferentes disciplinas, integrando-as em torno do trabalho como objeto do conhecimento.</p>
+	
+<p>Sugerir que um curso de Língua Portuguesa ou Matemática tome o trabalho como tema transversal não é propor que o professor ou a professora, em certo momento, interrompam a programação de suas disciplinas. A transversalidade pressupõe que um tema, como o trabalho, seja abordado simultaneamente ao desenvolvimento dos objetivos das disciplinas.</p>
+	
+<p>Atividades orientadas ao desenvolvimento da leitura, da escrita ou da oralidade podem, por exemplo, abordar temáticas como emprego e condições de trabalho; atividades que envolvam habilidades matemáticas como interpretação de grandezas numéricas e leitura de gráficos podem propiciar a compreensão do mercado de trabalho; os direitos do trabalhador podem ser o fio condutor das aulas de História, enquanto o letramento científico pode ser estimulado por meio de pesquisas sobre novas tecnologias.</p>
+	
+
+<strong>Fotografia de alunos jovens e adultos visitando um espaço cultural dedicado às Artes ou à História. A imagem deve deixar clara uma situação de apreciação de peças relacionadas à temática do trabalho. Os alunos podem estar no Museu da Imigração observando fotografias dos primeiros trabalhadores assalariados das fazendas de café; ou no MASP, diante de O lavrador de café, de Portinari.
+Caso o material digital seja distribuído a municípios pouco atendidos por equipamentos culturais deste tipo, a imagem pode retratar alunos jovens e adultos diante de livros que apresentem as imagens acima, entre outras muitas possibilidades, como Operários, da Tarsila do Amaral.
+	
+LEGENDA: Práticas pedagógicas no campo das Artes Plásticas podem promover a apreciação de obras que retratam trabalhadores em diferentes contextos históricos e sociais. Atividades assim planejadas podem contribuir para a formação estética dos educandos, ao mesmo tempo em que podem apoiar a reflexão e o debate sobre diversos elementos relacionados ao mundo do trabalho. </strong>
+	
+<p>Esses exemplos mencionam objetivos que, na escola, costumam fazer parte do currículo das disciplinas convencionais. Ao serem postos em comunicação com a temática do trabalho, tais objetivos podem ultrapassar uma finalidade meramente escolar e assumir um sentido social.</p>	
+	
+<p><strong>AÇÃO EDUCATIVA - AGUARDANDO VIDEO PARA INSERIR AQUI </strong></p>
+	
+	
+<p>Embora a educação profissional em uma EJA voltada à formação humana não se limite à capacitação para o mercado, seria de se estranhar uma proposta de integração que não qualificasse o trabalhador para o acesso a novas ocupações e condições de renda. Nesse sentido, a escola também pode planejar ações voltadas ao emprego, como a pesquisa de vagas, a escrita do currículo e a participação em entrevistas de emprego. Sabemos que situações escolares de natureza mais pragmática costumam estar entre as expectativas dos educandos. Ainda assim, mesmo a questão do emprego pode ganhar abordagens que considerem as novas formas de organização do trabalho, os processos produtivos como um todo e os agentes sociais que dele participam.</p>
+
+<p>Fica claro que a educação profissional pode ir além do desenvolvimento de competências que promovam a inclusão no mercado de trabalho. Ela pode contribuir para que os educandos reconheçam o trabalho como um fazer humano e, portanto, sua condição de como sujeitos históricos, produtores de cultura e cidadãos. Para isso, é preciso ter em vista que o direito dos educandos ao trabalho corresponde ao direito ao conhecimento sobre o mundo do trabalho.</p>
+	
+<p>É preciso considerar que a aproximação entre as disciplinas e a transversalidade não depende apenas de cada um dos educadores, mas precisam ser produzidas em equipe e podem beneficiar-se de ações formativas do corpo docente da escola. Somente então é possível construir um currículo de educação profissional minimamente capaz de estimular a formação integral.</p>
+	
+	
+	
+<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #BB133E;">
+<h3><img src="imagens/glossario.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura: </h3>
+<p>SILVA, Mônica Ribeiro da. <strong>A política de integração curricular no âmbito do PROEJA: entre discursos, sujeitos e práticas. Ensaio: Avaliação e Políticas Públicas em Educação.</strong> Rio de Janeiro, v. 19, n. 71, p. 307-326, abr./jun. 2011. Disponível <a href="http://www.scielo.br/pdf/ensaio/v19n71/a05v19n71.pdf" target="_blank">clicando aqui</a>.</p>
+
+<p><em>O artigo analisa a construção de um currículo visando a integração entre educação geral e profissional no contexto de implantação do PROEJA no Estado do Paraná. Independente do contexto, as observações e relatos de campo apresentados pelo artigo são valiosos para pensar as diversas formas de integração curricular em torno do trabalho como princípio educativo. </em></p>
+	
+</blockquote>
+	
+<p>&nbsp; </p>
+
+	
+</div>	
+
+
+</div>
+	
+</div>	
+	
+	
+	
+	
+	
+	
+
+	
+
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 4 - Eixos norteadores para o planejamento</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+
+<p><br>Feitas algumas considerações sobre o currículo (Módulo 3), podemos nos aproximar do planejamento de aulas do ensino fundamental e médio da EJA que contribuam para a formação profissional dos educandos. A preocupação aqui não é a de eleger temas, que variam de acordo com o perfil do alunado, mas de sugerir estratégias didáticas voltadas ao desenvolvimento de linguagens e atitudes altamente valorizadas pelo modo como o trabalho se organiza nos dias de hoje. Elas podem tomar parte em disciplinas da formação geral e específica para o trabalho.</p>
+	
+<p>A maioria dos jovens e adultos volta à escola trazendo uma visão de mundo vinculada à condição de trabalhadores. Ela funda saberes, práticas e valores que devem ter espaço no processo formativo: revelam a realidade e as necessidades dos educandos, orientam o planejamento e, postos em diálogo, instauram condições para a construção da identidade do grupo como um coletivo de trabalhadores. </p>
+	
+
+<p>O exercício narrativo sobre o vivido e a escuta do outro são capazes de gerar novas constatações e conhecimentos sobre a realidade, o que, na pedagogia de Paulo Freire, é condição para transformá-la. A formação de sujeitos críticos requer a investigação da realidade e, com ela, a superação do saber da pura experiência por um conhecimento organizado, tipicamente formal e letrado.</p>
+	
+<p>Vale lembrar que ensinar não é transferir conhecimentos, mas criar condições para sua produção. Embora aulas expositivas tenham seu valor, o papel formativo da educação profissional se esvazia quando predominam situações baseadas na transmissão de conceitos e procedimentos a alunos passivos, geralmente convidados a realizar exercícios que mais solicitam a memória e o automatismo de certas práticas do que a reflexão, a indagação, o debate e a decisão.</p>
+	
+<strong>Onde está o link para a situação-problema?</strong>
+
+<p><strong>AÇÃO EDUCATIVA - AGUARDANDO VIDEO PARA INSERIR AQUI </strong></p>	
+
+<p>Uma situação-problema não é uma situação previsível, que possa ser realizada com instrumentos imediatamente acessíveis ao aluno, mas consiste em uma tarefa cuja realização promove aprendizagem. </p>	
+
+<p>Outra estratégia didática relevante para a formação profissional é o trabalho em pequenos grupos. Esse tipo de organização, frequente em muitas escolas, valoriza o diálogo e, por esta razão, favorece a aprendizagem frente a diversas atividades. Ocorre que a capacidade para o trabalho em grupo costuma ser tomada como pressuposto para a realização das atividades, sem que seja, ela mesma, considerada objeto de trabalho pedagógico.</p>
+<p>As mudanças na organização do trabalho ocorridas nas últimas décadas deram ênfase ao trabalho colaborativo, lembrando-nos, uma vez mais, que trabalhar em grupo não significa justapor alunos e alunas, mas criar condições para a reflexão sobre o modo como cada um toma parte nas relações interpessoais.</p>
+<p>No campo das linguagens, podemos destacar a importância de colocar os alunos frente a diferentes situações comunicativas, nas quais tenham a oportunidade de aproximar-se de gêneros textuais importantes no mundo do trabalho. A produção escrita de e-mails, cartas de apresentação, relatórios e slides eletrônicos pode apoiar a aprendizagem da linguagem formal, ao passo que apresentações orais planejadas abrem espaço à discussão sobre a postura adequada a esse tipo de situação.</p>
+<p>Vale, finalmente, considerar a presença da tecnologia no cotidiano em geral e, especificamente, seu lugar no mundo do trabalho. Nesta medida, a escola também pode contribuir para o desenvolvimento do letramento digital dos alunos, valorizando a aprendizagem do uso de softwares (para edição de textos, apresentações e planilhas) e da internet em práticas sociais nas quais eles são recursos de comunicação e informação.</p>
+	
+	
+<strong>Imagem de três alunos de EJA em pé diante da classe, junto a uma tela, supostamente fazendo uma apresentação oral apoiada por imagens.
+LEGENDA: Atividades em pequenos grupos, que envolvam apresentações orais planejadas, apoiadas por slides, envolvem o planejamento de sequências didáticas capazes de desenvolver habilidades e atitudes altamente valorizadas pelo mundo do trabalho nos dias de hoje.  </strong>
+	
+<p>Acreditamos que uma proposta pedagógica que ofereça lugar ao diálogo entre educandos e educadores, inclusive em atividades que solicitem a colaboração e a comunicação entre pares, tenha o potencial de fazer com que a formação para o trabalho deixe de ser um projeto individual para tornar-se mote para o desenvolvimento pessoal e a socialização. </p>
+
+
+<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #BB133E;">
+<h3><img src="imagens/glossario.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura: </h3>
+<p>SILVA, Mônica Ribeiro da. <strong>A política de integração curricular no âmbito do PROEJA: entre discursos, sujeitos e práticas. Ensaio: Avaliação e Políticas Públicas em Educação.</strong> Rio de Janeiro, v. 19, n. 71, p. 307-326, abr./jun. 2011. Disponível <a href="http://www.scielo.br/pdf/ensaio/v19n71/a05v19n71.pdf" target="_blank">clicando aqui</a>.</p>
+
+<p><em>O artigo analisa a construção de um currículo visando a integração entre educação geral e profissional no contexto de implantação do PROEJA no Estado do Paraná. Independente do contexto, as observações e relatos de campo apresentados pelo artigo são valiosos para pensar as diversas formas de integração curricular em torno do trabalho como princípio educativo. </em></p>
+	
+</blockquote>
+	
+<p>&nbsp; </p>
+	
+	
+
+	
+</div>	
+
+
+</div>
+	
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+</div>
+	
+
+
+
+	
+<div class="barra_logos">
+<p align="center" style="vertical-align: middle";><strong>Iniciativa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apoio</strong></p>
+<p align="center" style="vertical-align: middle";>
+<img src="imagens/logo_fund_vale.png" width="200px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagens/logo_ght.png">
+</p>
+</div>
+
+
+
+
+<div class="rodape">
+<p align="center" style="vertical-align: middle;">Fundação Vale @ 2018 Todos os direitos reservados</p>
+</div>
+
+	
+	
+	
+	
+<script language="JavaScript">
+<!--
+var TRange=null
+function findString (str) {
+if (parseInt(navigator.appVersion)<4) return;
+var strFound;
+if (window.find) {
+// CODE FOR BROWSERS THAT SUPPORT window.find
+strFound=self.find(str);
+if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+strFound=self.find(str)
+}
+if (!strFound) {
+strFound=self.find(str,0,1)
+while (self.find(str,0,1)) continue
+}
+}
+else if (navigator.appName.indexOf("Microsoft")!=-1) {
+// EXPLORER-SPECIFIC CODE
+if (TRange!=null) {
+TRange.collapse(false)
+strFound=TRange.findText(str)
+if (strFound) TRange.select()
+}
+if (TRange==null || strFound==0) {
+TRange=self.document.body.createTextRange()
+strFound=TRange.findText(str)
+if (strFound) TRange.select()
+}
+}
+else if (navigator.appName=="Opera") {
+alert ("Opera browsers not supported, sorry...")
+return;
+}
+if (!strFound) alert ("String '"+str+"' not found!")
+return;
+}
+//-->
+</script>
+	
+
+<script type="text/javascript" src="code/imageMapResizer.min.js"></script>
+<script type="text/javascript">
+	$('map').imageMapResize();
+</script>	
+	
+	
+	
+
+	
+</body>
+</html>
