@@ -416,9 +416,83 @@ body #eixo3 a#ativo {
 }	
 	
 	
+
 	
+.divflipcard{
+	width: 100%;
+	text-align: center;
+    float: left;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 150px;
+
+	}
 	
+.flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 320px;
+  perspective: 1000px;
+  margin: 0 auto;
+  padding-right: 20px;	
+  padding-top: 20px;	
+  float: left;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ECB11F;
+  color: #fff;
+  transform: rotateY(180deg);
+  width: 300px;
+  padding: 0px 10px;
+}	
+.flip-card-back p {
+  line-height: 20px;
+  font-size: 20px;
+  text-align: left;
+}
 	
+.flip-card-back h3 {
+  color: #fff;
+  font-family: "Caecilia";
+  line-height: 26px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 26px;
+}
+
+
+
 	
 	
 	
@@ -690,6 +764,88 @@ blockquote {
 	margin-bottom:30px;
 }	
 	
+.divflipcard{
+	width: 100%;
+	text-align: center;
+    float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+
+	}
+	
+.flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 320px;
+  perspective: 1000px;
+  margin: 0 auto;
+  padding-right: 20px;	
+  padding-top: 20px;	
+  float: left;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #ECB11F;
+  color: #fff;
+  transform: rotateY(180deg);
+  width: 300px;
+  padding: 0px 10px;
+}	
+.flip-card-back p {
+  line-height: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+	
+.flip-card-back h3 {
+  color: #fff;
+  font-family: "Caecilia";
+  line-height: 26px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 26px;
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 </style>	
 	
@@ -849,9 +1005,7 @@ $(document).ready(function(){
 });
 </script>
 	
-	
 
-	
 	
 
 
@@ -1116,28 +1270,205 @@ Seu navegador não suporta esse formato de áudio.
 
 <h3 align="left"> <img src="imagens/glossario.png" style="width: 60px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Informe-se</h3>
 
-<p>No quadro a seguir, acompanhe o glossário de termos que discutimos nessa seção.</p>
+<p>Passe o mouse nos cards abaixo para ver a definição dos termos que discutimos nessa seção.</p>
+	
+
 
 	
-<blockquote>
-<ul style="list-style-type: none;padding: 20px;">
-	<h3 style="color: #000"><strong>Glossário</strong></h3>
-	<li><strong>Bissexual</strong>: É a pessoa que se sente atraída afetiva e sexualmente por pessoas tanto do gênero oposto como do mesmo gênero.</li>
-	<li><strong>Cisgênero</strong>: pessoa que tem uma identidade de gênero em consonância com a genitália de nascimento.</li>
-	<li><strong>Orientação sexual</strong>: refere-se ao modo como uma pessoa sente atração sexual ou afetiva. Pode ser desejo de se relacionar com pessoas do seu mesmo gênero (orientação homossexual), do gênero oposto (orientação heterossexual), pelos dois (bissexual) ou não expressar atração sexual (assexual). </li>
-	<li><strong>Desigualdade</strong>: Quando uma diferença é transformada em fonte para uma posição de poder. Ou seja, quando uma diferença vira base para julgamentos que classificam um lado como melhor que outro, seja essa diferença de ordem física, moral, regional, religiosa, geracional, sexual, linguística, identitária ou econômica.</li>
-	<li><strong>Estereótipo</strong>: O que é criado como expectativa sobre uma pessoa tomando como pressuposto alguma característica sua. Isto é, a imagem preconcebida que temos dela a partir de alguma característica sua, como se todas as pessoas com aquela mesma característica automaticamente tivessem as mesmas ações, comportamentos, desejos ou valores. Por exemplo: generalizamos que todas as pessoas do gênero feminino desejam se casar ou ser mães, como se não houvesse possibilidade de alguém ter um desejo contrário. Normalmente discriminações e violências de gênero são fundamentadas a partir de estereótipos.</li>
-	<li><strong>Gay</strong>: pessoa com identidade de gênero masculina que se sente atraída ou mantém relações afetivo-sexuais com pessoas também masculinas. </li>
-	<li><strong>Gênero</strong>: conceito criado no final dos anos 1960 para falar sobre os aspectos culturais que produzem a diferenciação entre masculinidades e feminilidades e também suas relações de poder e desigualdade. </li>
-	<li><strong>Homofobia</strong>: é toda discriminação ou violência, seja ela física ou simbólica, contra pessoas com orientação sexual homossexual.</li>
-	<li><strong>Heterossexual</strong>: Quem se sente atraída afetiva e sexualmente por pessoas do gênero oposto.</li>
-	<li><strong>Homossexual</strong>: Quem se sente atraída afetiva e sexualmente por pessoas mesmo gênero.</li>
-	<li><strong>Identidade de gênero</strong>: É como uma pessoa se vê e como ela se mostra para o mundo. Seu modo de pensar, se vestir, sonhar ou agir.</li>
-	<li><strong>Lésbica</strong>: pessoa com identidade de gênero feminina que se sente atraída ou mantém relações afetivo-sexuais com pessoas também femininas. </li>
-	<li><strong>Travesti/Transexual</strong>: Quando uma pessoa tem uma identidade de gênero diferente daquela socialmente esperada para sua genitália, por exemplo: quando uma pessoa tem uma vagina, mas se reconhece e mostra como homem (referido sempre no masculino e chamado de “homem trans”) ou nasceu com um pênis e se reconhece e mostra como uma mulher (referida sempre no feminino e chamada de “mulher transexual”) . Algumas dessas pessoas demonstram desejo de mudar sua genitália por meio de cirurgia, mas não é obrigatório. Elas podem ser tanto heterossexuais como homossexuais, bissexuais ou assexuais: a orientação sexual não depende da identidade de gênero. Para aprofundar nesse tema, acompanhe a <a href="http://www.ebc.com.br/trans" target="_blank">reportagem especial Eu Trans</a>.</li>
-	<li><strong>Transfobia</strong>: é toda discriminação ou violência, seja ela física ou simbólica, contra travestis ou transexuais.</li>
-</ul>
-</blockquote>
+	
+<div class="divflipcard">
+	
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard1.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Bissexual</h3> 
+      <p align="justify">É a pessoa que se sente atraída afetiva e sexualmente por pessoas tanto do gênero oposto como do mesmo gênero.</p>
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard2.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Cisgênero</h3> 
+      <p align="justify">Pessoa que tem uma identidade de gênero em consonância com a genitália de nascimento.</p>
+		
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard3.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Orientação sexual</h3> 
+      <p align="justify">Refere-se ao modo como uma pessoa sente atração sexual ou afetiva. Pode ser desejo de se relacionar com pessoas do seu mesmo gênero (orientação homossexual), do gênero oposto (orientação heterossexual), pelos dois (bissexual) ou não expressar atração sexual (assexual).</p>
+		
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard4.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Gay</h3> 
+      <p align="justify">Pessoa com identidade de gênero masculina que se sente atraída ou mantém relações afetivo-sexuais com pessoas também masculinas.</p>
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard5.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Desigualdade</h3> 
+      <p align="justify" style="font-size: 16px;">Quando uma diferença é transformada em fonte para uma posição de poder. Ou seja, quando uma diferença vira base para julgamentos que classificam um lado como melhor que outro, seja essa diferença de ordem física, moral, regional, religiosa, geracional, sexual, linguística, identitária ou econômica.</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard6.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3 style="padding-bottom: 10px;padding-top: 20px;">Estereótipo</h3> 
+      <p align="justify" style="font-size: 12px;">O que é criado como expectativa sobre uma pessoa tomando como pressuposto alguma característica sua. Isto é, a imagem preconcebida que temos dela a partir de alguma característica sua, como se todas as pessoas com aquela mesma característica automaticamente tivessem as mesmas ações, comportamentos, desejos ou valores. Por exemplo: generalizamos que todas as pessoas do gênero feminino desejam se casar ou ser mães, como se não houvesse possibilidade de alguém ter um desejo contrário. Normalmente discriminações e violências de gênero são fundamentadas a partir de estereótipos.</p>
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard7.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Gênero</h3> 
+      <p align="justify">Conceito criado no final dos anos 1960 para falar sobre os aspectos culturais que produzem a diferenciação entre masculinidades e feminilidades e também suas relações de poder e desigualdade.</p>
+    </div>
+  </div>
+</div>	
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard8.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Homofobia</h3> 
+      <p align="justify">É toda discriminação ou violência, seja ela física ou simbólica, contra pessoas com orientação sexual homossexual.</p>
+    </div>
+  </div>
+</div>		
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard9.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Heterossexual</h3> 
+      <p align="justify">Quem se sente atraída afetiva e sexualmente por pessoas do gênero oposto.</p>
+    </div>
+  </div>
+</div>	
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard10.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Homossexual</h3> 
+      <p align="justify">Quem se sente atraída afetiva e sexualmente por pessoas mesmo gênero.</p>
+    </div>
+  </div>
+</div>	
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard11.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Identidade de gênero</h3> 
+      <p align="justify">É como uma pessoa se vê e como ela se mostra para o mundo. Seu modo de pensar, se vestir, sonhar ou agir.</p>
+    </div>
+  </div>
+</div>	
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard12.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Lésbica</h3> 
+      <p align="justify">Pessoa com identidade de gênero feminina que se sente atraída ou mantém relações afetivo-sexuais com pessoas também femininas.</p>
+    </div>
+  </div>
+</div>	
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard13.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3 style="padding-bottom: 10px;padding-top: 10px;">Travesti/Transexual</h3> 
+      <p align="justify" style="font-size: 16px;line-height: 14px">Quando uma pessoa tem uma identidade de gênero diferente daquela socialmente esperada para sua genitália, por exemplo: quando uma pessoa tem uma vagina, mas se reconhece e mostra como homem (referido sempre no masculino e chamado de “homem trans”) ou nasceu com um pênis e se reconhece e mostra como uma mulher (referida sempre no feminino e chamada de “mulher transexual”) . Algumas dessas pessoas demonstram desejo de mudar sua genitália por meio de cirurgia, mas não é obrigatório. Elas podem ser tanto heterossexuais como homossexuais, bissexuais ou assexuais: a orientação sexual não depende da identidade de gênero. Para aprofundar nesse tema, acompanhe <a href="http://www.ebc.com.br/trans" target="_blank">a reportagem especial Eu Trans.</a></p>
+    </div>
+  </div>
+</div>
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e2_flipcard14.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>Transfobia</h3> 
+      <p align="justify">É toda discriminação ou violência, seja ela física ou simbólica, contra travestis ou transexuais.</p>
+    </div>
+  </div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+
+</div>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 
 <p><br>Para saber mais sobre como a discriminação contra a população LGBT aparecem na escola e como combatê-la, assista a reportagem da Revista Nova Escola “<a href="https://novaescola.org.br/conteudo/1473/combater-a-discriminacao-para-promover-a-liberdade" target="_blank">Combater a discriminação para promover a liberdade</a>”.</p>
 	

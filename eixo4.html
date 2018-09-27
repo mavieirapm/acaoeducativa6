@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -858,7 +858,72 @@ blockquote {
 	text-align: center;
 	}		
 	
+.divflipcard{
+	width: 100%;
+	text-align: center;
+	float: left;
+	padding-left: 60px;
 
+	}
+	
+.flip-card {
+  background-color: transparent;
+  width: 220px;
+  height: 380px;
+  perspective: 1000px;
+  margin: 0 auto;
+  float: left;
+  padding: 10px 5px;	
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #bb133e;
+  color: #fff;
+  transform: rotateY(180deg);
+  width: 200px;
+  padding: 0px 10px;
+}	
+.flip-card-back p {
+  line-height: 12px;
+  font-size: 12px;
+}
+	
+.flip-card-back h3 {
+  color: #fff;
+  font-family: "Caecilia";
+  line-height: 16px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
 	
 	
 	
@@ -1363,8 +1428,8 @@ Seu navegador não suporta esse formato de vídeo.
 	  <p align="justify">• Extrativista florestal de produtos regionais (madeira; alimentos silvestres; fibras, ceras e óleos; gomas e resinas) Artesão regional (cerâmica, bordados, madeira, palha e materiais orgânicos)</p>
 	  
 	  <p align="justify"><strong>Mínimo - 1104 horas e Máximo - 1840 horas</strong></p>
-	  <p align="justify">Teoria: ≥ 552 horas e ≤ 920 horas</p>
-	  <p align="justify">Prática: ≥ 552 horas e ≤ 1288 horas</p>
+	  <p align="justify">Teoria: ≥ 552 horas e ≤ 920 horas<br>
+	  Prática: ≥ 552 horas e ≤ 1288 horas</p>
     </div>
   </div>
 </div>
