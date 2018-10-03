@@ -245,7 +245,8 @@ h2 {
 	}
 	
 .collapse2 {
-  margin: 0px 60px;
+  margin-bottom: 0px;
+  margin-top: 0px;
   word-wrap: break-word;
 	}
 	
@@ -449,7 +450,25 @@ body #eixo3 a#ativo {
 	top:1px;
 }
 	
+.estante{
+	background-color: #C8C8C8;
+	border: solid 12px #e37222;
+	width:70%;
+	margin-left: 15%;
+	background-image: linear-gradient(#696969 , #C8C8C8);
+	box-shadow: 40px 40px 160px #343434 inset;
+	float: left;
+	}
 	
+
+
+#pop:hover{
+  animation: pop 0.3s linear 1;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.1);}
+}
 	
 	
 	
@@ -776,6 +795,18 @@ blockquote {
     text-decoration: none;
     cursor: pointer;
 }
+	
+	
+.estante{
+	background-color: #C8C8C8;
+	border: solid 12px #e37222;
+	width:90%;
+	margin-left: 0px;
+	background-image: linear-gradient(#696969 , #C8C8C8);
+	box-shadow: 10px 10px 60px #343434 inset;
+	float: left;
+	}	
+
 
 	
 }
@@ -860,91 +891,74 @@ $(document).ready(function() {
 	
 <script>
 $(document).ready(function(){
- $("#braca").click(function(){
- $("#menuraca").hide();
+ $(".bcentro").click(function(){
+ $(".tvazia").hide();
+ $(".tnordeste").hide();
+ $(".tnorte").hide();
+ $(".tsudeste").hide();
+ $(".tsul").hide();
  });
- $("#braca").click(function(){
- $("#raca").show();
- });
-});
-	
-$(document).ready(function(){
- $("#betnia").click(function(){
- $("#menuraca").hide();
- });
- $("#betnia").click(function(){
- $("#etnia").show();
+ $(".bcentro").click(function(){
+ $(".tcentro").show();
  });
 });
 	
 $(document).ready(function(){
- $("#bracis").click(function(){
- $("#menuraca").hide();
+ $(".bnordeste").click(function(){
+ $(".tvazia").hide();
+ $(".tcentro").hide();
+ $(".tnorte").hide();
+ $(".tsudeste").hide();
+ $(".tsul").hide();
  });
- $("#bracis").click(function(){
- $("#racismo").show();
- });
-});
-	
-$(document).ready(function(){
- $("#bprec").click(function(){
- $("#menuraca").hide();
- });
- $("#bprec").click(function(){
- $("#preconceito").show();
+ $(".bnordeste").click(function(){
+ $(".tnordeste").show();
  });
 });
 	
 $(document).ready(function(){
- $("#bdisc").click(function(){
- $("#menuraca").hide();
+ $(".bnorte").click(function(){
+ $(".tvazia").hide();
+ $(".tcentro").hide();
+ $(".tnordeste").hide();
+ $(".tsudeste").hide();
+ $(".tsul").hide();
  });
- $("#bdisc").click(function(){
- $("#discriminacao").show();
- });
-});
-	
-$(document).ready(function(){
- $("#fecharraca").click(function(){
- $("#raca").hide();
- });
- $("#fecharraca").click(function(){
- $("#menuraca").show();
+ $(".bnorte").click(function(){
+ $(".tnorte").show();
  });
 });
 	
 $(document).ready(function(){
- $("#fecharetnia").click(function(){
- $("#etnia").hide();
+ $(".bsudeste").click(function(){
+ $(".tvazia").hide();
+ $(".tcentro").hide();
+ $(".tnordeste").hide();
+ $(".tnorte").hide();
+ $(".tsul").hide();
  });
- $("#fecharetnia").click(function(){
- $("#menuraca").show();
+ $(".bsudeste").click(function(){
+ $(".tsudeste").show();
  });
 });
+	
 $(document).ready(function(){
- $("#fecharracis").click(function(){
- $("#racismo").hide();
+ $(".bsul").click(function(){
+ $(".tvazia").hide();
+ $(".tcentro").hide();
+ $(".tnordeste").hide();
+ $(".tnorte").hide();
+ $(".tsudeste").hide();
  });
- $("#fecharracis").click(function(){
- $("#menuraca").show();
- });
-});
-$(document).ready(function(){
- $("#fecharprec").click(function(){
- $("#preconceito").hide();
- });
- $("#fecharprec").click(function(){
- $("#menuraca").show();
+ $(".bsul").click(function(){
+ $(".tsul").show();
  });
 });
-$(document).ready(function(){
- $("#fechardisc").click(function(){
- $("#discriminacao").hide();
- });
- $("#fechardisc").click(function(){
- $("#menuraca").show();
- });
-});
+	
+	
+	
+
+
 </script>
 	
 <script>
@@ -1129,8 +1143,7 @@ Seu navegador não suporta esse formato de vídeo.
 <h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão:</h3>
 <p style="padding-left:20px;">CATELLI Jr, Roberto; ESCOURA, Michele et al. <strong><a href="pdf/231-431-1-PB.pdf" target="_blank">Proposições de organização curricular na educação de jovens e adultos</a></strong>. Cadernos Cenpec, São Paulo, v.3, n.2, p.162-186, jun. 2013.</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 
 <div class="box_audio">	
 <div class="audio">
@@ -1145,9 +1158,10 @@ Seu navegador não suporta esse formato de áudio.
 </blockquote>
 
 <p>&nbsp;</p>
-<p>&nbsp;</p>
 
 <p align="center"><img src="imagens/eixo3_img2_1.png" style="width: 100%; display: inline-block" align="center"></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 
 </div>	
 
@@ -1155,74 +1169,35 @@ Seu navegador não suporta esse formato de áudio.
 	
 	
 <div class="textos" >
-<p>&nbsp;</p>
+
 <p><img src="imagens/atencao2.png"></p>
 <hr align="center">
 
 <p>Clique nos botões abaixo para saber qual a diversidade etária em seu estado.</p>
 
 
-	
-<div class="collapse2">
-<div class="tit_bloco3" align="center"><strong>SUL</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2" style="text-align: center">
-<img src="imagens/tabela1.png" style="display: inline-block;">
-</div>
+<div class="tabela" style="width:100%;margin-bottom: 40px;" align="center" >
 
-</div>
-</div>
+	<img src="imagens/bcentro.png" class="bcentro" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px; ">
+	<img src="imagens/bnordeste.png" class="bnordeste" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
+	<img src="imagens/bnorte.png" class="bnorte" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
+	<img src="imagens/bsudeste.png" class="bsudeste" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
+	<img src="imagens/bsul.png" class="bsul" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
 	
-	
-<div class="collapse2">
-<div class="tit_bloco3" align="center"><strong>CENTRO-OESTE</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2" style="text-align: center">
-<img src="imagens/tabela2.png" style="display: inline-block;">
-</div>
+<div class="" style="width:100%;margin-top: 12px;margin-bottom: 20px;">
+	<img src="imagens/tabela0.png"  class="tvazia" align="center" style="display: inline-block;width: 85%;">
+	<img src="imagens/tabela2.png"  class="tcentro" align="center" style="display: inline-block;display: none;width: 85%;">
+	<img src="imagens/tabela5.png"  class="tnordeste" align="center" style="display: inline-block;display: none;width: 85%;">
+	<img src="imagens/tabela4.png"  class="tnorte" align="center" style="display: inline-block;display: none;width: 85%;">
+	<img src="imagens/tabela3.png"  class="tsudeste" align="center" style="display: inline-block;display: none;width: 85%;">
+	<img src="imagens/tabela1.png"  class="tsul" align="center" style="display: inline-block;display: none;width: 85%;">
+	<p>&nbsp;</p>
 
-</div>
-</div>
+</div>	
+	
+	
+</div>	
 
-	
-<div class="collapse2">
-<div class="tit_bloco3" align="center"><strong>SUDESTE</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2" style="text-align: center">
-<img src="imagens/tabela3.png" style="display: inline-block;">
-</div>
-
-</div>
-</div>
-
-	
-
-<div class="collapse2">
-<div class="tit_bloco3" align="center"><strong>NORTE</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2" style="text-align: center">
-<img src="imagens/tabela4.png" style="display: inline-block;">
-</div>
-
-</div>
-</div>
-	
-	
-	
-<div class="collapse2">
-<div class="tit_bloco3" align="center"><strong>NORDESTE</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2" style="text-align: center">
-<img src="imagens/tabela5.png" style="display: inline-block;">
-</div>
-
-</div>
-</div>
 
 
 
@@ -1287,16 +1262,12 @@ Seu navegador não suporta esse formato de vídeo.
 	<p><img src="imagens/aspas.jpg" align="left" style="padding-right:6px;">Os adultos não escolarizados, contrariamente, ao que habitualmente se divulga são possuidores de uma grande diversidade de saberes e apresentam uma enorme capacidade de aprendizagem, o que é fundamental para a sua vida em sociedade.</p>
 	<hr align="center" style="margin-top: 10px">
 </div>	
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 	
 <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
 <h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão:</h3>
-<p style="padding-left:20px;">CAVACO, Carmen. <strong><a href="pdf/CAVACO_Aprendizado_experiencial_2016.pdf" target="_blank">Formação Experiencial de Adultos Não Escolarizados: saberes e contextos de aprendizagem</a></strong>. Educação & Realidade, Porto Alegre, v. 41, n. 3, p. 951-967, jul./set. 2016.</p>
+<p style="padding-left:20px;">CAVACO, Carmen. <strong><a href="file:///G:/Drives%20de%20equipe/AE_EDUCAÇÂO/1.%20Uni_Edu/2.%20Assessoria%20e%20Avaliação/FUNDAÇÂO%20VALE/MATERIAL%20DIGITAL/MÓDULOS/CAVACO%20-%20Aprendizado%20experiencial%20(2016).pdf" target="_blank">Formação Experiencial de Adultos Não Escolarizados: saberes e contextos de aprendizagem</a></strong>. Educação & Realidade, Porto Alegre, v. 41, n. 3, p. 951-967, jul./set. 2016.</p>
 <p style="padding-left:20px;">O artigo resultou de uma investigação qualitativa, baseada em entrevistas biográficas, que teve como objetivo analisar o processo de formação de adultos não escolarizados com base na experiência. Analisa o modo como estes adultos se formaram ao longo da vida, o que aprenderam, que contextos e pessoas são significativos nessa aprendizagem. Seguindo um referencial teórico baseado na formação experiencial e nas histórias de vida, entende-se que a formação é um processo muito amplo, que se confunde com a experiência de vida. Verificou-se que os adultos não escolarizados possuem saberes diversificados, que resultaram de processos de formação experiencial, em todos os tempos e espaços da sua vida.</p>
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+	
 
 <div class="box_audio">	
 <div class="audio">
@@ -1408,8 +1379,7 @@ Seu navegador não suporta esse formato de vídeo.
 <p>No caso espanhol, na escola de adultos chamada La Verneda, a tertúlia literária é uma proposta em que jovens e adultos de diferentes idades e níveis de leitura se reúnem para viver uma experiência semanal de duas horas discutindo grandes autores da literatura. A proposta é que se realize um diálogo igualitário, no qual todas as opiniões têm o mesmo valor, independente da escolaridade e do título acadêmico de cada um. Cada um dos integrantes da tertúlia leva o livro escolhido para ler e para casa. Sua tarefa é ler e escolher um pequeno trecho que tenha gostado para compartilhar com os colegas da tertúlia. A partir daí se estabelece o diálogo que pode levar para diversos caminhos conforme a dinâmica estabelecida pelo próprio grupo. A leitura pode sugerir debates sobre temas diversos relacionados à comunidade ou a problemas da vida social ou cotidiana. Por fim, devem chegar a uma interpretação coletiva da leitura sem ter que chegar a uma interpretação academicamente mais correta ou disseminada daquela leitura. Este é o sentido do conhecimento dialógico, que se produz com base no diálogo horizontal entre os participantes.</p>
 <p>Considerando a diversidade etária, étnico-racial, de origem, de gênero, de orientação sexual, religiosa, linguística e cultural presente nas salas de EJA propomos o deslocamento do trabalho focado nas carências facilmente observáveis no domínio das habilidades leitoras para o desafio de construir caminhos que levem a emergir as diferentes experiências e visões de mundo que habitam as salas de EJA.</p>
 <p>Intencionalidade educativa e disponibilidade dos professores a novos aprendizados são elementos essenciais para que as diferentes identidades e experiências presentes na sala de aula emerjam e sejam identificadas vias para a construção de processos de ensino comprometidos com a valorização de experiências concretas e potencialmente transformadoras do fazer pedagógico em todas as suas dimensões.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+	
 	
 <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
 <h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;Conhecendo mais sobre Tertúlias dialógicas</h3>
@@ -1425,835 +1395,71 @@ Seu navegador não suporta esse formato de vídeo.
 	
 <h3 align="left">Indicações de leitura na EJA</h3>
 
-	
-	
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>O SINAL DO PAJÉ</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
+<p>Na estante abaixo temos algumas indicações de leitura. Clique nos livros para ver suas fichas de leitura.</p>
 
-<div>
-<p><img src="imagens/livro1.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>O SINAL DO PAJÉ</strong></br>
-Texto: Daniel Munduruku</br>
-Editora Peirópolis</p>
+	
+
+<div style="width: 100%;margin-bottom: 30px;float: left" align="center">
+
+<div class="estante">
+	
+<div style="width:100%;text-align: center;">
+	<a href="pdf/livro1.pdf" target="_blank"><img id="pop" src="imagens/livro1.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro2.pdf" target="_blank"><img id="pop" src="imagens/livro2.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro3.pdf" target="_blank"><img id="pop" src="imagens/livro3.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+</div>	
+
+<div style="background-color:#e37222;height:14px;width:100%;box-shadow: 0px 10px 12px #000000;border-top:1px solid #f9964f;">
 </div>
 	
-<div>
-<p>O escritor Daniel Munduruku Monteiro Costa (Belém/PA, 1964) é filósofo, historiador e psicólogo. Faz parte da nação indígena Munduruku. Para ele, escrever é uma forma de se manter ligado à cultura da aldeia que deixou no Pará, da qual saiu por curiosidade e vontade de descortinar novos horizontes. "Escrevo para me manter índio", diz o autor. Sem se distanciar de suas raízes, tornou-se educador social e criou um jeito de ensinar que inclui a tradição indígena de contar histórias.</p>
-	
-<p>Em linguagem cuidadosa e com belas ilustrações, o livro aborda o tema das escolhas e favorece a discussão das questões indígenas e do multiculturalismo.</p>
-	
-<p><em>O sinal do pajé</em> é uma obra representativa da literatura indígena, importante por apresentar a cultura indígena pelo olhar de um de seus membros e por ressaltar questões como tolerância, respeito e diálogo entre as culturas.</p>
-	
-<p>Por meio de sua narrativa, o autor pretende ajudar o jovem brasileiro, não importando o grupo étnico a que pertença, a pensar nos conflitos que afligem as pessoas quando precisam optar entre dois ou mais sonhos na vida.</p>
+<div style="width:100%;text-align: center;">
+	<a href="pdf/livro4.pdf" target="_blank"><img id="pop" src="imagens/livro4.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro5.pdf" target="_blank"><img id="pop" src="imagens/livro5.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro6.pdf" target="_blank"><img id="pop" src="imagens/livro6.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+</div>	
+
+<div style="background-color:#e37222;height:14px;width:100%;box-shadow: 0px 10px 12px #000000;border-top:1px solid #f9964f;">
 </div>
 	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
+<div style="width:100%;text-align: center;">
+	<a href="pdf/livro7.pdf" target="_blank"><img id="pop" src="imagens/livro7.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro8.pdf" target="_blank"><img id="pop" src="imagens/livro8.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro9.pdf" target="_blank"><img id="pop" src="imagens/livro9.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+</div>	
 	
-<p>Junto dos alunos, inspecione o livro, observando:</p>
-<ul style="padding-left: 20px;">
-	<li>as orelhas;</li>
-	<li>a ficha catalográfica;</li>
-	<li>o nome do autor;</li>
-	<li>o nome da ilustradora;</li>
-	<li>o nome da editora e o ano da edição.</li>
-</ul>
+<div style="background-color:#e37222;height:14px;width:100%;box-shadow: 0px 10px 12px #000000;border-top:1px solid #f9964f;">
+</div>
 	
-<p>Em seguida, apresente e leia para a turma:</p>
-<ul style="padding-left: 20px;">
-	<li>a dedicatória;</li>
-	<li>a nota do autor;</li>
-	<li>o trecho de texto (epígrafe) que abre o livro;</li>
-	<li>os títulos dos capítulos que compõem o sumário;</li>
-	<li>quem são Taísa Borges e Daniel Munduruku;</li>
-	<li>o posfácio (p. 52).</li>
-</ul>
+<div style="width:100%;text-align: center;">
+	<a href="pdf/livro10.pdf" target="_blank"><img id="pop" src="imagens/livro10.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro11.pdf" target="_blank"><img id="pop" src="imagens/livro11.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+	<a href="pdf/livro11.pdf" target="_blank"><img id="pop" src="imagens/livro12.png" align="center" style="max-width: 25%;display: inline-block;"></a>
+</div>	
 	
-<p><strong>Importante</strong>: no posfácio, o autor apresenta a obra, explicando por que escolheu como tema o conflito gerado quando temos de fazer escolhas. E convida o leitor a responder a um jovem indígena que vive essa angústia: “Quem sabe a resposta do leitor possa ajudar outros jovens, que estão vivendo o conflito, a encontrar uma solução”. </p>
-	
-<p>Peça aos alunos para acompanhar a leitura da história feita pelo professor e, depois das discussões, para que escrevam, em duplas, a resposta a esse jovem. Para os alunos que ainda não dominam a escrita, proponha a elaboração coletiva da resposta.</p>
-	
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Estabeleça um cronograma de leitura e quanto será lido por dia. Faça a leitura colaborativa (compartilhada) do livro, tanto para o 1º como para o 2º segmentos. </p>
-	
-<p><strong>A leitura colaborativa é uma atividade em que o professor lê um texto com a classe e, durante a leitura, questiona os alunos sobre os índices linguísticos que dão sustentação aos sentidos que eles estão atribuindo ao texto.</strong> </p>
-	
-<p><strong>É uma excelente estratégia didática para o trabalho de formação de leitores, principalmente para o tratamento dos textos que se distanciem muito do nível de autonomia dos alunos. Ensina o aluno como se lê um texto.</strong></p>
-	
-<p><strong>Importante</strong>: antes da leitura de cada página, apresente a ilustração correspondente. Observe com a classe os desenhos, as linhas, as cores, os grafismos. Inclua a capa na investigação. A ilustração é mais um elemento que atribui sentido ao texto.</p>
-	
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p>Faça com a turma uma roda de discussão sobre a temática da narrativa. Comente que os elementos da discussão servirão de base para a resposta a ser escrita para um jovem indígena e enviada à editora Peirópolis, conforme o combinado anterior ao início da leitura.</p>
-	
-<h3 align="left" style="font-size: 22px;">Avaliação</h3>
-	
-<p>Avalie a compreensão da narrativa em todos os momentos das atividades. São várias as oportunidades para você constatar se o aluno está compreendendo a história ou, se ele está com alguma dificuldade, qual o tipo de dificuldade apresentada. São informações importantes para você saber como dosar as intervenções e estimular para melhor cada vez mais o nível de compreensão leitora dos alunos.</p>
-	
-<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-<h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;Para saber mais</h3>
-<p style="padding-left:20px;"><a href="danielmunduruku.blogspot.com/p/daniel-munduruku.html" target="_blank">Mundurukando – Blog do Daniel Munduruku</a>.</p>
-<p style="padding-left:20px;"><a href="http://institutouka.blogspot.com.br" target="_blank">Instituto UK´A – Casa dos saberes ancestrais</a>.</p>
-<p style="padding-left:20px;"><a href="consciencia.net/entrevista-daniel-munduruku" target="_blank">Revista Consciência.Net – Entrevista com Daniel Munduruku</a>. </p>
-</blockquote>
+<div style="background-color:#e37222;height:14px;width:100%;box-shadow: 0px 10px 12px #000000;border-top:1px solid #f9964f;">
+</div>
 
+
+</div>
+</div>
+	
+	
+
+	
+
+	
+</div>	
+	
+
+</div>	
+	
+	
+</div>	
+	
 <p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>	
-	
-	
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>O QUE DIZEM AS PALAVRAS</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro2.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>O QUE DIZEM AS PALAVRAS</strong></br>
-Texto e ilustrações: Nani</br>
-Editora Lê</p>
-</div>
-	
-<div>
-<p>Com muito humor, Nani desperta para a escrita e a apresenta como um jogo criativo, provocando o leitor a desvendar o que está por trás das palavras. </p>
-	
-<p>Excelente livro para todas as idades, mas pode ser mais bem aproveitado com leitores iniciantes adultos. Ajuda a desenvolver a capacidade de compreensão desse perfil de leitor porque, se de um lado ele precisa apenas decodificar a única palavra de cada quadro, do outro, a compreensão do significado exige esforço de interpretação das metáforas. Palavra e imagem precisam ser “lidas”, pois o significado de uma se completa no significado da outra. Cada página traz duas palavras ilustradas, em ordem alfabética, tais como: censura, fracasso, opressão, pacto e sigilo. Palavras que não costumam fazer parte do vocabulário cotidiano de neoleitores, mas que são carregadas de sentido e podem ajudá-los a compreender outros textos.</p>
-</div>
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Atividades sugeridas</h3>
-	
-<ul style="padding-left: 20px;">
-	<li>Ler para a classe e comentar o texto de abertura do livro, em que o autor fala sobre o que as palavras podem fazer: conversar, elogiar, xingar, descrever etc. O objetivo é provocar uma reflexão sobre o valor e o poder das palavras.</li>
-	<li>Comentar sobre o autor e seu trabalho como cartunista.</li>
-	<li>Propor que os alunos, em duplas, escolham duas palavras do livro para ler e interpretar o sentido, relacionando-as às respectivas imagens. Depois de cada dupla expor sua interpretação para os colegas, estimular todos a comentar as interpretações apresentadas, concordando, discordando e acrescentando comentários.</li>
-	<li>Propor aos alunos que escolham uma palavra, diferente das apresentadas no livro, e brinquem visualmente com os sentidos que ela suscita, assim como faz o autor em seu livro. Os desenhos produzidos podem ser expostos no mural da sala ou da escola. Outra possibilidade é elaborar um livro com as produções dos alunos.</li>
-</ul>
-
 <p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>	
-	
-	
-	
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>TREM DO QUEIJO</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro3.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>TREM DO QUEIJO</strong></br>
-Texto: Almir Mota</br>
-Ilustrações: Juliana Buli</p>
-Aletria Editora </p>
-</div>
-	
-<div>
-<p>O escritor cearense Almir Mota faz um passeio pela cultura de Minas Gerais. O livro conta a história de um trem que transportava queijo. É uma viagem pelo imaginário popular que leva o leitor a conhecer as estações ferroviárias, os passageiros e as paisagens dos caminhos percorridos pelo trenzinho. </p>
-</div>
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<ul style="padding-left: 20px;">
-	<li>Apresente o livro para a classe. Fale do autor e da ilustradora (p. 26).</li>
-	<li>Mostre as ilustrações, página por página. Peça aos alunos para prestar atenção nos desenhos, descrevendo o que veem.</li>
-	<li>Reapresente as imagens. Sugira a criação de uma história oral para as ilustrações. Dê tempo para que elaborem.</li>
-	<li>Peça que contem para a classe a história criada. Estimule todos a falar. Dê atenção especial aos mais inibidos. </li>
-</ul>
-
-	
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Para favorecer a percepção fonética dos leitores iniciantes, leia em voz alta para a classe. No caso de leitores autônomos, peça que leiam em voz alta duas páginas. Faça comentários durante a leitura.</p>
-	
-
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<ul style="padding-left: 20px;">
-	<li>Prepare questões para ampliar a compreensão do que foi lido e promova uma roda de conversa; </li>
-	<li>Sugestões de encaminhamentos para a roda de conversa:</li>
-	<li style="padding-left: 20px;">que aspectos da cultura e da linguagem de Minas Gerais estão presentes na história?</li>
-	<li style="padding-left: 20px;">quais são suas lembranças de boas viagens? Em que tipo de transporte foram feitas? Alguma foi de trem?</li>
-	<li style="padding-left: 20px;">alguma ilustração do livro remete a alguma lembrança? Conte sobre isso.</li>
-	<li style="padding-left: 20px;">leia a frase da p. 22: “Carolina nem é mais menina”. A ilustração revela isso? De que modo?</li>
-	<li style="padding-left: 20px;">o que se escreve na frente do envelope de uma carta que se quer enviar pelo correio? Se você fosse colocar o envelope da p. 22 no correio, que mudanças faria no que está escrito?  </li>
-	<li style="padding-left: 20px;">uma ilustração não é apenas um recurso para deixar a página de um livro mais bonita para os olhos. A boa ilustração não é um apêndice. Ela compõe com o texto uma unidade de significação. Para favorecer a observação das ilustrações, tente saber qual o leitor achou mais significativa e por qual motivo.</li>
-</ul>
-	
-<h3 align="left" style="font-size: 22px;">Outras linguagens</h3>
-	
-<p>O trem é um tema muito presente no imaginário brasileiro. Artistas em geral – poetas, músicos, pintores – costumam abordá-lo em seus trabalhos. Amplie a proposta, apresentando nas aulas esse tema em outras linguagens. Seguem algumas sugestões.</p>
-
-<div class="citacao2">
-<p style="font-size: 11px;"><strong>O trenzinho do caipira<sup>1</sup></strong>, quarto movimento da composição Bachianas brasileiras nº 2, do maestro Heitor Villa-Lobos (1887-1959), caracteriza-se por simular os sons de uma locomotiva com os instrumentos da orquestra. Em 1975, como parte da obra Poema sujo, Ferreira Gullar (1930) indicou que seus versos (ver abaixo) eram para ser cantados com a música de Villa-Lobos:</p>
-<p style="font-size: 11px;">[...]<br>
-lá vai o trem com o menino<br>
-lá vai a vida a rodar<br>
-lá vai ciranda e destino<br>
-cidade e noite a girar<br>
-lá vai o trem sem destino<br>
-pro dia novo encontrar<br>
-correndo vai pela terra<br>
-vai pela serra<br>
-vai pelo mar<br>
-cantando pela serra do luar<br>
-correndo entre as estrelas a voar<br>
- no ar<br><br>
-
-[...]<br>
-	
-GULLAR, Ferreira. Poema sujo. 16. ed. <br>
-Rio de Janeiro: José Olympio, 2014. p. 46.</p>
-</div>
-	
-
-<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-<h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;Para saber mais</h3>
-<p>O compositor e cantor carioca Edu Lobo foi o primeiro a gravar “O trenzinho do caipira”, em 1977, no álbum Camaleão, com o fragmento do poema de Ferreira Gullar incluído como letra para a melodia de Bachianas brasileiras nº 2, de Heitor Villa-Lobos. <a href="www.youtube.com/watch?v=X7_PMh1M6Ic" target="_blank">Para ouvir o áudio clique aqui.</a></p>
-<p><a href="www.blocosonline.com.br/literatura/poesia/p01/p010610.htm" target="_blank">“Trem de Alagoas”, poema do pernambucano Ascenso Ferreira (1895-1965)</a>.</p>
-<p><a href="www.luso-poemas.net/modules/news03/article.php?storyid=861" target="_blank">“Trem de ferro”, poema do pernambucano Manuel Bandeira (1886-1968)</a>.</p>
-<p><a href="http://enciclopedia.itaucultural.org.br/obra2484/2a-classe" target="_blank">“Segunda classe”, de Tarsila do Amaral, 1933. Óleo sobre tela</a>.</p>
-
-
-</blockquote>
-
 <p>&nbsp;</p>
-
 <p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>A CONTRADIÇÃO HUMANA</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro4.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>A CONTRADIÇÃO HUMANA</strong></br>
-Texto e ilustrações: Afonso Cruz</br>
-Editora Peirópolis</p>
-</div>
-	
-<div>
-<p>De modo aparentemente inocente, o autor elabora uma crítica aos nossos comportamentos mais comuns. Com fino humor, as imagens e o texto de Afonso Cruz levam o leitor a tomar consciência das contradições expressadas nas atitudes humanas e nas relações interpessoais. A obra é também uma contribuição para o desenvolvimento da consciência ecológica, não só pelo questionamento da relação do ser humano com o meio natural, mas de nossa relação com o meio social.</p>
-</div>
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p>Como é uma obra rica em imagens e recursos gráficos, é importante explorá-la cuidadosamente desde a capa. Isso vai ajudar o aluno a desenvolver capacidades interpretativas. Nada ali está por acaso. Então peça para que sejam observadas as cores, as linhas, os tipos de letras, os desenhos etc. Explique que imagem e texto compõem uma unidade – uma não pode ser compreendida sem o outro, e vice-versa. Promova um debate sobre as impressões colhidas. </p>
-
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Apresente o narrador do livro, que é um menino. Solicite aos alunos que encontrem no texto a confirmação para essa afirmação. Reitere que tanto as frases como as ilustrações devem ser observadas.</p>
-	
-<p>Faça a leitura compartilhada da obra, promovendo pausas a cada nova contradição mencionada. Converse com a turma sobre elas. </p>
-	
-
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p><strong>Produção textual com ilustração</strong></p>
-	
-<p>Em duplas, peça aos alunos que imitem o autor, criando e ilustrando uma narrativa que aborde alguma contradição humana não citada no livro. Na ilustração, sugira que sejam usadas letras de diferentes tipos e cores, escrita cursiva e de imprensa, desenhos ou colagem de figuras humanas, de bichos, de espaços e de objetos. Para essa aula, providencie lápis de cor, papel sulfite, tesoura, cola, revistas velhas para recorte e retalhos de tecido. Deixe tudo à disposição da classe.</p>
-	
-<h3 align="left" style="font-size: 22px;">Mural</h3>
-	
-<p>Ajude-os a organizar uma exposição na própria sala de aula ou no pátio ou em espaços disponíveis da escola.</p>
-	
-
-</div>
-
-</div>
-</div>
-</div>	
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>FIEL</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro5.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>FIEL</strong></br>
-Texto: Jessé Andarilho</br>
-Editora Objetiva</p>
-</div>
-	
-
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<ul style="padding-left: 20px;">
-	<li>Leia o livro, observando suas próprias reações como leitor. Considere-as quando for trabalhá-lo com os alunos. </li>
-	<li>Converse com a classe sobre a temática do livro. Prepare-se para essa conversa: “Como abordarei a temática do envolvimento de um jovem de 16 anos com o tráfico de drogas na favela onde nasceu?”.</li>
-	<li>Discuta com a turma o que é ser um jovem de 16 anos hoje, do ponto de vista físico, social (formas de lazer; relacionamentos com amigos, família, amorosos), psicológico (as inseguranças e os medos), humano (gostos, sonhos, desejos, aspirações etc.).</li>
-	<li>Sensibilize a classe para a leitura do livro. Provoque a curiosidade do leitor, lançando a seguinte pergunta: “Como será a história do personagem Felipe, de 16 anos, bom estudante, habilidoso jogador de futebol, filho de pais trabalhadores, morador de uma favela na cidade do Rio de Janeiro?”. </li>
-	<li>Depois da conversa, conte quem é o autor e como ele escreveu o livro. Essas informações estão nas orelhas e nas últimas páginas, na seção “Agradecimentos”.</li>
-</ul>
-	
-
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Decida como será feita a leitura – a escolha deverá se basear no nível da turma –, se ela será colaborativa ou autônoma, com momentos de leitura em voz alta, se deverá ser preparada anteriormente pelo professor e/ou pelo aluno.</p>
-	
-<p>Importante: As decisões precisam considerar o tempo disponível. É desejável que os alunos façam a leitura integral do livro.  </p>
-	
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p><strong>1.</strong> Atividade oral – Promover uma roda de discussão </p>
-<p>Enquanto metade da classe prepara perguntas de compreensão da história, uma por aluno, a outra metade responde. Depois as funções são trocadas. A intenção não é perceber erros e acertos, mas provocar uma discussão entre todos. O professor também prepara perguntas. </p>
-	
-<p><strong>2.</strong> Produção escrita </p>
-<p>Propor aos alunos que:</p>	
-<ul style="padding-left: 20px;">
-	<li>a) continuem a história – Por exemplo, respondendo à pergunta: “O que aconteceu com Felipe depois que foi salvo por Bananada?” Esse final pode ser elaborado na classe, em duplas;</li>
-	<li>b) deem títulos aos capítulos – Atividade que ajuda o professor a observar o nível de compreensão da leitura. Para atribuir um título, é preciso que o capítulo tenha sido compreendido;</li>
-	<li>c) elaborem uma reflexão escrita, respondendo às perguntas: “O que a leitura desse livro significou para você?”; “O que você compreendeu da história?”; “Quais sentimentos a leitura provocou?”.</li>
-</ul>
-<p><strong>3.</strong> Combine com a turma que os diferentes finais da história, os títulos atribuídos aos capítulos e a reflexão escrita serão publicados no CADERNO DE MEMÓRIAS DIGITAL.</p>
-	
-	
-	
-	
-<h3 align="left" style="font-size: 22px;">Avaliação</h3>
-	
-<p>Como o objetivo é promover a leitura do livro Fiel, avalie se houve compreensão da história e em que nível, tomando por base as rodas de discussão e as atividades escritas.</p>
-
-<p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>
-
-
-
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>COLECIONADOR DE PEDRAS</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div style="float: left;">
-<p><img src="imagens/livro6.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>COLECIONADOR DE PEDRAS</strong></br>
-Texto: Sérgio Vaz</br>
-Global Editora</p>
-</div>
-	
-<div>
-<p>Sérgio Vaz nasceu em Ladainha (MG), no ano de 1964. Vive em Taboão da Serra (SP) desde criança. É cocriador de um dos principais espaços de encontro entre a poesia e a literatura, os saraus da Cooperifa. Autointitula-se poeta da periferia. A vida na periferia de São Paulo, aliás, inspirou os poemas reunidos em Colecionador de pedras. Sua visão do fazer poético é bastante democrática: ”Poeta panfletário e semianalfabeto creio que literatura é para todos. Se não é, deveria ser.” </p>
-</div>
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p>Poeta da chamada literatura periférica, denominação atribuída à literatura feita nas bordas da metrópole, o percurso literário de Sérgio Vaz merece ser conhecido. Esse percurso pode ser inspirador para alunos leitores iniciantes.</p>
-	
-<p>Para sensibilizar os estudantes a ler os poemas do livro Colecionador de pedras, conte-lhes a história do autor, o que ele pensa e o que escreve. Leia e comente para a turma trechos de entrevista feita por Éder Fonseca com Sérgio Vaz, publicada no portal Panorama Mercantil<sup>1</sup>: </p>
-	
-<div class="citacao2">
-<p style="font-size: 11px;"><em>Em sua poesia, Sérgio Vaz fala das pessoas com quem vive, do que observa, do que o entristece, dos que são negros e pobres, dos que moram na periferia, dos que são parecidos com ele; mas também fala da violência contra mulheres, mesmo sem ser mulher, e da violência contra o índio, mesmo sem ser índio. Fala de amor, de alegria, de amizade, de sonhos possíveis e impossíveis.</em></p>
-
-<p style="font-size: 11px;">“Nossa Poesia nasce das ruas violentas, da saúde precária, do ensino de má qualidade, do racismo, do preconceito de classe, do desemprego, das mazelas sociais etc. Dessa literatura que denuncia o que se sofre na pele. Dessa literatura das letras descalças, mas de pés firmes e calejados que não descansam nunca. Dessa literatura que sangra na página e umedece de lágrimas. Dessa literatura órfã de pai e mãe, dessas letras mal dormidas, dessa palavra torta e mira certa, que falta trigo na hora do pão.</p>
-	
-<p style="font-size: 11px;">Dessa poesia que apanha na cara, e não dá a outra face. Desse verso maltrapilho que dorme nas calçadas, mas não pede esmola. Da rima pobre, que por dignidade não pede dinheiro emprestado nem compra fiado. A Literatura que fala dessa vida desgramática que dói mesmo quando a gente parece que está feliz.</p>
-	
-<p style="font-size: 11px;">Ah, mas vão dizer, como disseram outro dia: ‘E quando tudo isso acabar, a fome, a miséria, o racismo, a violência, enfim, vocês vão escrever sobre o quê?’ Eu vou escrever um livro chamado Que mundo maravilhoso. É disso que a Literatura de periferia fala, da luta e da busca de um mundo maravilhoso para todos nós.</p>
-	
-<p style="font-size: 11px;">Não importa se com menos ou mais crase, com menos ou mais vírgulas. Essa literatura não se mede pela pontuação, métrica ou estética, ainda que tudo isso tenha sua serventia, mas pela postura de suas linhas e entrelinhas. Nesse caso, se tiver nobreza nos atos e não tiver pobreza no coração, pode escrever essa literatura.</p>
-	
-<p style="font-size: 11px;">O escritor é aquele que desce até o inferno para que o leitor, esse ser ingrato e inconstante, ande como um anjo pela dor alheia. Escrever é se matar um pouco todo dia na presença de algumas testemunhas que muitas vezes assistem a tudo, mas não podem fazer nada. Ainda que não saiba, escrever é a minha vida.” </p>
-	
-<p style="font-size: 11px;">NA FUNDAÇÃO CASA...<sup>3</sup><br><br>
-— Quem gosta de poesia?<br>
-— Ninguém senhor.<br>
-Aí recitei “Negro drama” dos Racionais.<br>
-— Senhor, isso é poesia?<br>
-— É.<br>
-— Então nóis gosta.<br>
-É isso. Todo mundo gosta de poesia.<br> 
-Só não sabe que gosta.<br> </p>
-</div>	
-
-	
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Alguns poemas, para ser mais bem apreciados, devem ser ditos em voz alta, lidos ou declamados de cor pelo leitor para si mesmo ou para outras pessoas. Uma característica fundamental da literatura da periferia é a oralidade.</p>
-	
-<p>Professor(a), comece por você. </p>
-	
-<p>Com antecedência, escolha no livro um poema que o tenha emocionado. Decore ou leia para a classe. Explique para a turma a razão de sua escolha.</p>
-	
-<p>Em outro momento, proponha aos alunos que façam o mesmo. A atividade vai criar a necessidade de uma leitura anterior atenta.</p>
-	
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p><strong>Organização de um sarau</strong></p>
-	
-<p>Sérgio Vaz é um dos criadores do Sarau da Cooperifa. Tomando isso como referência, organize um sarau com seus alunos, semelhante aos saraus que você conhece. Explique para a classe o que é um sarau – tipo de reunião artística muito disseminada nos salões das elites parisienses no século XIX. Chegou ao Brasil em 1808, com a família real, e seguia os moldes dos salões franceses. Fora de moda há muitos anos, o sarau ressurgiu com os poetas da Cooperifa, em 2001. Nos saraus franceses e brasileiros de outros tempos, eram declamadas poesias da Arcádia, do Romantismo, versos parnasianos. Hoje são declamados poemas de autoria dos próprios frequentadores dos saraus, letras de canções e muitos RAPs que abordam a realidade das periferias ou das localidades em que o evento acontece.</p>
-	
-<p>Combine uma data para o sarau acontecer. Para esse dia, cada aluno escolhe um poema para ler ou declamar para os colegas. </p>
-	
-<p>Na apresentação da entrevista publicada no portal Panorama Mercantil, a mesma citada anteriormente, assim foi definido o sarau da Cooperifa:</p>
-	
-<div class="citacao2">
-<p style="font-size: 11px;">Lá (no sarau) você pode chegar e falar seu poema, mas é necessário sentar e ouvir o do outro. E se você bater palma para um, tem que bater palma para todos os outros, porque não é uma competição com prêmio no final: “É para comungar a palavra, comungar a amizade com respeito”, diz o poeta [Sérgio Vaz].</p>
-</div>
-
-	
-<h3 align="left" style="font-size: 22px;">Produção de poemas</h3>
-	
-<p><strong>Lambe-lambe</strong></p>
-	
-<p>Vaz está empenhado em um novo projeto: espalhar seus versos por meio de cartazes pela periferia de São Paulo: os lambe-lambes.</p>
-<p>Lambe-lambe é uma vertente da arte de rua que utiliza cartazes – com frases, desenhos, poesias, entre outros – como manifestação nos meios urbanos. Eles são colados em muros, postes, pontos de ônibus e em outros locais, seja para transmitir uma ideia, realizar divulgação ou fazer protestos.</p>
-<p>Como atividade, peça aos alunos que escrevam em casa um poema. Sugira que explorem algum tema ou episódio que os sensibilize, de uma realidade vivida ou observada por eles. Marque uma data para que a produção seja concluída. Avise que o destino final do texto será o lambe-lambe. Solicite que passem o poema a limpo em folha de qualquer cor de papel, pode ser A4 ou maior, com letra grande e legível. O poema será colado no entorno da escola, em local que a direção disponibilizar e o aluno escolher. Com antecedência, planeje a saída para fora da escola.  
-</p>
-
-	
-<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-<h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;Para saber mais</h3>
-<p style="padding-left:20px;">LEITE, Antonio Eleison. <a href="http://www.each.usp.br/revistaec/?q=revista/1/marcos-fundamentais-da-literatura-perif%C3%A9rica-em-s%C3%A3o-paulo" target="_blank">Dossiê sobre Cultura Popular Urbana – Marcos Fundamentais da Literatura Periférica em São Paulo</a>. Revista de Estudos Culturais, EACH, Usp. São Paulo, n. 1, abr. 2014.</p>
-<p style="padding-left:20px;">VAZ, Sérgio. <a href="http://revistalingua.com.br/textos/106/sergio-vaz-o-poeta-da-periferia-326164-1.asp" target="_blank">Entrevista: Sérgio Vaz completa 25 anos de poesia com novo projeto</a>. Revista Língua Portuguesa, Ed. Segmento. São Paulo, n. 116, jun. 2015.</p>
-<p style="padding-left:20px;"><a href="consciencia.net/entrevista-daniel-munduruku" target="_blank">Revista Consciência.Net – Entrevista com Daniel Munduruku</a>. </p>
-</blockquote>
-
-<p>&nbsp;</p>
-	
-</div>
-
-</div>
-</div>
-</div>	
-
-
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>EU CONTRA ELE NAS CAVERNAS DE MINAS</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro7.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>EU CONTRA ELE NAS CAVERNAS DE MINAS</strong></br>
-Texto: Joel Rufino dos Santos</br>
-Xilogravuras: Samuel Casal</br>
-Editora Rovelle</p>
-</div>
-	
-<div>
-<p>Escrito por Joel Rufino dos Santos (1941-2015) – escritor e historiador, uma das mais importantes referências em cultura negra no país – e ilustrado com xilogravuras por Samuel Costa, Eu contra ele nas cavernas de Minas é uma aventura que se inscreve no gênero do realismo fantástico. Faz uso de elementos e citações da realidade cotidiana atrelados a acontecimentos e situações incomuns. O fantástico está presente nas lendas e nos contos de fada, nos mitos antigos, nas histórias em quadrinhos e também nos filmes de ficção científica e terror.</p>
-</div>
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p>Será um desafio trabalhar a compreensão desse livro se os alunos não tiveram experiências anteriores com a literatura fantástica. Considere essa dificuldade e planeje cuidadosamente as etapas das aulas de leitura. </p>
-<p>Inicie com a apresentação do livro. Mostre as capas e o interior do livro, página por página. Peça aos alunos que observem os desenhos fortes, em branco e preto, e os detalhes gráficos, como os morcegos da página de abertura e a representação do átomo na página da dedicatória. Indague qual terá sido a intenção dessa representação do átomo. O livro é dedicado à Victoria Garbayo, neta do autor. </p>
-<p>Sugira a eles que compararem as ilustrações desse livro com as ilustrações das obras O sinal do pajé, de Daniel Munduruku, e Contos ao redor da fogueira, de Rogério Andrade Barbosa. Diga para observarem as cores, os grafismos, a delicadeza ou não dos desenhos. </p>
-<p>Leia para a classe as últimas páginas do livro, a seção “Sobre o design”. Comente a riqueza de informações descritas. </p>
-<p>Fale do ilustrador Samuel Casal – as informações estão na seção “O Ilustrador”, no final do livro.  </p>
-<p>Apresente o autor, Joel Rufino dos Santos, lendo e comentando para a classe a seção “O Autor”.</p>
-	
-
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Depois da cuidadosa apresentação, inicie a leitura do livro em voz alta. Comente com os alunos que eles poderão achar a narrativa diferente e até estranha. Explique que esta é uma característica da literatura fantástica.</p>
-	
-<div class="citacao2">
-<p style="font-size: 11px;">Um dos estranhamentos, por exemplo, pode ocorrer em relação ao nome dos personagens. Um se chama “eu”, e o outro “ele”: Eu era seu nome. (p. 14) <br>
-— Antes de mais nada, como você se chama?<br>
-— Ele é o meu nome – respondeu o morcego.  (p. 16) <br>
-</p>
-</div>	
-	
-<p>Faça uma síntese para a classe:</p>
-	
-<div class="citacao2">
-<p style="font-size: 11px;">O sol já se põe quando mais um mutirão chega ao fim na fazenda Monteiro. Os vizinhos das redondezas ajudaram a capinar o terreno e o farto banquete oferecido por Dom Abelardo Monteiro está prestes a ser servido quando um desconhecido surge. Ninguém o conhecia. Era de mato da cabeça aos pés.</p>
-<p style="font-size: 11px;">Sentindo-se ameaçados, os rapazes pegam enxadas e cercam o estranho, que confessa não ser da roça. Debochando do trabalho honesto, ele diz que foi até lá só para comer e dançar. Encurralado, o sujeito foge, e é instaurada uma busca pelo estranho.</p>
-<p style="font-size: 11px;">Um anúncio colocado no jornal, divulgando a generosa recompensa pela prisão do pilantra, atrai caçadores até do exterior. Um jovem caçador se interessa pela recompensa e embarca numa aventura pelo tempo e pelo espaço, cruzando com diversos personagens da literatura e testemunhando episódios marcantes da história.</p>
-<p style="font-size: 11px;">Quem era o capeta verde? O Doutor Sabará explicou que ele era o espírito vegetal produtor da morte (p. 13). Que fim terá essa perseguição?</p>
-</div>	
-	
-<p>Comece a leitura em voz alta para a classe. Faça pausas para comentar trechos e ajudar os alunos na compreensão da história. Explique os personagens da literatura e episódios históricos que participam do enredo.</p>
-	
-<p>Mostre o humor que há, por exemplo, nas palavras inglesas traduzidas para o português: chópingue (p. 21); flechilaite (p. 18). Ou nesta outra passagem:</p>
-	
-<div class="citacao2">
-<p style="font-size: 11px;">O encontro com o poeta CDA:<br>
-— ... Por que o senhor diz u’a moça, em vez de uma moça, como todo mundo? (p. 21)<br>
-— Sou poeta.<br>
-[...]<br>
-— Só lhe digo minhas iniciais: CDA. O senhor mesmo ponha resposta. (p. 21)</p>
-</div>	
-	
-<p>No caso, o autor faz alusão, provavelmente, a Carlos Drummond de Andrade. Explique o engraçado diálogo de “eu” com Marília de Dirceu, uma referência ao poema escrito por Tomás Antônio Gonzaga no século XVIII (p. 22-3).</p>
-	
-<p>O caminho do tempo, pois era esse que eu tomara, descia sempre. Eu iluminava o chão para não cair. Com pouco, ouviu uma voz tristonha: ”Ai, ai, beleza, toda a vida eu fui assim, ai, ai, beleza, você tenha dó de mim”. Apontou a lanterna, antigamente chamada flechilaite, e viu u’a moça loira cozendo.</p>
-<p>- Em que posso ajuda-la?</p>
-<p>- Há anos ele não dá noticia.</p>
-<p>- Ele quem?</p>
-<p>- Meu noivo.</p>
-<p>- Para onde ele foi?</p>
-<p>- Para a África.</p>
-<p>- Muito, muito triste. Qual é o seu nome?<br></p>
-<p>A moça não era linda. Pegou um caderno, abriu numa página.</p>
-<p>- Olha o que Dirceu escreveu pra mim.</p>
-<p>- Leia a senhora – disse Eu.</p>
-<p>- Não sei ler – falou ela.<br></p>
-<p>Eu pediu que ela segurasse o flechilaite. “Os seus cabelos que sobre as costas ondeiam são que os de Apolo mais belos, nem de loura cor são, têm a cor da negra noite e com o branco do rosto fazem Marília um composto de mais formosa união”.</p>
-<p>- Marília é a senhora?</p>
-<p>- Antes não fosse.</p>
-<p>- Mas a poesia diz que Marília não é loira.</p>
-<p>- Pintei. Fico melhor.</p>
-<p>- Com essa, já me voy – despediu-se Eu.</p>
-	
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p>A história termina com um convite:</p>
-	
-<div class="citacao2">
-<p style="font-size: 11px;">Aqui suspendo esta história. Se você souber como terminar, acesse <a href="www.rovelle.com.br/eucontraele" target="_blank">este link</a> e deixe uma mensagem para Eu ou Ele. Somos a mesma pessoa.</p>
-</div>
-	
-<p>Desafie os alunos a escrever um final para essa aventura. Peça que mantenham o gênero realismo fantástico e que ilustrem com a cópia de uma xilogravura pesquisada na internet ou em materiais impressos. Depois, solicite que apresentem e leiam a produção para os colegas. </p>
-
-</div>
-
-</div>
-</div>
-</div>	
-
-
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>TEMPOS DE ESCOLA</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro8.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>TEMPOS DE ESCOLA</strong></br>
-Texto: Vários autores (Machado de Assis, Moacyr Scliar, Fabrício Corsaletti, Antônio Prata, Olavo Bilac, Lima Barreto, Carlos Drummond de Andrade, Otto Lara Resende, Sérgio Santanna)</br>
-Editora Companhia das Letras</p>
-</div>
-	
-<div>
-<p>Este livro reúne narrativas variadas, mas que giram todas em torno do mesmo tema: acontecimentos vividos nos tempos de escola e pessoas conhecidas naquelas épocas. </p>
-	
-<p>Quem não tem uma história desse tempo para contar? Algumas alegres, outras tristes. Umas doces, outras amargas. Todos temos. Fazer ou escutar a leitura dos contos, crônicas e memórias desse livro pode se transformar numa rica experiência de resgate da memória. 
-</p>
-	
-<p>O resgate da memória é uma forma de validar a nossa existência. E se constitui numa boa prática, especialmente para jovens, adultos e idosos que estão voltando a estudar, mas que chegam carregados de experiências anteriores guardadas, com muita lembrança para resgatar e muita história para contar.</p>
-	
-
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p><strong>Sensibilização para a leitura</strong></p>
-
-<p>Peça aos alunos que se lembrem de passagens do seu tempo da juventude e da infância: a escola, os colegas, os professores, as provas, a aprendizagem da escrita, da matemática, da leitura, a merenda, o recreio, as amizades que ficaram, as brigas, os namoros etc. Esse momento é individual e silencioso. Permita a quem quiser escrever livremente ou desenhar cenas, com lugares e pessoas.</p>
-	
-<p>Em seguida, em duplas, estimule conversas de uns com os outros, sugerindo que compartilhem suas lembranças com um(a) colega. Oriente-os a prestar atenção ao relato do colega, pois alguns episódios serão apresentados à classe. É importante que os oradores voluntários tenham a permissão da(o) colega para tentar repetir o que escutou.</p>
-	
-<p>Na etapa seguinte, solicite que todos contem o episódio que mais o sensibilizou no relato do(a) colega. Quando essa etapa estiver concluída, faça uma síntese do que fora apresentado. Avise-os que tais elementos serão comparados com os elementos das histórias do livro.</p>
-	
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Antes de iniciar o trabalho em sala de aula, leia todas as histórias do livro. De acordo com as características dos seus alunos, interesses, maturidade e nível de compreensão leitora, escolha quatro histórias. Selecione gêneros textuais, épocas e autores diferentes. A obra reúne textos de três gêneros diferentes: crônicas, contos e memórias. As narrativas acontecem no século XIX, em histórias elaboradas por Machado de Assis e Lima Barreto; no século XX, com Drummond e Otto Lara Resende; e nos séculos XX e XXI, com Moacyr Scliar, Sérgio Sant’anna, Antônio Prata e Fabrício Corsaletti.</p>
-	
-<p>Pergunte à classe quem quer preparar a leitura de uma história em casa. Escolha dois alunos. As outras duas histórias serão lidas à turma por você. Faça com a classe um cronograma das leituras.</p>
-	
-<p>Durante a leitura de cada texto em voz alta, sugira pausas aos alunos para que possam comparar o que estão escutando com as próprias lembranças. As pausas não podem ser a todo momento, pois isso atrapalharia a atenção e a fluidez da leitura. </p>
-	
-
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p>Depois de lidos e discutidos os quatro textos, em roda, proponha uma reflexão sobre:</p>
-	
-<ul style="padding-left: 20px;">
-	<li>as diferenças entre a escola do século XIX e a dos séculos XX e XXI;</li>
-	<li>as diferenças entre as crianças e jovens do século XIX e início do XX e também entre as crianças e jovens do final do século XX e início do século XXI.</li>
-</ul>
-	
-<p>Elaborem coletivamente um painel com os dados observados na discussão sobre as histórias.</p>
-	
-<p>Ofereça o livro para quem quiser levar para casa, assim será possível continuar a leitura das histórias não lidas na classe.</p>
-	
-
-</div>
-
-</div>
-</div>
-</div>	
-
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>INDEZ</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro9.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>INDEZ</strong></br>
-Texto: Bartolomeu Campos de Queirós</br>
-Global Editora</p>
-</div>
-	
-<div>
-<p>O escritor mineiro Bartolomeu Campos de Queirós (1944-2012), com simplicidade e delicadeza, percorre as lembranças e as fantasias da infância do menino Antônio e transforma as palavras comuns em prosa poética. A narrativa parte da visão de um narrador adulto. Conta a trajetória de vida de Antônio – do nascimento em uma cidadezinha do interior à partida para estudar fora.</p>
-	
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>A leitura de Indez inspira um trabalho com a memória dos alunos, sejam eles jovens, adultos ou idosos.</p>
-	
-<p>Inicie apresentando o autor, Bartolomeu Campos de Queirós. É um dos nossos escritores mais queridos e premiados.   </p>
-	
-<p>Depois apresente o livro. Chame a atenção para o título. Palavra estranha indez. Pergunte à classe se alguém conhece essa palavra. Os mais velhos ou os que viveram no campo provavelmente saberão. Mas nesse momento ainda ninguém dirá nada.</p>
-	
-<p>Peça que prestem atenção e descubram o significado dessa palavra depois de escutar sua leitura. Vá direto para o trecho da página 51:</p>
-
-<div class="citacao2">
-<p style="font-size: 11px;">Ensinaram-lhe que, ao encontrar um ninho, era preciso deixar sempre um ovo – o indez – para que a galinha continuasse a botar outros. Mas a vontade de Antônio era de levar também o indez. Então a galinha, perdendo a direção do ninho, quem sabe, construiria outro, em lugar bem longe, mais oculto, mais secreto.</p>
-</div>
-	
-<p>Volte à pergunta: “O que é indez?” Discuta com a classe o significado da palavra.</p>
-	
-<p>Em seguida, pergunte por que o autor deu esse título ao livro. Avise os alunos que eles darão uma resposta antes e outra depois da leitura do livro. A última resposta, depois de conhecerem a história, provavelmente virá ampliada. Ajude a classe a ampliar sua compreensão leitora.    
-</p>
-	
-<p>De acordo com o nível da classe, a leitura será feita ou compartilhada, ou em voz alta pelo professor, ou em voz alta cada dia por um aluno etc.</p>
-	
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p><strong>Proposta de produção escrita</strong></p>
-	
-<p>A história narra a infância de Antônio – as brincadeiras, as rezas, as doenças e os costumes de uma família do interior de Minas de um tempo já passado.</p>
-	
-<p>Forme pequenos grupos e peça aos alunos que conversem entre si sobre a infância – onde e como foi. Depois dessa conversa, cada um escreve um texto sobre sua infância, baseado na sua história de vida, mas que pode ter elementos de ficção. O título será o aspecto mais significativo da narrativa para o aluno autor. Antes, combine com a classe quem será o leitor pretendido por eles para seus textos e onde querem publicá-los. Peça que façam uma ilustração.</p>
-	
-p><strong>Atividades orais</strong></p>
-	
-<p><strong>1.</strong> Leitura em voz alta do texto de memória da infância</p>
-<p>Combine com os alunos para que cada um leia à classe seu texto de memória da infância. Proponha aos que tocam algum instrumento a apresentação de alguma canção infantil. Ou sugira que escolham uma canção como fundo musical enquanto leem o texto para os colegas.</p>
-<p><strong>2.</strong> Conversa sobre os aspectos da cultura interiorana de Minas Gerais presentes no livro </p>
-<p>Faça um círculo com os alunos. Promova uma conversa sobre os aspectos da cultura interiorana de Minas Gerais presentes no livro. Antes, crie com eles categorias, como brincadeiras, resguardo depois de ter filho, curas de doenças, comida, tratamento de animais, crenças etc. </p>
-<p><strong>3.</strong> Comparação entre o modo de vida da infância do menino Antônio com o modo de vida da infância atual </p>
-
-<p>Promova uma reflexão. Oriente os alunos a comparar o modo de vida da infância do menino Antônio com o modo de vida da infância atual. Pergunte a eles que aspectos ainda são semelhantes.  Quais são diferentes? Existe um tempo melhor ou pior?</p>
-	
-<h3 align="left" style="font-size: 22px;">Avaliação</h3>
-	
-<p>Avalie a compreensão da narrativa em todos os momentos das atividades. São várias as oportunidades para você constatar se o aluno está compreendendo a história ou, se ele está com alguma dificuldade, qual o tipo de dificuldade apresentada. São informações importantes para você saber como dosar as intervenções e estimular para melhor cada vez mais o nível de compreensão leitora dos alunos.</p>
-	
-<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-<p>Esse livro conta muito sobre mitos e superstições do nosso passado, conta histórias na beirada da fogueira, conta os mitos sobre o nome Antônio que nasceu antes da hora e por isso é danado, desde pequeno.</p>
-<p>Conta histórias da nossa infância, porque é humilde mas divertida, e as brincadeiras que até hoje nos interiores se faz ao comemorar as festas juninas o São João e outras festas típicas.</p>
-<p>Conta como era o tempo antes, porque era mais fresco, sobre os animais gordos quando a mulher ia dar à luz. Conta como era as casas do interior, os moradores.</p>
-<p>Conta história de Antônio e tudo que aprendeu na vida e na escola, que nada foi fácil e tudo aos poucos e também relata o amor que chegou até Antônio.</p>
-<p align="center"><img src="imagens/carta.png" style="display: inline-block"></p>
-<p><strong>Professora: Maria do Espírito Santo Araújo Miranda</strong></p>
-	
-</blockquote>
-
-<p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>	
-
-
-
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>CONTOS AO REDOR DA FOGUEIRA</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div>
-<p><img src="imagens/livro10.png" style="display: inline-block;padding-right: 12px;" align="left"><strong>CONTOS AO REDOR DA FOGUEIRA</strong></br>
-Texto: Rogério Andrade Barbosa</br>
-Ilustrações: Rui de Oliveira</br>
-Editora Rovelle</p>
-</div>
-	
-<div>
-<p>O escritor Rogério Barbosa é também pesquisador, professor e contador de histórias. Suas pesquisas recaem sobre a cultura e a literatura oral africanas. É daí que vem a inspiração para a escrita de suas histórias.</p>
-	
-<p>Contos ao redor da fogueira reúne dois mitos de origem africana. O autor resgata histórias originais daquele continente passadas de pai para filho pela tradição oral. Não é um reconto, mas uma recriação. Ele as recria, interferindo no desfecho para mostrar o poder da inteligência e dos sentimentos humanos frente a crendices e superstições.  </p>
-	
-<p>As belas ilustrações são de autoria do premiado artista Rui de Oliveira. A escolha de tons fortes e escuros, os grafismos, os desenhos em branco e preto, pequenos detalhes como a delicada numeração colorida das páginas e a singeleza da página de dedicatória, contribuem para a criação de uma atmosfera mágica. </p>
-</div>
-	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p>Esse livro pede uma atenta exploração anterior à leitura das histórias. É uma edição muito bonita que convém ser apresentada cuidadosamente. Com essa apresentação, seus alunos estarão aprendendo a ler além das palavras escritas.</p>
-<p>Para iniciar, mostre as capas e o interior do livro, página por página. Peça que observem a delicada numeração colorida das páginas e a singeleza da página de dedicatória.</p>	
-<p>Pergunte aos alunos a que região do planeta a aparência do livro remete e que expliquem a resposta.</p>	
-<p>Estimule-os a comparar as ilustrações dessa obra com as de O sinal do pajé, de Daniel Munduruku. Ali está presente a atmosfera indígena brasileira. Mais uma vez, sugira que observarem os tons e os grafismos.</p>	
-<p>Leia para a classe as últimas páginas do livro, a seção “Sobre o design”, e o quadro que traz informações da sua composição.</p>	
-<p>Fale do ilustrador Rui de Oliveira. Leia para a turma a seção “Sobre o Ilustrador”, no final do livro.</p>	
-<p>Dê referências do autor, Rogério Andrade Barbosa, lendo e comentando a seção “Apresentação”, que contém uma apreciação da professora de literatura Laura Sandroni.</p>	
-	
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p>Faça a apresentação dos contos:</p>
-	
-<ol style="padding-left: 20px;">
-	<li>“Kumbu, o menino da floresta sagrada” – Essa história tem como base o tabu em torno do nascimento de gêmeos de alguns povos africanos. Entre eles, o parto simultâneo de mais de uma criança causa medo, pois veem o fato como mau sinal. De acordo com seus antigos costumes, para evitar a infelicidade, a segunda criança a nascer deve ser abandonada na floresta. O menino Kumbu foi o segundo a nascer. </li>
-	<li>Sensibilize a turma para a leitura, perguntando: “O que terá acontecido com Kumbu depois de abandonado na floresta?”. </li>
-	<li>“Buanga, a noiva da chuva” – Para trazer as chuvas de volta e impedir a seca eterna para sua gente, era costume jovens mulheres serem sacrificadas aos Deuses da Montanha. A escolhida era levada de sua cabana pelas mãos do temido curandeiro Songa, o maior Fazedor de Chuvas da região. De acordo com as antigas tradições, a destinada a ser esposa do Deus da Chuva deveria viver isolada para sempre nas montanhas, sob os cuidados da mãe. Buanga foi a escolhida pelo curandeiro para salvar o seu povo.</li>
-</ol>
-	
-<p>Para sensibilizar a turma para a leitura, diga que a história termina com estas palavras: “Os mais velhos contam que, desde aquele dia, nenhuma outra moça foi sacrificada aos Deuses da Montanha.”.</p>
-	
-<p>Pergunte à classe: “Como isso terá acontecido?” Peça aos alunos que levantem hipóteses, que serão confirmadas ou não depois que o conto for lido.</p>
-	
-<p>Comente que o personagem principal do conto “Kumbu, o menino da floresta sagrada” é um menino. Já em “Buanga, a noiva da chuva”, é uma jovem. Proponha uma reflexão sobre a visão do masculino e do feminino nas histórias. Peça a eles que invertam os papeis de Kumbu e de Buanga, imaginando como seriam as histórias se os títulos fossem: “Buanga, a menina da floresta” e “Kumbu, o noivo da chuva”.</p>
-	
-<p><strong>Contação de história ao redor da fogueira</strong> – Se houver espaço adequado e seguro na escola, arme uma fogueira e organize uma contação de história ao redor dela. Você e mais um aluno ou dois preparam em casa trechos desses contos para ler ou contar oralmente para a turma.</p>
-	
-<h3 align="left" style="font-size: 22px;">Depois da leitura</h3>
-	
-<p>Reserve uma aula para que os alunos possam realizar comentários livres acerca do impacto das histórias sobre cada um.</p>
-
-<p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>	
-
-
-
-
-
-
-
-<div class="collapse2">
-<div class="tit_bloco2" align="center"><strong>ATIVIDADE INTEGRADA: COMÉDIAS PARA SE LER NA ESCOLA E HISTÓRIAS DAQUI E D'ACOLÁ</strong></div>
-<div class="conteudobloco2">
-	
-<div class="textos2">
-
-<div style="width: 100%;float: left;">
-<p><img src="imagens/livro12.png" style="display: inline-block;padding-right: 12px;margin-bottom: 20px;" align="left"><strong>HISTÓRIAS DAQUI E D’ACOLÁ </strong></br>
-Texto: Maria Valéria Rezende</br>
-Ilustrações: Diogo Droschi</br>
-Editora Autêntica</p>
-</div>
-
-<div style="width: 100%;float: left;">
-<p><img src="imagens/livro11.png" style="display: inline-block;padding-right: 12px;margin-bottom: 20px;" align="left"><strong>COMÉDIAS PARA SE LER NA ESCOLA</strong></br>
-Textos: Luis Fernando Veríssimo</br>
-Editora Objetiva</p>
-</div>
-	
-<div>
-<p>O livro Comédias para se ler na escola é uma ótima leitura para quem gosta de saborear histórias com humor e brincadeiras com a linguagem. Texto límpido, ágil, agudo e inteligente, com temas tirados do cotidiano, mas apresentados sob ângulos inesperados que revelam seu lado cômico. As crônicas estão distribuídas por temas, o que facilita a escolha do que se quer ler. </p>	
-<div>
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p>Leia anteriormente e comente com a classe o que diz a escritora Ana Maria Machado na apresentação intitulada “Bom de ouvido”. Ela expõe ali todas as grandes qualidades desse livro de Luis Fernando Veríssimo.</p>
-	
-<h3 align="left" style="font-size: 22px;">Histórias daqui e d’acolá, de Maria Valéria Rezende, com ilustrações de Diogo Droschi</h3>
-	
-<p>Coletânea de contos com histórias bem brasileiras, nas temáticas, na ambientação, nas situações típicas do nosso cotidiano e nos personagens que parecem ser pessoas conhecidas do leitor. O livro tem ilustrações computadorizadas inspiradas em xilogravuras de literatura de cordel.</p>
-	
-<h3 align="left" style="font-size: 22px;">Antes da leitura</h3>
-	
-<p>Apresente a escritora Maria Valéria Rezende. Leia à classe quem é ela (p. 95).</p>
-<p>Apresente o ilustrador Diogo Droschi. Informações na p. 95.</p>
-	
-
-<h3 align="left" style="font-size: 22px;">Durante a leitura</h3>
-	
-<p><strong>Encontro de contação de histórias</strong></p>
-	
-<p>Os dois livros supracitados oferecem excelentes textos de histórias que abordam diversificados temas, e que podem ser lidos em voz alta pelo professor ou por alunos.</p>
-	
-<p>Organize um encontro de contação de histórias. Escolha cinco histórias não muito longas e bem variadas de cada obra. A leitura de cada história será preparada e ensaiada em casa por dois alunos, que poderão ler um trecho cada um ou criar outra forma de apresentação. O tom de voz deve ser audível por todos. Marque dois dias para a leitura pública. No dia marcado, as carteiras ficarão em semicírculo. Tal disposição facilita a interação entre todos.</p>
-	
-<p>Promova uma conversa depois da leitura de cada história. A compreensão leitora se amplia quando se tem oportunidade de escutar o que o outro compreendeu e de compartilhar a nossa própria compreensão.</p>
-	
-
-<p>&nbsp;</p>
-
-</div>
-
-</div>
-</div>
-</div>	
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-	
-	
-
-	
-</div>	
-
-
-</div>	
-	
-</div>	
-	
 	
 </div>		
 	
