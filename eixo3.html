@@ -469,6 +469,24 @@ body #eixo3 a#ativo {
 @keyframes pop{
   50%  {transform: scale(1.1);}
 }
+    
+    
+	
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 	
 	
 	
@@ -1029,8 +1047,6 @@ $(document).ready(function(){
 
 
 
-	
-
 
 
 	
@@ -1352,11 +1368,161 @@ Seu navegador não suporta esse formato de vídeo.
 	
 <p><strong>Nível de alfabetismo da população brasileira de 15 a 64 anos. INAF, 2001 – 2018</strong></p>	
 
-<p align="center"><img src="imagens/eixo4_img6.png" style="display: inline-block;"></p>
-	
 <p>&nbsp;</p>	
-	
-<p align="center"><img src="imagens/eixo4_img7.png" style="display: inline-block;"></p>
+    
+    
+    
+	   
+<script src="code/highcharts.js"></script>
+<script src="code/export-data.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>   
+    
+    
+
+<script>
+Highcharts.chart('container', {
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'em %'
+  },
+  xAxis: {
+    categories: ['2001/2002', '2002/2003', '2003/2004', '2004/2005', '2007', '2009', '2011', '2015', '2018']
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: ''
+    },
+    stackLabels: {
+      enabled: false,
+      style: {
+        fontWeight: 'bold',
+        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+      }
+    }
+  },
+  legend: {
+    align: 'right',
+    x: -30,
+    verticalAlign: 'top',
+    y: 0,
+    floating: true,
+    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+    borderColor: '#CCC',
+    borderWidth: 1,
+    shadow: false
+  },
+  tooltip: {
+    headerFormat: '<b>{point.x}</b><br/>',
+    pointFormat: '{series.name}: {point.y}%'
+  },
+  plotOptions: {
+    column: {
+      stacking: 'normal',
+      dataLabels: {
+        enabled: true,
+        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+      }
+    }
+  },
+  series: [{
+    name: 'Proficiente',
+    data: [12, 13, 12, 11, 9, 7, 6, 4, 8]
+  }, {
+    name: 'Intermediário',
+    data: [27, 26, 26, 26, 25, 20, 21, 23, 22]
+  }, {
+    name: 'Elementar',
+    data: [28, 29, 30, 31, 32, 35, 37, 42, 34]
+  }, {
+    name: 'Rudimentar',
+    data: [20, 21, 21, 21, 21, 27, 25, 23, 25]
+  }, {
+    name: 'Analfabeto',
+    data: [12, 12, 12, 12, 13, 11, 11, 8, 12]
+  }]
+});
+</script>    
+
+    
+    
+    
+    
+ 
+    
+    
+    
+<div id="container2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>   
+    
+    
+
+<script>
+Highcharts.chart('container2', {
+  chart: {
+    type: 'column'
+  },
+  title: {
+    text: 'em %'
+  },
+  xAxis: {
+    categories: ['2001/2002', '2002/2003', '2003/2004', '2004/2005', '2007', '2009', '2011', '2015', '2018']
+  },
+  yAxis: {
+    min: 0,
+    title: {
+      text: ''
+    },
+    stackLabels: {
+      enabled: false,
+      style: {
+        fontWeight: 'bold',
+        color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+      }
+    }
+  },
+  legend: {
+    align: 'right',
+    x: -30,
+    verticalAlign: 'top',
+    y: 0,
+    floating: true,
+    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+    borderColor: '#CCC',
+    borderWidth: 1,
+    shadow: false
+  },
+  tooltip: {
+    headerFormat: '<b>{point.x}</b><br/>',
+    pointFormat: '{series.name}: {point.y}%'
+  },
+  plotOptions: {
+    column: {
+      stacking: 'normal',
+      dataLabels: {
+        enabled: true,
+        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+      }
+    }
+  },
+  series: [{
+    name: 'Analfabeto funcional',
+    data: [39, 39, 38, 37, 34, 27, 27, 27, 60]
+  }, {
+    name: 'Funcionalmente alfabetizados',
+    data: [60, 62, 63, 64, 66, 73, 73, 73, 29]
+  }]
+});
+</script>       
+    
+    
+    
+    
+    
+    
+
 	
 <p>&nbsp;</p>
 	
