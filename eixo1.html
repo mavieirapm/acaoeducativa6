@@ -1,0 +1,2079 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Percursos didáticos para jovens e adultos</title>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="code/timeline.css">
+<link rel="stylesheet" href="code/timeline2.css">
+
+
+    
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+	
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 120px;
+}
+	
+	
+.cabecalho{
+	  min-height: 80px;
+	  background-color: #fff;
+	  color: #000;
+	  width: 100%;
+	  float: left;
+	  position: fixed;
+	  z-index: 1;
+	  margin:0;
+	  padding:0;
+	}	
+	
+.logo {
+	width:50%;
+	height: 80px;
+	padding-left: 30px;
+	padding-top: 10px;
+	float: left;
+	}
+	
+.busca {
+	width:50%;
+	height: 80px;
+	margin-left:-51px;
+	padding-top: 10px;
+	padding-right: 20px;
+	float: right;
+	text-align: right;
+	}
+	
+.busca_int{
+	vertical-align: baseline;
+	padding-top: 46px;
+	}
+	
+.b1 {
+background: #008580;
+color: white;
+border-style:none;
+height: 21px;
+width: 72px;
+font: bold 12px arial, sans-serif;
+text-shadow:none;
+}		
+	
+.textos{
+	    color: #535353;
+		padding: 0px 200px;
+		text-align: justify;
+		font-family: "Arial";
+		font-size: 14px;
+		line-height: 32px;
+	    word-wrap: break-word;
+	}
+	
+	
+.textos p{
+	padding-bottom: 16px;
+	word-wrap: break-word;
+	}
+	
+.textos2{
+	    color: #535353;
+		padding: 0px 200px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 20px;
+	    word-wrap: break-word;
+	}
+.textos2 p{
+	word-wrap: break-word;		
+	}
+	
+.citacao{
+	    padding: 30px 300px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 16px;
+		line-height: 30px;
+		font-weight: 600;
+	}
+	
+.citacao2{
+	    padding: 30px 150px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 13px;
+		line-height: 20px;
+	}
+.capa {
+	float: left;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	width: 100%;
+	}	
+	
+.capa_tit {
+	float: left;
+	margin-top: 140px;
+	margin-bottom: 20px;
+	width: 100%;
+	background-image: url('imagens/eixo4_img1.png');
+	background-repeat: no-repeat;
+	background-size:auto;
+	display: block;
+	padding-top: 60px
+	}
+	
+.textos_capa{
+	    color: #535353;
+		padding: 30px 200px 60px 50%;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 30px;
+		float: left;
+		word-wrap: break-word;
+	}
+.modulos{
+	width: 100%;
+	float: left;
+	word-wrap: break-word;
+	
+	}
+.bgimg-2 {
+  background-image: url("imagens/eixo4_img3.jpg");
+  min-height: 500px;
+}
+	
+	
+@font-face{
+font-family: Caecilia;
+src: url('fonts/Caecilia-Heavy.otf');
+src: url('fonts/Caecilia-Heavy.otf?#iefix') format('embedded-opentype'),
+url('fonts/Caecilia-Heavy.otf') format('woff'), url('fonts/Caecilia-Heavy.otf') format('truetype'), url('fonts/Caecilia-Heavy.otf#Caecilia') format('svg');
+}
+	
+h1 {
+  font: 120px "Caecilia";
+  color: #007e7a;
+  padding-bottom: 12px;
+  
+}
+h3 {
+  font: 36px "Caecilia";
+  color: #007e7a;
+  padding-bottom: 12px;
+  padding-top: 26px;
+}	
+h2 {
+  font: 24px "Caecilia";
+  color: #007e7a;
+  padding-bottom: 16px;
+}
+	
+	
+	
+.barra_logos{
+  background-color: #DFDFDF;
+  font-size: 12px;
+  color:#000;
+  padding: 12px;
+  clear:both;
+  height: 120px;
+  font-family: "Verdana";
+  margin-top: 60px;
+	}
+	
+.rodape{
+  background-color: #bb133e;
+  font-size: 14px;
+  color:#fff;
+  padding: 12px;
+  clear:both;
+	}
+	
+.tit_bloco {
+  background: #007e7a; 
+  color: #fff; 
+  margin: 0px 200px;
+  padding: 10px 50px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 16px;
+	}	
+	
+.tit_bloco2 {
+  background: #007e7a; 
+  color: #fff; 
+  margin: 2px 200px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 14px;
+	}
+.collapse {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  word-wrap: break-word;
+	}
+	
+.collapse2 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  word-wrap: break-word;
+	}
+	
+	
+	
+video{
+  border-style: solid;
+  border-color: #007e7a;
+  border-width: 4px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+	
+	
+.video{
+	width:50%;
+	}
+hr {
+	border-color: #007e7a;
+	border-width: 1px;
+	border-style: solid;
+		
+	}
+blockquote {
+	margin-left: 60px;
+	margin-right: 60px;
+	background-color: #DDDDDD;
+	border-radius: 16px;
+	word-wrap: break-word;
+	}	
+	
+	
+	
+.mobile-menu {
+  display:block;
+  width:100%;
+  background: #007e7a;
+  line-height: 1.6em;
+  font-size: 13px;
+  text-align:center;
+  position: relative;
+  margin:0 auto;
+  float: right;
+  vertical-align: middle;
+}
+	
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+  list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:right;
+  width:100%;
+  position: absolute;
+  background-color: #ECB11F;
+}
+	
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	min-width:130px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #ECB11F;
+	text-decoration: none;
+    margin-left:-5px;
+    padding: 10px 8px; 
+	border-width: 1px;
+	border-style: solid;
+	
+}
+body #eixo3 a#ativo {
+	background-color: #ecb11f;
+	color: #fff;
+	}
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #ffffff;
+  background-color:#747678;
+}
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #747678;
+	color: #ffffff;
+	height: 40px;
+	line-height: 40px;
+}
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #ecb11f;
+}
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #ecb11f;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.mobile-menu .show-menu span{
+   padding-left: 35px;
+}
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+	
+.box_audio{
+	width: 100%;
+	float: left;
+	margin-left: 20%;
+    color:#fff;
+	
+	}
+	
+.audio{
+  text-align: center;
+  background-color: #007e7a;
+  width: 580px;
+  box-shadow: 2px 2px 5px grey;
+  margin-bottom: 30px;
+  margin-top:60px;
+  }
+	
+.audio audio{
+  border-style: solid;
+  border-color: #007e7a;
+  border-width: 1px;
+  width: 560px;
+	}
+	
+.flip {
+  position: relative;
+  width: 400px;
+  float: right;
+  cursor: pointer;
+}
+.imageflip {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(187,19,62,0.90);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+.flip:hover .overlay {
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Caecilia;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}	
+	
+.text a{
+	color: #ecb11f;
+	}
+	
+	
+.myButton {
+	background-color:#bb133d;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 30px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#5F031A;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+	
+	
+.iniciativa{
+	width:40%;
+	float:left;
+}
+
+
+.parceiros{
+	width:60%;
+	float:left;
+}
+
+.parceiros img{
+	padding-left:50px;
+	vertical-align:top;
+}	
+	
+	
+.pButton{
+	text-align: right;
+	}	
+	
+	
+.divflipcard{
+	width: 100%;
+	text-align: center;
+	float: left;
+	margin: 20px 0px;
+
+	}
+	
+.flip-card {
+  background-color: transparent;
+  width: 220px;
+  height: 220px;
+  perspective: 1000px;
+  margin: 0 auto;
+  float: left;
+  padding: 0px 5px;	
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #007e7a;
+  color: #fff;
+  transform: rotateY(180deg);
+  width: 200px;
+  padding: 0px 10px;
+}	
+.flip-card-back p {
+  line-height: 14px;
+  font-size: 12px;
+}
+	
+.flip-card-back h3 {
+  color: #fff;
+  font-family: "Caecilia";
+  line-height: 18px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+    
+
+.main-container {
+  background: #fff;
+  width: 100%;
+  margin: 25px auto 25px auto;
+  position: relative;
+  float: left;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+/*animation element*/
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(200px, 0px, 0px);
+  -webkit-transform: translate3d(200px, 0px, 0px);
+  -o-transform: translate(200px, 0px);
+  -ms-transform: translate(200px, 0px);
+  transform: translate3d(200px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+/*animation slide left styled for testimonials*/
+
+.animation-element.slide-left.testimonial {
+  float: left;
+  width: 47%;
+  margin: 0% 1.5% 3% 1.5%;
+  background: #F5F5F5;
+  padding: 15px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #EAEAEA;
+}
+.animation-element.slide-left.testimonial:hover,
+.animation-element.slide-left.testimonial:active{
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
+
+/*media queries for small devices*/
+@media screen and (max-width: 720px){
+  /*testimonials*/
+  .animation-element.slide-left.testimonial,
+  .animation-element.slide-left.testimonial:nth-of-type(odd),
+  .animation-element.slide-left.testimonial:nth-of-type(even){
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+  }
+  .animation-element.slide-left.testimonial .right,
+  .animation-element.slide-left.testimonial .left,
+  .animation-element.slide-left.testimonial .content,
+  .animation-element.slide-left.testimonial .rating{
+    text-align: center;
+    float: none;
+  }
+  .animation-element.slide-left.testimonial img{
+    width: 120px;
+    height: 85px;
+    margin-bottom: 5px;
+  }
+.animation-element.slide-left.testimonial {
+  float: left;
+  width: 75%;
+  margin: 0% 1.5% 0% 1.5%;
+  background: #F5F5F5;
+  padding: 5px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  border: solid 1px #EAEAEA;
+}
+  
+}
+    
+    
+    
+    
+	
+.textos li {
+    list-style-type: none;
+}
+.textos li:before {
+    content: '\2022';
+    color: #007e7a;
+    padding-right: 0.5em;
+    font-size: 1.5em;
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/*Responsive Styles*/
+@media screen and (max-width : 720px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8; 
+    border-top: 5px solid #f8f8f8; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		display:block;
+	}
+	.textos{
+		padding:20px;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  width: 100%;
+	
+}
+.bgimg-1, .bgimg-2, .bgimg-3 img {
+  width: auto;
+min-height: 300px;
+	
+}
+.logo {
+	width:100%;
+	height: 0px;
+	padding-top: 0px;
+	float: left;
+	}
+	
+	
+.busca {
+	width:100%;
+	height: 60px;
+	margin-left:0px;
+	padding-top: 0px;
+	padding-right: 10px;
+	float: right;
+	text-align: right;
+	}
+	
+.busca_int{
+	vertical-align: baseline;
+	padding-top: 20px;
+	}
+	
+	
+.capa {
+	float: left;
+	margin-top: 40px;
+	margin-bottom: -60px;
+	}	
+	
+	
+.textos_capa{
+	color: #535353;
+	padding: 10px 10px;
+	text-align: justify;
+	font-family: "Verdana";
+	font-size: 12px;
+	line-height: 18px;
+	float: left;
+	
+	}	
+	
+	
+h1 {
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font: 30px "Caecilia";
+}
+h3 {
+  letter-spacing: 0px;
+  font: 16px "Caecilia";
+  padding-top: 14px;
+}	
+h2 {
+  font: 14px "Caecilia";
+  color: #007e7a;
+  padding-bottom: 16px;
+}
+	
+	
+.capa img{
+	max-width: 100%;		
+	}
+	
+	
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+}
+	
+.bgimg-2 {
+  background-image: url("imagens/sapatos.jpg");
+  min-height:auto;
+}
+	
+video{
+  border-style: solid;
+  border-color: #ECB11F;
+  border-width: 4px;
+  width: 100%;
+}
+	
+.video{
+	width:85%;
+	}
+	
+.box_audio{
+	width: 100%;
+	float: left;
+	margin-left: 0%;
+	}
+	
+.audio{
+  text-align: center;
+  background-color: #007e7a;
+  width: 340px;
+  box-shadow: 2px 2px 5px grey;
+  margin-bottom: 30px;
+  margin-top:60px;
+  }
+	
+.audio audio{
+  border-style: solid;
+  border-color: #007e7a;
+  border-width: 1px;
+  width: 320px;	
+  }
+	
+.tit_bloco {
+  color: #fff; 
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 12px;
+  text-align: center
+	}	
+	
+.tit_bloco2 {
+  color: #fff; 
+  margin: 0px;
+  padding: 5px 0px;
+  cursor: pointer;
+  font-family: "Verdana";
+  font-size: 12px;
+  text-align: center
+	}	
+	
+.collapse {
+  margin-bottom: 20px;
+  margin-top: 20px;
+	}
+	
+.collapse2 {
+  margin-bottom: 2px;
+  margin-top: 0px;
+	}
+	
+#img_tit{
+	width: 60%;	
+	}
+	
+.citacao{
+	    padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+	
+.citacao2{
+	    padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 11px;
+		line-height: 16px;
+	}
+	
+	
+.textos{
+	    color: #535353;
+		padding: 10px 20px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 12px;
+		line-height: 18px;
+	}	
+.textos img{
+	max-width: 100%;
+		
+	}
+	
+.textos2{
+	    color: #535353;
+		padding: 5px 0px;
+		text-align: justify;
+		font-family: "Verdana";
+		font-size: 12px;
+		line-height: 18px;
+	}	
+.textos2 img{
+	max-width: 100%;
+		
+	}
+	
+blockquote {
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #DDDDDD;
+	border-radius: 12px;
+	}
+	
+	
+.flip {
+  position: relative;
+  width: 350px;
+  float: right;
+}
+.imageflip {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:rgba(187,19,62,0.90);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+.flip:hover .overlay {
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: Caecilia;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}	
+
+.iniciativa{
+	width:100%;
+	float:left;
+	margin-bottom:50px;
+}
+
+
+.parceiros{
+	width:100%;
+	float:left;
+	margin-bottom:30px;
+}
+
+
+.pButton{
+	text-align: center;
+	}		
+	
+.divflipcard{
+	width: 100%;
+	text-align: center;
+	float: left;
+	padding-left: 60px;
+
+	}
+	
+.flip-card {
+  background-color: transparent;
+  width: 220px;
+  height: 220px;
+  perspective: 1000px;
+  margin: 0 auto;
+  float: left;
+  padding: 10px 5px;	
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #007e7a;
+  color: #fff;
+  transform: rotateY(180deg);
+  width: 200px;
+  padding: 0px 10px;
+}	
+.flip-card-back p {
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+}
+	
+.flip-card-back h3 {
+  color: #fff;
+  font-family: "Caecilia";
+  line-height: 16px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+	
+.cd-is-hidden {
+    visibility: hidden;
+  }
+
+  .cd-timeline__img.cd-timeline__img--bounce-in {
+    visibility: visible;
+    animation: cd-bounce-1 0.6s;
+  }
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }	
+	
+	
+	
+	
+	
+	
+}
+</style>	
+	
+	
+</head>
+	
+	
+
+<script src="code/jquery-3.3.1.min.js"></script>
+
+	
+<script>// <![CDATA[
+$(document).ready(function() {
+  // Hides all paragraphs
+  $(".conteudobloco").hide();
+  // Optional for showing the first paragraph. For animation use .slideDown(200) instead of .show()
+  //$(".conteudobloco").first().show();
+  $(".tit_bloco").click(function()
+  {
+    // Toggles the paragraph under the header that is clicked. .slideToggle(200) can be changed to .slideDown(200) to make sure one paragraph is shown at all times.
+    $(this).next(".conteudobloco").slideToggle(200);
+    // Makes other pararaphes that is not under the current clicked heading dissapear
+    $(this).siblings().next(".conteudobloco").slideUp(200);
+	$('video').each(function() 
+{
+    $(this)[0].pause();
+});
+	$('audio').each(function() 
+{
+    $(this)[0].pause();
+});
+	  
+	  
+	  
+	  
+  });
+	
+	
+	
+});
+	
+	
+// ]]></script>
+	
+	
+
+	
+
+	
+
+	
+
+<script>// <![CDATA[
+$(document).ready(function() {
+  $(".conteudobloco2").hide();
+  
+  $(".tit_bloco2").click(function()
+  {
+    $(this).next(".conteudobloco2").slideToggle(200);
+    $(this).siblings().next(".conteudobloco2").slideUp(200);
+  });
+});
+// ]]></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+
+
+	
+	
+	
+<script>// <![CDATA[
+$(document).ready(function(){
+        $("#tempo1").hide();
+        $("#tempo2").hide();
+        $("#tempo3").hide();
+        $("#tempo4").hide();
+});
+	
+	
+$(document).ready(function(){
+    $("#btempo1").click(function(){
+        $("#tempo1").show();
+		$("#tempo2").hide();
+		$("#tempo3").hide();
+		$("#tempo4").hide();
+		$("#btempos").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#btempo2").click(function(){
+        $("#tempo2").show();
+		$("#tempo1").hide();
+		$("#tempo3").hide();
+		$("#tempo4").hide();
+		$("#btempos").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#btempo3").click(function(){
+        $("#tempo3").show();
+		$("#tempo1").hide();
+		$("#tempo2").hide();
+		$("#tempo4").hide();
+		$("#btempos").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#btempo4").click(function(){
+        $("#tempo4").show();
+		$("#tempo1").hide();
+		$("#tempo2").hide();
+		$("#tempo3").hide();
+		$("#btempos").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#tempo1").click(function(){
+        $("#btempos").show();
+		$("#tempo1").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#tempo2").click(function(){
+        $("#btempos").show();
+		$("#tempo2").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#tempo3").click(function(){
+        $("#btempos").show();
+		$("#tempo3").hide();
+    });
+});
+	
+$(document).ready(function(){
+    $("#tempo4").click(function(){
+        $("#btempos").show();
+		$("#tempo4").hide();
+    });
+});
+	
+	
+
+// ]]></script>	
+    
+    
+    
+    
+    
+<script>
+/*Interactivity to determine when an animated element in in view. In view elements trigger our animation*/
+$(document).ready(function() {
+
+  //window and animation items
+  var animation_elements = $.find('.animation-element');
+  var web_window = $(window);
+
+  //check to see if any animation containers are currently in view
+  function check_if_in_view() {
+    //get current window information
+    var window_height = web_window.height();
+    var window_top_position = web_window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    //iterate through elements to see if its in view
+    $.each(animation_elements, function() {
+
+      //get the element sinformation
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top_position = $(element).offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is visible (its viewable if it exists between the viewable space of the viewport)
+      if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+        element.addClass('in-view');
+      } else {
+        element.removeClass('in-view');
+      }
+    });
+
+  }
+
+  //on or scroll, detect elements in view
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger our scroll event on initial load
+  $(window).trigger('scroll');
+
+});
+</script>	
+	
+	
+
+    
+    
+	   
+	
+	
+	
+	
+	
+
+
+<body id="eixo3">
+
+	
+	
+<div class="cabecalho">
+  <div class="logo">
+	
+  </div>
+  <div class="busca">
+	 <div class="busca_int">
+	<form name="f1" action="" 
+    onSubmit="if(this.t1.value!=null && this.t1.value!='')
+    findString(this.t1.value);return false"
+    >
+	<input type="text" name="t1" value="" size="20">
+	<input type="submit" class="b1" value="Pesquisar">
+	</form>
+	</div>
+  </div>
+	<nav class="mobile-menu">
+	<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu"><b>
+		<li><a href="index.html">Início<br><br></a></li>
+		<li><a href="#" id="ativo">Fundamentos<br>da EJA</a></li>
+		<li><a href="eixo2.html">Diversidade: gênero<br>e raça na EJA</a></li>
+		<li><a href="eixo3.html" id="ativo">Na sala de<br>aula de EJA</a></li>
+		<li><a href="eixo4.html" >Educação<br>profissional</a></li>
+		<li><a href="eixo5.html">Cidades, mobilidade<br>e sustentabilidade</a></li></b>
+	</ul>
+</nav>
+  
+</div>
+	
+
+<div class="capa" style="padding-top: 60px">
+	<img src="imagens/eixo1_img1.png" width="100%" align="center" style="margin-bottom: 80px">
+
+</div>
+	
+
+	
+<div class="textos">
+
+<h3>Atualizando o conceito: A EJA hoje</h3>
+    
+<div class="citacao2">
+	<p><img src="imagens/aspas_e1.png" align="left" style="padding-right:6px;">Convém explicitar logo de início o que entendemos por educação de jovens e adultos, uma vez que em diferentes países e regiões do mundo o conceito engloba práticas formativas diversas (...) O campo focaliza as pessoas jovens, adultas e idosas pertencentes aos estratos sociais de baixa renda, cujo direito à educação foi violado na infância ou adolescência em virtude de preconceitos, de ausência ou distância de escolas, de trabalho precoce e frequência breve ou descontínua a instituições de ensino de má qualidade, onde não tiveram êxito na aprendizagem, realizando percursos acidentados, marcados por reprovações e abandonos; esses jovens procuram alternativas de reinserção no sistema educativo e aceleração de estudos. Compreende ainda as pessoas jovens e adultas que interromperam os estudos nos níveis obrigatórios à sua época (o antigo primário ou ensino fundamental) e que buscam nivelar sua escolaridade no patamar requerido pelo mercado de trabalho e garantido pela legislação atual às novas gerações (o ensino médio).”</p>
+    
+<hr align="center" style="margin-top: 10px">
+<p align="right">Maria Clara di Pierro – Formação e Práticas na Educação de Jovens e Adultos (pags.11/12)<br>
+Ação Educativa (2017)</p>
+
+
+</div>
+    
+<h2><br>Módulos</h2>
+<p>Clique nos itens abaixo para visualizar os módulos.</p>
+</div>
+
+
+
+
+	
+
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 1 - História da Educação de Jovens e Adultos no Brasil</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+<p><br>A construção da identidade contemporânea da EJA no Brasil é profundamente marcada pelos fóruns e conferências internacionais promovidas pela UNESCO a partir dos anos 1990 e pela defesa da educação como direito humano que remonta ao pensamento e às experiências de Paulo Freire a partir dos anos 1960.</p>
+<p>A história da EJA no país, porém, é muito anterior a esse período e o levantamento de iniciativas da sociedade civil ou governamentais nos remetem a experiências como as da Sociedade Beneficente Luís Gama, fundada em 18 de maio de 1888 (5 dias após a assinatura da abolição da escravatura), em Campinas, ou da Frente Negra Brasileira nos anos 1930, ambas dedicadas à educação da população negra ou iniciativas governamentais como o Mobral (1967-1985) que durante o período de ditadura militar realizou campanha direcionada à “erradicação do analfabetismo”.</p>
+<p>Atualmente, o reconhecimento do direito de todos à educação por toda vida é reconhecido como direito constitucional e a especificidade da modalidade de ensino é garantida em legislação específica.</p>
+<p>O desafio do acesso, permanência e qualidade da EJA permanece imenso, porém com dispositivos legais e marcos conceituais bem mais próximos da realidade e das necessidades de aprendizagem de seus sujeitos.</p>
+	
+
+</div>  
+    
+ 
+    
+    
+<div class="timeline-container" id="timeline-1">
+  <div class="timeline-header">
+    <h2 class="timeline-header__title">Educação de pessoas jovens e adultas</h2>
+    <h3 class="timeline-header__subtitle">Linha do tempo</h3>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item" data-text="Sociedade Beneficente Luís Gama">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img1.png"/>
+        <h2 class="timeline__content-title">1888</h2>
+        <p class="timeline__content-desc">Em 18 de maio de 1888, apenas cinco dias após a abolição, foi fundada a Sociedade Beneficente Luís Gama, em Campinas. Com proposta de amparo social, a entidade abriu um “colégio” com cursos para a educação de adultos trabalhadores, no período noturno, e para jovens, no diurno. Depois de muitas dificuldades, o “colégio” encerrou suas atividades na metade da década de 1890 (Maciel, 1997, p. 75). Em 1902, um professor negro daquela cidade, Francisco José de Oliveira, criou o “colégio” São Benedito para alfabetizar os filhos dos negros e mulatos. Cerca de um ano depois, o jornal O Baluarte informava acerca do curso preparatório, do intermediário e do exame de fim de ano do referido colégio (O Baluarte, 17 dez. 1903, p. 4). Em 1907, havia 272 alunos matriculados, dos quais 124 eram filhos de imigrantes e 14 nada pagavam. Em 1908, chegou a reunir 422 alunos. Em 30 de abril de 1910, o colégio foi incorporado à Federação Paulista dos Homens de Cor (Domingues, 2004, p. 352).</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Paulo Freire e a Educação Popular">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img2.png"/>
+        <h2 class="timeline__content-title">1960</h2>
+        <p class="timeline__content-desc">Paulo Freire nasceu em 1921 em Recife, numa família de classe média.  Formou-se em direito, mas não seguiu carreira, encaminhando a vida profissional para o magistério. Suas ideias pedagógicas se formaram da observação da cultura dos alunos – em particular o uso da linguagem – e do papel elitista da escola. Em 1963, em Angicos (RN), chefiou um programa que alfabetizou 300 pessoas. No ano seguinte, o golpe militar o surpreendeu em Brasília, onde coordenava o Plano Nacional de Alfabetização do presidente João Goulart. Freire passou 70 dias na prisão antes de se exilar. Em 1968, no Chile, escreveu seu livro mais conhecido, Pedagogia do Oprimido. Também deu aulas nos Estados Unidos e na Suíça e organizou planos de alfabetização em países africanos. Com a anistia, em 1979, voltou ao Brasil, integrando-se à vida universitária. Foi nomeado doutor honoris causa em 28 universidades em vários países e teve obras traduzidas em mais de 20 idiomas. Morreu em 1997, de parada cardíaca. Fundamentada no referencial teórico-metodológico freireano, compreende-se a educação popular como uma concepção de educação realizada por meio de processos contínuos e permanentes de formação, direcionados à transformação da realidade a partir do protagonismo dos sujeitos.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="MEB – Movimento de Educação de Base">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img3.png"/>
+        <h2 class="timeline__content-title">1960</h2>
+        <p class="timeline__content-desc">O Movimento de Educação de Base (MEB) foi idealizado pela Igreja Católica com propósito de atuar, frente à população rural, na promoção humana por meio da educação popular, mas sem objetivos explicitamente catequéticos. A alfabetização de adultos seria realizada através da rede de emissoras católicas que serviriam de escolas radiofônicas para transmissão dos conteúdos alfabetizadores, repassado para milhões de pessoas que acompanhavam as aulas no início da noite em áreas do Norte, Nordeste e Centro-Oeste do Brasil. Voltado para alfabetização da população rural, tinha como proposta promover uma educação de base que levasse o homem a refletir sobre seus valores pessoais, morais e cívicos engajando-o no preparo para as reformas básicas – tais como a reforma agrária e ajudando-o a defender-se de ideologias incompatíveis com o espírito cristão da nacionalidade (FAVERO, 2006, p. 56).<br>
+        <a href="https://www.youtube.com/watch?v=yuNBk-Zqep8" target="_blank">Vídeo – Fóruns de EJA entrevista com Osmar Fávero</a> </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="MOBRAL">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img4.png"/>
+        <h2 class="timeline__content-title">1967</h2>
+        <p class="timeline__content-desc">Instituído pela Lei 5.379, de 15 de dezembro de 1967, no governo do presidente Arthur da Costa e Silva, atuou nesse primeiro momento apenas como órgão de assistência financeira e técnica às iniciativas de alfabetização de jovens e adultos. A partir de 1970 é reformulado, iniciando sua programação com o Decreto n° 1.124 de 8 de setembro. O Mobral tinha o intuito de alfabetizar adolescentes e adultos e em um período tido como breve – dez anos – erradicar o analfabetismo do país e se sobressair diante do peso do fracasso de dezenas de programas anteriores. Buscava-se atender a população urbana entre 15 e 35 anos, caracterizada pela faixa etária de pessoas que atenderia a demanda por mão de obra. Podemos aproximar essa posição ao que frisa Jannuzzi (1979), estando a prioridade não em proporcionar educação de qualidade, mas em suprir as necessidades da industrialização, afinal, nota-se que nesse período o país estava sob as perspectivas otimistas do “milagre econômico”. <br><a href="pdf/mobral.pdf" target="_blank">Saiba mais sobre o mobral</a></p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Constituição">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img5.png"/>
+        <h2 class="timeline__content-title">1988</h2>
+        <p class="timeline__content-desc">A Constituição Federal de 1988 garantiu pela primeira vez, no plano legal, o direito ao ensino fundamental gratuito, inclusive aos que não tiveram na idade própria, incluindo, portanto, jovens, adultos e idosos. A Constituição afirma ainda que “o acesso ao ensino obrigatório e gratuito é direito subjetivo” e que “o não oferecimento do ensino obrigatório pelo poder público, ou sua oferta irregular, importa responsabilidade da autoridade competente”.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Lei de Diretrizes e Bases da Educação - Lei nº 9.394 de 20 de dezembro de 1996">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img6.png"/>
+        <h2 class="timeline__content-title">1996</h2>
+        <p class="timeline__content-desc">Estabelece:<br />
+VII – Oferta de educação escolar regular para jovens e adultos, com características e modalidades adequadas às suas necessidades e disponibilidades, garantindo-se aos que forem trabalhadores as condições de acesso e permanência na escola [...]. <br /><br /><br /></p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Alfabetização Solidária – AlfaSol">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img7.png"/>
+        <h2 class="timeline__content-title">1997</h2>
+        <p class="timeline__content-desc">O Programa Alfabetização Solidária foi criado em 1997 no âmbito do Programa Comunidade Solidária fundado pela antropóloga Ruth Cardoso, esposa do Presidente Fernando Henrique Cardoso. Implantado em municípios do Norte e do Nordeste e em Grandes Centros Urbanos, tinha por objetivo reduzir o analfabetismo nas localidades com menor IDH. Funcionava a partir do estabelecimento de “parcerias” com Instituições de Educação Superior (IES) que selecionavam e ofereciam formação inicial para coordenadores e alfabetizadores entre os moradores com maior escolaridade para ministrar aulas de alfabetização em cursos com duração de um semestre.
+O Programa era financiado com recursos advindos de doações de empresas e de cidadãos (da campanha “adote um aluno”) e com fundos governamentais. Após a finalização do Programa Comunidade Solidária se tornou a ONG Alfasol, atuante ainda hoje.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Diretrizes Nacionais para a Educação de Jovens e Adultos">
+      <div class="timeline__content"><img class="timeline__img" src="imagens/lt_img8.png"/>
+        <h2 class="timeline__content-title">2000</h2>
+        <p class="timeline__content-desc">
+          <a href="pdf/resolucao_CNE_CEB_01_2000.pdf" target="_blank">Resolução CNE/CEB nº 1, de 5 de julho de 2000.</a><br>
+<a href="pdf/parecer_CNE_CEB_11_2000.pdf" target="_blank">Parecer do Conselho Nacional de Educação estabelecendo fundamentos e funções da EJA.</a>
+        </p>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+<script src='code/jquery.min.js'></script>
+
+  
+
+<script  src="code/timeline.js"></script> 
+    
+    
+    
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+ 
+    
+	
+</div>	
+
+
+</div>
+	
+
+    
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 2 - EJA e Direitos Humanos</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+
+<p>&nbsp;</p>
+    
+<div class="citacao2" >
+	<p><img src="imagens/aspas_e1.png" align="left" style="padding-right:6px;display:inline-block;">Temos o <strong>direito</strong> de ser iguais quando a nossa diferença nos inferioriza; e temos o <strong>direito</strong> de ser diferentes quando a nossa igualdade nos descaracteriza. Daí a necessidade de uma <strong>igualdade</strong> que reconheça as diferenças e de uma <strong>diferença</strong> que não produza, alimente ou reproduza as desigualdades”.</p>
+	<hr align="center" style="margin-top: 10px">
+    	<p align="right"><strong>Boaventura de Souza Santos, 1997</strong></p>
+</div>
+  
+<h3 align="left">Breve Histórico dos direitos humanos</h3>
+<p>Passe o mouse sobre os cards abaixo para saber mais.</p>
+
+    
+<div class="divflipcard">
+	
+	
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e1flipcard1.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>1ª Geração<br>Direitos civis</h3> 
+      <p align="justify">Os direitos civis referem-se às liberdades individuais, como o direito de ir e vir e de dispor do próprio corpo.</p>
+    </div>
+  </div>
+</div>
+    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e1flipcard2.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>2ª Geração<br>Direitos econômicos, sociais e culturais</h3> 
+      <p align="justify">Incluem o direito à educação, o direito a alojamento adequado, à comida, à água, a condições dignas de trabalho e ao usufruto dos mais elevados padrões de prestação de cuidados de saúde físicos e mentais.</p>
+    </div>
+  </div>
+</div>
+    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e1flipcard3.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>3ª Geração<br>Direito à diversidade</h3> 
+      <p align="justify">Refere-se ao direito ao desenvolvimento, à paz e a valores culturais próprios = Diversidade.</p>
+    </div>
+  </div>
+</div>
+    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imagens/e1flipcard4.png" style="display: inline-block;">
+    </div>
+    <div class="flip-card-back">
+      <h3>4ª Geração<br>Direitos ambientais</h3> 
+      <p align="justify">Conjunto de princípios jurídicos e de normas jurídicas voltado à proteção jurídica da qualidade do meio ambiente.</p>
+    </div>
+  </div>
+</div>
+	
+
+
+</div>	
+    
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>Características dos Direitos Humanos</h3>   
+
+  
+    
+<div class="main-container">
+  <div class="container cf">
+    <div class="animation-element slide-left testimonial" style="width: 100%">
+      <div style="width: 50%;float: left">
+          <img src="imagens/slideimg1.png">
+      </div>
+      <div style="width: 50%;float: right">
+          <h3 align="left" style="color: #bb133e;">Universalidade</h3>
+          <p>Valem para todo mundo. Nenhuma condição ou situação pode justificar o desrespeito à dignidade humana.<br>
+          http://folhapress.folha.com.br/foto/8765310</p>
+      </div>
+    </div>
+      
+    <div class="animation-element slide-left testimonial" style="width: 100%">
+      <div style="width: 50%;float: left">
+          <img src="imagens/slideimg2.png">
+      </div>
+      <div style="width: 50%;float: right">
+          <h3 align="left" style="color: #bb133e;">Indivisibilidade</h3>
+          <p>Todas as pessoas têm direito a gozar dos direitos em sua totalidade, sem fracionamento ou redução, sem serem obrigadas a abrir mão de um direito para acessar outro.<br>
+          http://folhapress.folha.com.br/foto/725558</p>
+      </div>
+    </div>
+      
+    <div class="animation-element slide-left testimonial" style="width: 100%">
+      <div style="width: 50%;float: left">
+          <img src="imagens/slideimg3.png">
+      </div>
+      <div style="width: 50%;float: right">
+          <h3 align="left" style="color: #bb133e;">Interdependência</h3>
+          <p>Todos os direitos estão relacionados entre si e nenhum tem mais importância que outro. Também não há direito que possa ser realizado isoladamente.<br>
+          http://folhapress.folha.com.br/foto/8765310</p>
+      </div>
+    </div>
+      
+    <div class="animation-element slide-left testimonial" style="width: 100%">
+      <div style="width: 50%;float: left">
+          <img src="imagens/slideimg4.png">
+      </div>
+      <div style="width: 50%;float: right">
+          <h3 align="left" style="color: #bb133e;">Exigibilidade e justiciabilidade</h3>
+          <p>os direitos podem ser exigidos quando forem desrespeitados ou violados. Como os direitos são previstos em leis nacionais e em normas internacionais – como a Declaração Universal dos Direitos Humanos e Pactos de Direitos Humanos (1966) entre outros–, para exigi-los, pode-se recorrer tanto aos sistema de justiça nacional como internacional.<br>
+          http://folhapress.folha.com.br/foto/879449
+</p>
+      </div>
+    </div>
+    
+    </div>
+</div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+<h3 align="left">Desafios dos direitos humanos e a Educação das Pessoas jovens  e Adultos</h3>
+<p>&nbsp;</p>
+    
+<h2><strong>Todos e todas têm direitos - A educação como um direito humano</strong></h2>
+	
+<p>A qualidade social da educação, quando considerada como um direito humano, está vinculada às dimensões da adaptabilidade e da aceitabilidade (TOMASEVSKI, 2001). </p>
+<p>A adaptabilidade requer que todas as condições de ensino e aprendizagem sejam formuladas e concretizadas com base nas necessidades dos educandos. A aceitabilidade se relaciona aos consensos estabelecidos em torno da função social da educação, que deve ser ofertada de maneira a corresponder às expectativas que a sociedade lhe confere. No caso da educação de jovens e adultos, em que pesem os avanços formais que apontam para a satisfação da adaptabilidade e aceitabilidade desta modalidade de ensino, diferentes estudos apontam para a permanência da reprodução, precarizada, da educação ofertada às crianças e adolescentes (OLIVEIRA, 2007; ALBUQUERQUE, 2008, entre outros).</p>
+<p>&nbsp;</p>
+	
+	
+<h2 align="left">Desafio atual da EJA como direito humano: Juvenilização</h2>
+    
+<p>Quem são os/as jovens da EJA?</p>
+<ul style="padding-left: 20px;">
+	<li>Os que estão em defasagem idade/série</li>
+	<li>Os que têm histórico de repetências</li>
+	<li>Jovens trabalhadores(as) das camadas mais pobres</li>
+	<li>Os que enfrentam a falta de reconhecimento das culturas juvenis na escola</li>
+	<li>Os que vivenciaram na trajetória escolar racismo, homofobia, transfobia e machismo</li>
+</ul>
+<p>&nbsp;</p>
+
+<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #007E7A;">
+<h3><img src="imagens/e1Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para saber mais</h3>
+
+<h4>Fora de série (documentário)</h4>	
+<p>Um filme dentro de uma pesquisa, ou vice-versa. Fora de Série, documentário produzido pelo Observatório Jovem do Rio de Janeiro, é um filme de pesquisa com estudantes do ensino médio da Educação de Jovens e Adultos (EJA) de 13 escolas públicas do Rio de Janeiro. Nele os jovens narram percursos de vida e contam histórias sobre seus relacionamentos com a escola. Os relatos apresentam desafios que envolvem o processo da formação escolar e revelam suportes e apoios encontrados dentro e fora da escola para concluir o ensino médio. <br>
+<strong><a href="https://www.filmeforadeserie.com/" target="_blank">Clique aqui para saber mais</a>.</strong></p>
+
+<h4>Nunca me sonharam (documentário)</h4>
+<p>Nunca Me Sonharam nos convida ao diálogo sobre a realidade do ensino médio nas escolas públicas do Brasil. Na voz de estudantes, gestores, professores e especialistas, o filme questiona: como nós, enquanto sociedade, estamos cuidando e valorizando a qualidade da educação oferecida aos jovens na fase mais sensível e transformadora de suas vidas?<br>
+<strong><a href="http://www.institutounibanco.org.br/blog/2017/05/29/documentario-nunca-me-sonharam-e-disponibilizado-gratuitamente-para-educadores/ " target="_blank">Clique aqui para saber mais</a>.</strong></p>
+	
+<h4>Educação de pessoas jovens e adultas e direitos humanos.</h4>
+<p>Direitos, diversidade, práticas e experiências educativas na Educação de Jovens e Adultos
+Mariângela Graciano e Rosário S. Genta Lugli (organizadoras) – Editora Alameda/2017<br>
+<strong><a href="pdf/F5509280bdfe07e2022e25ae27dbc6d31b1f0169.pdf" target="_blank">Clique aqui para saber mais</a>.</strong></p>
+
+</blockquote>
+<p>&nbsp;</p>
+
+
+	
+</div>	
+
+
+</div>
+	
+</div>		
+	
+
+	
+
+	
+	
+	
+	
+	
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 3 - Legislação da EJA</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+
+<p>&nbsp;</p> 
+
+<h4>“Parágrafo único: </h4>
+
+<ul style="padding-left: 30px;">
+	<li>Como modalidade (...) da Educação Básica, a identidade própria da Educação de Jovens e Adultos considerará as situações, os perfis dos estudantes, as faixas etárias e se pautará pelos princípios de equidade, diferença e proporcionalidade na apropriação e contextualização das diretrizes curriculares nacionais e na proposição de um modelo pedagógico próprio, de modo a assegurar:</li>
+	<li>I - quanto à equidade, a distribuição específica dos componentes curriculares a fim de propiciar um patamar igualitário de formação e restabelecer a igualdade de direitos e de oportunidades face ao direito à educação;</li>
+	<li>II - quanto à diferença, a identificação e o reconhecimento da alteridade própria inseparável dos jovens e dos adultos em seu processo formativo, da valorização do mérito de cada qual e do desenvolvimento de seus conhecimentos e valores;</li>
+	<li>III - quanto à proporcionalidade, a disposição e alocação adequadas dos componentes curriculares face às necessidades próprias da Educação de Jovens e Adultos com espaços e tempos nos quais as práticas pedagógicas assegurem aos seus estudantes identidade formativa comum aos demais participantes da escolarização básica.”</li>
+</ul>
+
+
+<p align="right"><strong>Diretrizes Curriculares Nacionais para a Educação de Jovens e Adultos – CNE/CEB nº 1 – 05.07.200</strong></p>
+<p>&nbsp;</p>
+	
+<h3 align="center">Marcos legais da EJA</h3>
+<p>&nbsp;</p>
+</div>
+
+<div class="demo">
+    <div class="container2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-timeline">
+                    <div class="timeline2">
+                        <div class="timeline-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2 class="title">Constituição Federal - 1988</h2>
+                            <p class="description">
+                                A República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito promulga a seguinte constituição,
+                            </p>
+                            <a href="http://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm" target="_blank" class="read-more">Clique aqui</a>
+                        </div>
+                    </div>
+ 
+                    <div class="timeline2">
+                        <div class="timeline-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2 class="title">Lei de Diretrizes e Bases da Educação - 1996</h2>
+                            <p class="description">
+                                A educação abrange os processos formativos que se desenvolvem na vida familiar, na convivência humana, no trabalho, nas instituições de ensino e pesquisa, nos movimentos sociais e organizações da sociedade civil e nas manifestações culturais.
+                            </p>
+                            <a href="http://www.planalto.gov.br/ccivil_03/leis/L9394.htm" class="read-more"  target="_blank">Clique aqui</a>
+                        </div>
+                    </div>
+                    <div class="timeline2">
+                        <div class="timeline-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h2 class="title">Diretrizes Nacionais para Educação de Jovens e Adultos - 2000</h2>
+                            <p class="description">
+                                Diretrizes Nacionais para Educação de Jovens e Adultos - 2000
+                            </p>
+                            <a href="http://www.planalto.gov.br/ccivil_03/Constituicao/Constituicao.htm" class="read-more"  target="_blank">Clique aqui</a>
+                        </div>
+                    </div>
+                    <div class="timeline2">
+                        <div class="timeline-icon">
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="timeline-content right">
+                            <h2 class="title">Parecer do Conselho Nacional de Educação - 2000</h2>
+                            <p class="description">
+                                Em 10 de maio de 2000 é aprovado o Parecer CNE 11/2000 que trata das Diretrizes Curriculares Nacionais para a Educação de Jovens e Adultos, sob a coordenação do Relator Conselheiro Carlos Roberto Jamil Cury.
+                            </p>
+                            <a href="pdf/resolucao_CNE_CEB_01_2000.pdf" class="read-more"  target="_blank">Clique aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+  
+    
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+	
+<div class="textos">
+	
+	
+<blockquote style="background-color: #fff;padding:20px;border: dashed 4px #007E7A;">
+<h3><img src="imagens/e1Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para saber mais</h3>
+
+<h4>Filme: Narradores de Javé (2001)</h4>	
+<p>O filme “Narradores de Javé” foi dirigido por Eliane Caffé e lançado em 2001. Rodado na cidade de Gameleiro da Lapa (BA), o longa-metragem narra a história de uma localidade chamada Javé prestes a ser destruída para a construção de uma Usina Hidroelétrica. </p>
+<p>Para evitar a destruição de sua cidade os habitantes decidem escrever a história da localidade visando pleitear o status de patrimônio histórico e cultural do país, porém se deparam com o fato de que a maioria dos habitantes de Javé é analfabeta e por esta razão não possuem nenhum relato histórico documentado. Antonio Biá, um dos únicos moradores alfabetizado é incumbido de colher e registrar os relatos dos moradores.<br>
+
+<strong><a href="https://www.youtube.com/watch?v=GlaFRraqeOg" target="_blank">Clique aqui para ver o trailer</a>.</strong></p>
+	
+<h4>Educação de pessoas jovens e adultas e direitos humanos.</h4>
+<p>Direitos, diversidade, práticas e experiências educativas na Educação de Jovens e Adultos
+Mariângela Graciano e Rosário S. Genta Lugli (organizadoras) – Editora Alameda/2017<br>
+<strong><a href="pdf/F5509280bdfe07e2022e25ae27dbc6d31b1f0169.pdf" target="_blank">Clique aqui para saber mais</a>.</strong></p>
+
+</blockquote>
+	
+
+	
+<p>&nbsp; </p>
+
+	
+</div>	
+
+
+</div>
+	
+</div>	
+	
+	
+	
+	
+	
+	
+
+	
+
+<div class="collapse">
+
+<div class="tit_bloco"><strong>Módulo 4 - Fundamentos da EJA</strong></div>
+
+<div class="conteudobloco">
+
+<div class="textos">
+
+<p>&nbsp;</p>
+<p>A construção de uma proposta de organização curricular deve considerar os marcos legais da modalidade que se articulam com a cultura e o perfil dos sujeitos jovens e adultos das localidades atendidas. Alguns fundamentos devem ser considerados na construção de uma proposta adequada às necessidades de aprendizagem e de atendimento cidadão aos jovens, adultos e idosos:</p>
+
+<ul style="padding-left: 30px;">
+	<li>considerar o direito humano à educação;</li>
+	<li>assegurar a equidade educativa;</li>
+	<li>considerar o mundo do trabalho como temática central;</li>
+	<li>garantir a qualidade da aprendizagem dos jovens e adultos;</li>
+	<li>abordar temas significativos para o universo juvenil e adulto. </li>
+</ul>
+	
+<h3>Fundamentos da EJA e suas implicações</h3>
+
+    
+<div class="collapse2">
+<div class="tit_bloco2" align="center"><strong>Assegurar a equidade educativa</strong></div>
+<div class="conteudobloco2">
+	
+<div class="textos2">
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Implicações</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Adotar uma perspectiva contextualizada para a organização do ensino e seleção de conteúdos.<br>
+- Abordar temas relevantes para as pessoas jovens e adultas das comunidades atendidas.
+</p>
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Desdobramentos na perspectiva racial</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Afirmação do caráter multirracial e pluriétnico da sociedade brasileira.<br>
+- Reconhecimento da presença negra nas salas de aula e no território.<br>
+- Aprofundamento do conhecimento acerca das diferentes culturas presentes nas salas de aula da EJA e no território.<br>
+- Desconstrução da ideia de hierarquia entre culturas.<br>
+- Proposição de processos pedagógicos que privilegiam a interação, reflexão e valorização das diferenças.
+</p>
+
+</div>
+</div>
+</div>
+	
+	
+	
+<div class="collapse2">
+<div class="tit_bloco2" align="center"><strong>Considerar o mundo do trabalho como temática central</strong></div>
+<div class="conteudobloco2">
+	
+<div class="textos2">
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Implicações</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">Aprofundar o conhecimento relativo ao universo e relações de trabalho na história da humanidade e nas suas peculiaridades locais.
+</p>
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Desdobramentos na perspectiva racial</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">Reflexão acerca do processo de transição do trabalho escravo para remunerado, destacando as implicações históricas para as relações raciais e indicadores sociais no Brasil atual.
+</p>
+
+</div>
+</div>
+</div>
+	
+	
+
+	
+<div class="collapse2">
+<div class="tit_bloco2" align="center"><strong>Garantir a qualidade da aprendizagem dos adultos</strong></div>
+<div class="conteudobloco2">
+	
+<div class="textos2">
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Implicações</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Construir processo de formação inicial e continuada, específico para educadores e gestores da EJA.<br>
+- Adequar equipamentos, espaço físico e rotina escolar às necessidades das pessoas jovens e adultas.
+</p>
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Desdobramentos na perspectiva racial</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Inclusão no processo de formação dos professores de reflexões acerca das diferentes trajetórias e de enfrentamentos cotidianos vivenciados por alunos e alunas no tocante a relações raciais dentro e fora da escola.<br>
+- Atenção constante à representação equilibrada e livre de estigmatizações das diferentes raças no ambiente escolar, materiais didáticos e atividades propostas.<br>
+- Promoção do conhecimento sobre a África e africanidades brasileiras em suas múltiplas abordagens.<br>
+</p>
+
+</div>
+</div>
+</div>
+	
+	
+	
+	
+
+	
+<div class="collapse2">
+<div class="tit_bloco2" align="center"><strong>Abordar temas significativos para o universo juvenil e adulto</strong></div>
+<div class="conteudobloco2">
+	
+<div class="textos2">
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Implicações</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Tendências atuais do mundo do trabalho.<br>
+- Relações étnico-raciais.<br>
+- Relações de gênero e direitos da mulher.<br>
+- Meios de informação e comunicação.<br>
+- Cidadania e participação.<br>
+</p>
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Desdobramentos na perspectiva racial</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Inclusão no processo de formação dos professores de reflexões acerca das diferentes trajetórias e de enfrentamentos cotidianos vivenciados por alunos e alunas no tocante a relações raciais dentro e fora da escola.<br>
+- Atenção constante à representação equilibrada e livre de estigmatizações das diferentes raças no ambiente escolar, materiais didáticos e atividades propostas.<br>
+- Promoção do conhecimento sobre a África e africanidades brasileiras em suas múltiplas abordagens.<br>
+</p>
+
+</div>
+</div>
+</div>
+	
+	
+	
+
+	
+<div class="collapse2">
+<div class="tit_bloco2" align="center"><strong>Considerar o direito humano à educação</strong></div>
+<div class="conteudobloco2">
+	
+<div class="textos2">
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Implicações</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Tendências atuais do mundo do trabalho.<br>
+- Relações étnico-raciais.<br>
+- Relações de gênero e direitos da mulher.<br>
+- Meios de informação e comunicação.<br>
+- Cidadania e participação.<br>
+</p>
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Desdobramentos na perspectiva racial</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Manutenção de acervo e recursos adequados para a abordagem das questões étnico-raciais incluindo livros, periódicos, filmes e jogos, para alunos/as e professores/as.<br>
+- Organização de debates e atividades direcionadas ao enfrentamento do racismo e desigualdades sociais no Brasil e na localidade.<br>
+- Abordagem da cultura negra em suas múltiplas manifestações como patrimônio histórico, ambiental, econômico, político e cultural.<br>
+- Análise crítica e constante da representação das diferentes raças nos meios de informação e comunicação.<br>
+</p>
+
+</div>
+</div>
+</div>
+	
+	
+	
+	
+
+<div class="collapse2">
+<div class="tit_bloco2" align="center"><strong>Considerar o mundo do trabalho como temática central</strong></div>
+<div class="conteudobloco2">
+	
+<div class="textos2">
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Implicações</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">Promover aprendizagens que permitam às pessoas jovens e adultas a participação plena na sociedade.<br>
+</p>
+<p style="background-color: #CDCDCD;" align="center"><strong><br>Desdobramentos na perspectiva racial</strong></p>
+<p style="background-color: #fff;padding: 20px;border-style: solid;border-width: 1px;border-color:#CDCDCD">- Incentivo à participação da comunidade escolar nas lutas antirracistas.<br>
+- Promoção da reflexão coletiva sobre o papel do racismo na construção das desigualdades educacionais no Brasil.<br>
+- Reconhecimento de todos os alunos e alunas da EJA como sujeitos de conhecimento e aprendizagem, rompendo o estigma histórico dos estudantes negros como menos capacitados.<br>
+- Reconhecimento da EJA como espaço de reivindicação de direitos educativos, problematização de experiências, valorização, construção e transformação de conhecimentos.<br>
+</p>
+
+</div>
+</div>
+</div>
+	
+	
+<p>&nbsp;</p>
+	
+	
+
+	
+</div>	
+
+
+</div>
+	
+</div>
+	
+	
+	
+	
+	
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+	
+	
+	
+	
+	
+
+
+	
+
+
+
+	
+<div class="barra_logos">
+
+<div class="iniciativa">
+<p align="center"><strong>Iniciativa</strong></p>
+<p align="center"><img src="imagens/Fundacao-Vale.png" style="display:inline-block;width:300px"></p>
+</div>
+
+<div class="parceiros">
+<p align="center"><strong>Parceiros investidores</strong></p>
+<p align="center"><img src="imagens/logo_ght.png" style="display:inline-block"><img src="imagens/logo_global.png" style="display:inline-block"><img src="imagens/logo_michelin.png" style="display:inline-block"></p>
+</div>
+
+
+</div>
+
+
+
+
+<div class="rodape">
+<p align="center" style="vertical-align: middle;">Fundação Vale @ 2018 Todos os direitos reservados</p>
+</div>
+
+	
+	
+	
+	
+<script language="JavaScript">
+<!--
+var TRange=null
+function findString (str) {
+if (parseInt(navigator.appVersion)<4) return;
+var strFound;
+if (window.find) {
+// CODE FOR BROWSERS THAT SUPPORT window.find
+strFound=self.find(str);
+if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+strFound=self.find(str)
+}
+if (!strFound) {
+strFound=self.find(str,0,1)
+while (self.find(str,0,1)) continue
+}
+}
+else if (navigator.appName.indexOf("Microsoft")!=-1) {
+// EXPLORER-SPECIFIC CODE
+if (TRange!=null) {
+TRange.collapse(false)
+strFound=TRange.findText(str)
+if (strFound) TRange.select()
+}
+if (TRange==null || strFound==0) {
+TRange=self.document.body.createTextRange()
+strFound=TRange.findText(str)
+if (strFound) TRange.select()
+}
+}
+else if (navigator.appName=="Opera") {
+alert ("Opera browsers not supported, sorry...")
+return;
+}
+if (!strFound) alert ("String '"+str+"' not found!")
+return;
+}
+//-->
+</script>
+	
+
+<script type="text/javascript" src="code/imageMapResizer.min.js"></script>
+<script type="text/javascript">
+	$('map').imageMapResize();
+</script>	
+	
+	
+	
+
+	
+</body>
+</html>
