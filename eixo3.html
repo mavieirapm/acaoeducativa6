@@ -6,6 +6,7 @@
     <title>Percursos didáticos para jovens e adultos</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="code/accordion.css" type="text/css" />
     <style>
         *{
   margin:0;
@@ -473,13 +474,288 @@ body #eixo3 a#ativo {
     
     
 	
-    
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 10px;
+}
+        
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+}
+
+.btn:focus,
+.btn.focus {
+  box-shadow: 0px 0px 5px #c5c5c5;
+}
+        
+.btn-primary {
+  color: #fff;
+  background-color: #007e7a;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #e37222;
+
+}
+
+
+        
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #ffffff;
+  background-color: #007e7a;
+}
+        
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #007e7a;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+}
     
 
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -25%);
+}
+
+.modal.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - (0.5rem * 2));
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    outline: 0;
+    margin-left:16.666%;
+    margin-top:-100px;
+}
+        
+.modal-content img{
+    max-width: 100%;
+        }
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000000;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.modal-backdrop.show {
+    opacity: 0.26;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.modal-footer > :not(:first-child) {
+    margin-left: .25rem;
+}
+
+.modal-footer > :not(:last-child) {
+    margin-right: .25rem;
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+
+    
+.modal-dialog .modal-content {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    border: none;
+}
+
+.modal-dialog .modal-content .card-signup {
+    margin: 0;
+}
+
+.modal-dialog .modal-content .card-signup .modal-header {
+    padding-top: 0;
+}
+
+.modal-dialog .modal-header {
+    border-bottom: none;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px;
+}
+
+.modal-dialog .modal-body {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+}
+
+.modal-dialog .modal-footer {
+    border-top: none;
+    padding: 24px;
+}
+
+.modal-dialog .modal-footer.text-center {
+    text-align: center;
+}
+
+.modal-dialog .modal-footer button {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+}
+
+.modal-dialog .modal-footer button.pull-left {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    left: -5px;
+}
+
+.modal-dialog .modal-body + .modal-footer {
+    padding-top: 0;
+}
+
+.modal-backdrop {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-dialog {
+    margin-top: 130px;
+}
+
+.modal .modal-header .close {
+    color: #999;
+}
+
+.modal .modal-header .close:hover,
+.modal .modal-header .close:focus {
+    opacity: 1;
+}
+
+.modal .modal-header .close i {
+    font-size: 16px;
+}
+
+.show:not(.modal) .dropdown-toggle:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
     
     
-    
-    
+.video_temp {
+    width: 720px; 
+    height: 380px;
+        }    
     
     
     
@@ -777,43 +1053,6 @@ blockquote {
 	}	
 	
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 	
 	
 .estante{
@@ -825,6 +1064,37 @@ blockquote {
 	box-shadow: 10px 10px 60px #343434 inset;
 	float: left;
 	}	
+    
+.modal{
+    width: 100%; 
+    padding-left: 0px;
+}
+
+
+    
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    outline: 0;
+    z-index: 1;
+    margin-bottom: 20px;
+    margin-left:10px;
+}
+    
+.video_temp {
+    width: 360px; 
+    height: 190px;
+        }
+    
+
 
 
 	
@@ -909,75 +1179,55 @@ $(document).ready(function() {
 
 
 <script>
-    $(document).ready(function(){
- $(".bcentro").click(function(){
- $(".tvazia").hide();
- $(".tnordeste").hide();
- $(".tnorte").hide();
- $(".tsudeste").hide();
- $(".tsul").hide();
- });
- $(".bcentro").click(function(){
- $(".tcentro").show();
- });
-});
-	
-$(document).ready(function(){
- $(".bnordeste").click(function(){
- $(".tvazia").hide();
- $(".tcentro").hide();
- $(".tnorte").hide();
- $(".tsudeste").hide();
- $(".tsul").hide();
- });
- $(".bnordeste").click(function(){
- $(".tnordeste").show();
- });
-});
-	
-$(document).ready(function(){
- $(".bnorte").click(function(){
- $(".tvazia").hide();
- $(".tcentro").hide();
- $(".tnordeste").hide();
- $(".tsudeste").hide();
- $(".tsul").hide();
- });
- $(".bnorte").click(function(){
- $(".tnorte").show();
- });
-});
-	
-$(document).ready(function(){
- $(".bsudeste").click(function(){
- $(".tvazia").hide();
- $(".tcentro").hide();
- $(".tnordeste").hide();
- $(".tnorte").hide();
- $(".tsul").hide();
- });
- $(".bsudeste").click(function(){
- $(".tsudeste").show();
- });
-});
-	
-$(document).ready(function(){
- $(".bsul").click(function(){
- $(".tvazia").hide();
- $(".tcentro").hide();
- $(".tnordeste").hide();
- $(".tnorte").hide();
- $(".tsudeste").hide();
- });
- $(".bsul").click(function(){
- $(".tsul").show();
- });
-});
-	
-	
-	
+    var Expand = (function() {
+  var tile = $('.strips__strip');
+  var tileLink = $('.strips__strip > .strip__content');
+  var tileText = tileLink.find('.strip__inner-text');
+  var stripClose = $('.strip__close');
+  
+  var expanded  = false;
 
+  var open = function() {
+      
+    var tile = $(this).parent();
 
+      if (!expanded) {
+        tile.addClass('strips__strip--expanded');
+        // add delay to inner text
+        tileText.css('transition', 'all .5s .3s cubic-bezier(0.23, 1, 0.32, 1)');
+        stripClose.addClass('strip__close--show');
+        stripClose.css('transition', 'all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)');
+        expanded = true;
+      } 
+    };
+  
+  var close = function() {
+    if (expanded) {
+      tile.removeClass('strips__strip--expanded');
+      // remove delay from inner text
+      tileText.css('transition', 'all 0.15s 0 cubic-bezier(0.23, 1, 0.32, 1)');
+      stripClose.removeClass('strip__close--show');
+      stripClose.css('transition', 'all 0.2s 0s cubic-bezier(0.23, 1, 0.32, 1)')
+      expanded = false;
+    }
+  }
+
+    var bindActions = function() {
+      tileLink.on('click', open);
+      stripClose.on('click', close);
+    };
+
+    var init = function() {
+      bindActions();
+    };
+
+    return {
+      init: init
+    };
+
+  }());
+
+Expand.init();
 </script>
 
 <script>
@@ -1099,7 +1349,7 @@ $(document).ready(function(){
 
     <div style="width: 100%;text-align: center;">
         <div class="video" style="margin: 0 auto;">
-            <p align="center"><iframe src="https://drive.google.com/file/d/16t3YSHCxteBEDD7Jb9d0ER1B7DMF8r8Q/preview" width="100%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+            <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/16t3YSHCxteBEDD7Jb9d0ER1B7DMF8r8Q/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
 
         </div>
     </div>
@@ -1114,7 +1364,7 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>1 - A especificidade curricular da EJA</strong></div>
+            <div class="tit_bloco"><strong>1 &ndash; A especificidade curricular da EJA</strong></div>
 
             <div class="conteudobloco">
 
@@ -1148,20 +1398,22 @@ $(document).ready(function(){
                     <p><br> </p>
 
                     <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-                        <h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão:</h3>
+                        <h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão</h3>
                         <p style="padding-left:20px;">CATELLI Jr, Roberto; ESCOURA, Michele et al. <strong><a href="pdf/231-431-1-PB.pdf" target="_blank">Proposições de organização curricular na educação de jovens e adultos</a></strong>. Cadernos Cenpec, São Paulo, v.3, n.2, p.162-186, jun. 2013.</p>
-                        <p>&nbsp;</p>
 
-
-                        <div class="box_audio">
+                        <div class="box_audio" style="margin-left: 10%;">
                             <div class="audio">
-                                <p style="color: #000;padding-top: 10px;">Aperte o play e ouça mais sobre o assunto.</p>
+                                <p style="color: #000;padding-top: 10px;">Aperte o play e escute o áudio sobre a leitura proposta para discussão.</p>
                                 <audio width="600" controls>
                                     <source src="imagens/eixo3_mod1.mp3" type="audio/mpeg">
                                     Seu navegador não suporta esse formato de áudio.
                                 </audio>
                             </div>
                         </div>
+                        <p>&nbsp;</p>
+
+
+
 
                     </blockquote>
 
@@ -1181,31 +1433,104 @@ $(document).ready(function(){
                     <p><img src="imagens/atencao2.png"></p>
                     <hr align="center">
 
-                    <p>Clique nos botões abaixo para saber qual a diversidade etária em seu estado.</p>
+                    <p>Clique nos botões abaixo para saber qual a diversidade etária da EJA em seu estado.</p>
 
-
-                    <div class="tabela" style="width:100%;margin-bottom: 40px;" align="center">
-
-                        <img src="imagens/bcentro.png" class="bcentro" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px; ">
-                        <img src="imagens/bnordeste.png" class="bnordeste" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
-                        <img src="imagens/bnorte.png" class="bnorte" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
-                        <img src="imagens/bsudeste.png" class="bsudeste" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
-                        <img src="imagens/bsul.png" class="bsul" align="center" id="pop" style="display: inline-block;cursor: pointer;width:25%;padding:5px;max-width:150px;">
-
-                        <div class="" style="width:100%;margin-top: 12px;margin-bottom: 20px;">
-                            <img src="imagens/mapa_centro.png" class="tcentro" align="center" style="display: inline-block;display: none;">
-                            <img src="imagens/mapa_nordeste.png" class="tnordeste" align="center" style="display: inline-block;display: none;">
-                            <img src="imagens/mapa_norte.png" class="tnorte" align="center" style="display: inline-block;display: none;">
-                            <img src="imagens/mapa_sudeste.png" class="tsudeste" align="center" style="display: inline-block;display: none;">
-                            <img src="imagens/mapa_sul.png" class="tsul" align="center" style="display: inline-block;display: none;">
-                            <p>&nbsp;</p>
+                    <div style="width: 100%;text-align: center;">
+                        <div style="margin: 0 auto;">
+                            <button class="btn btn-primary"><a data-toggle="modal" data-target="#modal1" style="cursor: pointer">Centro-oeste</a></button>
+                            <button class="btn btn-primary"><a data-toggle="modal" data-target="#modal2" style="cursor: pointer">Nordeste</a></button>
+                            <button class="btn btn-primary"><a data-toggle="modal" data-target="#modal3" style="cursor: pointer">Norte</a></button>
+                            <button class="btn btn-primary"><a data-toggle="modal" data-target="#modal4" style="cursor: pointer">Sudeste</a></button>
+                            <button class="btn btn-primary"><a data-toggle="modal" data-target="#modal5" style="cursor: pointer">Sul</a></button>
 
                         </div>
-
-
                     </div>
 
 
+
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Centro-oeste</h3>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><img src="imagens/mapa_centro.png" style="display: inline-block"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Nordeste</h3>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><img src="imagens/mapa_nordeste.png" style="display: inline-block"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Norte</h3>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><img src="imagens/mapa_norte.png" style="display: inline-block"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Sudeste</h3>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><img src="imagens/mapa_sudeste.png" style="display: inline-block"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title" id="exampleModalLabel">Sul</h3>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p align="center"><img src="imagens/mapa_sul.png" style="display: inline-block"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <p>&nbsp;</p>
 
 
                 </div>
@@ -1226,18 +1551,15 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>2 - Os jovens e adultos enquanto sujeitos de aprendizagem: estratégias para a sala de aula</strong></div>
+            <div class="tit_bloco"><strong>2 &ndash; Os jovens e adultos enquanto sujeitos de aprendizagem: estratégias para a sala de aula</strong></div>
 
             <div class="conteudobloco">
 
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
-                <div style="width: 100%;text-align: center;float: left;margin-bottom: 40px;">
+                <div style="width: 100%;text-align: center;">
                     <div class="video" style="margin: 0 auto;">
-                        <video controls>
-                            <source src="imagens/Roberto1.mp4" type="video/mp4">
-                            Seu navegador não suporta esse formato de vídeo.
-                        </video>
+                        <p align="center"><iframe class="video_temp" src="https://drive.google.com/drive/folders/1ec12YTFI970Om0YgRos6CxykAhS0O5W2?ogsrc=32][entrevista_Germano]" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block;margin-left: -10%;"></iframe></p>
 
                     </div>
                 </div>
@@ -1263,6 +1585,9 @@ $(document).ready(function(){
                         <hr align="center" style="margin-top: 10px">
                     </div>
 
+                    <p>&nbsp;</p>
+
+
                     <p>Ao concluir a pesquisa, Cavaco afirma que:</p>
 
                     <div class="citacao2">
@@ -1270,29 +1595,39 @@ $(document).ready(function(){
                         <hr align="center" style="margin-top: 10px">
                     </div>
 
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
                     <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-                        <h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão:</h3>
+                        <h3><img src="imagens/book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Leitura para discussão</h3>
                         <p style="padding-left:20px;">CAVACO, Carmen. <strong><a href="file:///G:/Drives%20de%20equipe/AE_EDUCAÇÂO/1.%20Uni_Edu/2.%20Assessoria%20e%20Avaliação/FUNDAÇÂO%20VALE/MATERIAL%20DIGITAL/MÓDULOS/CAVACO%20-%20Aprendizado%20experiencial%20(2016).pdf" target="_blank">Formação Experiencial de Adultos Não Escolarizados: saberes e contextos de aprendizagem</a></strong>. Educação & Realidade, Porto Alegre, v. 41, n. 3, p. 951-967, jul./set. 2016.</p>
-                        <p style="padding-left:20px;">O artigo resultou de uma investigação qualitativa, baseada em entrevistas biográficas, que teve como objetivo analisar o processo de formação de adultos não escolarizados com base na experiência. Analisa o modo como estes adultos se formaram ao longo da vida, o que aprenderam, que contextos e pessoas são significativos nessa aprendizagem. Seguindo um referencial teórico baseado na formação experiencial e nas histórias de vida, entende-se que a formação é um processo muito amplo, que se confunde com a experiência de vida. Verificou-se que os adultos não escolarizados possuem saberes diversificados, que resultaram de processos de formação experiencial, em todos os tempos e espaços da sua vida.</p>
 
 
-                        <div class="box_audio">
+
+                        <div class="box_audio" style="margin-left: 10%;">
                             <div class="audio">
-                                <p style="color: #000;padding-top: 10px;">Aperte o play e ouça um áudio sobre formação na EJA.</p>
+                                <p style="color: #000;padding-top: 10px;">Aperte o play e escute o áudio sobre o artigo indicado.</p>
                                 <audio width="600" controls>
                                     <source src="imagens/eixo3_mod2.mp3" type="audio/mpeg">
                                     Seu navegador não suporta esse formato de áudio.
                                 </audio>
                             </div>
                         </div>
+                        <p>&nbsp;</p>
+
+
+
 
 
 
                     </blockquote>
 
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
 
 
-                    <h3 align="left">O desafio na leitura no Brasil </h3>
+
+                    <h3 align="left">Os saberes aprendidos por meio da experiência e sua articulação com os conhecimentos escolares</h3>
                     <p> Utilizar os saberes aprendidos pela experiência em sala de aula é uma forma de valorizar os conhecimentos que os estudantes já possuem, que não podem ser negados ou desconsiderados. Além disso, é possível articular o saber escolar ao saber obtido por meio da experiência. Nesse sentido, devemos fazer uso dos conhecimentos prévios dos educandos para fortalecer as aprendizagens escolares e ampliar aquelas que estão fundadas na experiência. Exemplo disso é o uso de extratos bancários, interpretação de contas de luz, uso de moedas, análise de preços e outros elementos da vida cotidiana no ensino da matemática. </p>
 
 
@@ -1305,9 +1640,9 @@ $(document).ready(function(){
                             Suelen Cristina Richeski</p>
                     </div>
 
-                    <p>Exemplos de atividades que articulam os conhecimentos obtidos por meio da experiência com conhecimentos escolares.</p>
+                    <p>Conheça uma sequência didática articulando os saberes adquiridos por meio da experiência e os conhecimentos escolares. </p>
 
-                    <p>Na área de ciências humanas, por exemplo, não se pode deixar de estudar a forma de organização do trabalho na sociedade capitalista sem fazer referência às próprias experiências de trabalho desses jovens e adultos. É preciso criar estratégias para que as pessoas narrem suas experiências profissionais para que possam a partir dela refletir sobre o seu significado no âmbito da sociedade capitalista. É possível ser desenvolvida uma atividade de pesquisa entre os alunos para levantar alguns aspectos da trajetória profissional dos estudantes seja no que se refere à jornada e condições de trabalho, seja em relação às relações humanas e de poder que vivenciou nesses espaços. Vale levantar também as aprendizagens que teve no campo profissional. A partir dos dados levantados e das narrativas dos estudantes torna-se possível fazer uso de alguns conceitos da área das ciências humanas para explicar algumas semelhanças encontradas na história profissional dos estudantes da turma. Além disso, pode-se abrir espaço para que os estudantes possam realizar oficinas em que seja possam ensinar aos demais algumas aprendizagens que tiveram na sua vida profissional. </p>
+                    <p>Na área de ciências humanas, por exemplo, não se pode deixar de estudar a forma de organização do trabalho na sociedade capitalista sem fazer referência às próprias experiências de trabalho desses jovens e adultos. É preciso criar estratégias para que as pessoas narrem suas experiências profissionais para que possam, a partir dela, refletir sobre o seu significado no âmbito da sociedade capitalista. É possível ser desenvolvida uma atividade de pesquisa entre os alunos para levantar alguns aspectos da trajetória profissional dos estudantes seja no que se refere à jornada e condições de trabalho, seja sobre as relações humanas e de poder que vivenciou nesses espaços. Vale levantar também as aprendizagens que teve no campo profissional. A partir dos dados levantados e das narrativas dos estudantes torna-se possível fazer uso de alguns conceitos da área das ciências humanas para explicar algumas semelhanças encontradas na história profissional dos estudantes da turma. Além disso, pode-se abrir espaço para que os estudantes possam realizar oficinas em que ensinem aos demais algumas aprendizagens que tiveram na sua vida profissional. </p>
 
 
 
@@ -1325,7 +1660,7 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>3 - Leitura na EJA</strong></div>
+            <div class="tit_bloco"><strong>3 &ndash; Leitura na EJA</strong></div>
 
             <div class="conteudobloco">
 
@@ -1333,7 +1668,7 @@ $(document).ready(function(){
                 <p>&nbsp;</p>
                 <div style="width: 100%;text-align: center;">
                     <div class="video" style="margin: 0 auto;">
-                        <p align="center"><iframe src="https://drive.google.com/file/d/1hIp_JcvvTeI5l36oVPeNZ8f7aiFytHjD/preview" width="100%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+                        <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1hIp_JcvvTeI5l36oVPeNZ8f7aiFytHjD/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
 
                     </div>
                 </div>
@@ -1516,6 +1851,16 @@ $(document).ready(function(){
                     <p>&nbsp;</p>
 
 
+                    <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
+                        <h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp; Veja também</h3>
+                        <p style="padding-left:20px;"><a href="pdf/Inaf2018_Relatorio_Resultados_Preliminares_v08Ago2018.pdf" target="_blank">Relatório com os resultados do Indicador de Alfabetismo funcional na edição de 2018</a>.</p>
+
+
+                    </blockquote>
+
+                    <p>&nbsp;</p>
+
+
 
 
 
@@ -1532,36 +1877,39 @@ $(document).ready(function(){
                     <p>Considerando a diversidade etária, étnico-racial, de origem, de gênero, de orientação sexual, religiosa, linguística e cultural presente nas salas de EJA propomos o deslocamento do trabalho focado nas carências facilmente observáveis no domínio das habilidades leitoras para o desafio de construir caminhos que levem a emergir as diferentes experiências e visões de mundo que habitam as salas de EJA.</p>
                     <p>Intencionalidade educativa e disponibilidade dos professores a novos aprendizados são elementos essenciais para que as diferentes identidades e experiências presentes na sala de aula emerjam e sejam identificadas vias para a construção de processos de ensino comprometidos com a valorização de experiências concretas e potencialmente transformadoras do fazer pedagógico em todas as suas dimensões.</p>
 
-                    <p>Uma das experiências bem-sucedidas de desenvolvimento de um trabalho de leitura na EJA são as rodas de leitura, também chamados de círculos de leitura, ou ainda, como ficou conhecida a experiência de uma escola catalã, as tertúlias literárias. </p>
+                    <p>Uma das experiências bem-sucedidas de desenvolvimento de um trabalho de leitura na EJA são as rodas de leitura, também chamados de círculos de leitura, ou ainda, como ficou conhecida a experiência de uma escola catalã, as tertúlias dialógicas literárias. </p>
 
                     <p>Intencionalidade educativa e disponibilidade dos professores a novos aprendizados são elementos essenciais para que as diferentes identidades e experiências presentes na sala de aula emerjam e sejam identificadas vias para a construção de processos de ensino comprometidos com a valorização de experiências concretas e potencialmente transformadoras do fazer pedagógico em todas as suas dimensões.</p>
 
 
                     <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #e37222;">
-                        <h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;Conhecendo mais sobre Tertúlias dialógicas</h3>
+                        <h3 style="font-size: 30px;"><img src="imagens/Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;Conhecendo mais sobre Tertúlias dialógicas literárias.</h3>
                         <p style="padding-left:20px;"><a href="http://www.niase.ufscar.br/tertulias-dialogicas" target="_blank">NIASE – Núcleo de Investigação e Ação Social e Educativa</a>.</p>
                         <p style="padding-left:20px;">Marigo, Adriana; Mello, Roseli; Amorim, Sabrina. <a href="pdf/ltp_58_suplemento_18cole_1210_1601.pdf" target="_blank">Tertúlia literária dialógica e educação de pessoas jovens e adultas: encontro entre literatura e vida</a>. Leitura: Teoria & Prática (suplemento), n.58, jun.2012, p. 1497-1505.</p>
                         <p style="padding-left:20px;">FLECHA, Ramon. <a href="http://www.edaverneda.org/edaverneda8/es/tertulias-literarias-dialogicas" target="_blank">Compartiendo palabras: el aprendizaje de las personas adultas a traves del dialogo</a>. Barcelona: Paidos, 1997. Escola La Verneda: tertúlias literárias dialógicas.</p>
-                        <p style="padding-left:20px;"><a href="https://www.youtube.com/watch?v=rmcqaOlS43I" target="_blank">Instituto Natura. Tertúlias literárias dialógicas. </a>.</p>
+                        <p style="padding-left:20px;"><a href="https://www.youtube.com/watch?v=rmcqaOlS43I" target="_blank">Instituto Natura &ndash; Tertúlias literárias dialógicas</a>.</p>
+
+
+                        <div class="box_audio" style="margin-left: 10%;">
+                            <div class="audio">
+                                <p style="color: #000;padding-top: 10px;">Aperte o play e escute o aúdio sobre tertúlias literárias.</p>
+                                <audio width="600" controls>
+                                    <source src="imagens/eixo3_mod3.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta esse formato de áudio.
+                                </audio>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+
 
 
                     </blockquote>
 
-                    <div class="box_audio">
-                        <div class="audio">
-                            <p style="color: #fff;padding-top: 10px;">Aperte o play e ouça mais sobre tertúlias literárias.</p>
-                            <audio width="600" controls>
-                                <source src="imagens/eixo3_mod3.mp3" type="audio/mpeg">
-                                Seu navegador não suporta esse formato de áudio.
-                            </audio>
-                        </div>
-                    </div>
 
-                    <p>&nbsp;</p>
 
-                    <h3 align="left">Indicações de leitura na EJA</h3>
+                    <h3 align="left">Indicações de textos literários para a educação de jovens e adultos</h3>
 
-                    <p>Na estante abaixo temos algumas indicações de leitura. Clique nos livros para ver suas fichas de leitura.</p>
+                    <p>Na estante abaixo temos algumas indicações de leitura, incluindo sugestões de como trabalhar o livro na sala de aula, além de outras informações relativas à obra. Clique nos livros para ver suas fichas de leitura.</p>
 
 
 
@@ -1715,6 +2063,11 @@ $(document).ready(function(){
         //-->
 
     </script>
+
+    <script src="code/jquery.min.js" type="text/javascript"></script>
+    <script src="code/popper.min.js" type="text/javascript"></script>
+    <script src="code/bootstrap-material-design.min.js" type="text/javascript"></script>
+
 
 
 

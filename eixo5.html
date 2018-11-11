@@ -93,7 +93,6 @@ text-shadow:none;
 .textos p{
 	padding-bottom: 16px;
 	word-wrap: break-word;
-    font-size: 14px;
 	}
 	
 .textos2{
@@ -424,6 +423,7 @@ body #eixo3 a#ativo {
   box-shadow: 2px 2px 5px grey;
   margin-bottom: 30px;
   margin-top:60px;
+  color:#fff;
   }
 	
 .audio audio{
@@ -1047,6 +1047,12 @@ nav {
     }
 }
     
+        
+.video_temp {
+    width: 720px; 
+    height: 380px;
+        }
+        
     
     
     
@@ -1433,6 +1439,11 @@ blockquote {
     margin-bottom: 20px;
     margin-left:0px;
 }
+    
+.video_temp {
+    width: 360px; 
+    height: 190px;
+        }
 
 	
 	
@@ -1583,7 +1594,7 @@ $(document).ready(function() {
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>Módulo 1 - Porque pensar a mobilidade urbana</strong></div>
+            <div class="tit_bloco"><strong>1 &ndash; Porque pensar a mobilidade urbana</strong></div>
 
             <div class="conteudobloco">
 
@@ -1593,7 +1604,7 @@ $(document).ready(function() {
 
                     <div style="width: 100%;text-align: center;">
                         <div class="video" style="margin: 0 auto;">
-                            <p align="center"><iframe src="https://drive.google.com/file/d/1yyvLCo4RdOV1K17w12JqfYfh826BHt4Z/preview" width="120%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block;margin-left: -10%;"></iframe></p>
+                            <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1yyvLCo4RdOV1K17w12JqfYfh826BHt4Z/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block;margin-left: -10%;"></iframe></p>
 
                         </div>
                     </div>
@@ -1607,7 +1618,7 @@ $(document).ready(function() {
 
                     <p>É importante relembrar que nos últimos 50 anos o Brasil passou por transformações que alteraram, significativamente, a maneira pela qual as populações vivenciam o território, em um processo crescente de urbanização que, atualmente, alcança cerca de 85% da população do país. </p>
 
-                    <object data="pdf/Tipologia_rural_urbano.pdf" type="application/pdf" width="100%" height="450px" typemustmatch>
+                    <object data="pdf/Tipologia_rural_urbano.pdf" type="application/pdf" width="100%" height="600px" typemustmatch>
                         <p>Se você não conseguir visualizar o mapa, instale o Adobe Pdf no seu computador <a href="pdf/instalador.exe">clicando aqui</a></p>
                     </object>
 
@@ -1686,7 +1697,7 @@ $(document).ready(function() {
 
                     <div style="width: 100%;text-align: center;">
                         <div class="video" style="margin: 0 auto;">
-                            <p align="center"><iframe src="https://drive.google.com/file/d/1u_ouz3uXvt4Z4g4CeUl6zPc8149T1DvY/preview" width="100%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+                            <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1u_ouz3uXvt4Z4g4CeUl6zPc8149T1DvY/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
 
                         </div>
                     </div>
@@ -1719,7 +1730,7 @@ $(document).ready(function() {
 
                     <p align="center"><img src="imagens/info9.png" style="display: inline-block"></p>
 
-                    <p>Além da Lei de Mobilidade Urbana, a maioria das cidades brasileiras incorporaram nos seus calendários três momentos de reflexão que buscam mobilizar a sociedade para a segurança no trânsito: o movimento “Maio Amarelo”, a Semana Nacional de Trânsito e o “Dia Mundial sem Carro”.</p>
+                    <p>Além da Lei de Mobilidade Urbana, a maioria das cidades brasileiras incorporaram nos seus calendários três momentos de reflexão que buscam mobilizar a sociedade para a segurança no trânsito: o movimento “Maio Amarelo”, a Semana Nacional de Trânsito e o “Dia Mundial sem Carro”. Clique nas peças de campanha a seguir e saiba mais.</p>
 
                     <div style="width: 100%;float: left;margin-bottom: 20px;">
                         <div style="float: left;padding-right: 20px;text-align: center;"><a data-toggle="modal" data-target="#modal3" style="cursor: pointer"><img src="imagens/eixo5_cartaz1.png" style="display: inline-block;"></a></div>
@@ -1785,7 +1796,7 @@ $(document).ready(function() {
                     <div style="float: left;margin-bottom: 60px;">
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais:</h3>
+                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja também</h3>
                             <ul style="padding-left:20px;">
                                 <li><strong><a href="https://www.youtube.com/watch?v=fpL3dAlqq18" target="_blank">Diálogos sustentáveis 5 – Mobilidade Urbana, TV USP Piracicaba.</a></strong> </li>
                                 <li><strong><a href="https://youtu.be/vouEeBimqos" target="_blank">Mini documentário “AUSENTES: evasão escolar no ensino médio”</a></strong>. Acesso em 25 set. 2018. </li>
@@ -1794,15 +1805,14 @@ $(document).ready(function() {
                         <p><br> </p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura: </h3>
+                            <h3><img src="imagens/e5book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura </h3>
 
-                            <p>Ao longo desta publicação serão apresentados um conjunto de conceitos e noções que buscam contribuir com a reflexão sobre a mobilidade urbana, enfatizando a importância do engajamento dos jovens e adultos em prol da construção de cidades socialmente mais justas e ambientalmente sustentáveis. Esses insumos podem ser utilizados como recursos didáticos em sala de aula, tomando como referência principal os saberes e conhecimentos dos alunos adquiridos a partir de suas vivências e suas experiências cotidianas nas cidades. A cidade enquanto lugar privilegiado para o exercício da cidadania é um campo vasto para experimentações e inovações capazes de alterar o padrão de urbanização altamente excludente e segregador que vem se consolidando no Brasil.</p>
-                            <p>As condições de mobilidade urbana se constituem em um sistema que articula um conjunto de espaços públicos, equipamentos e serviços de transporte que só fazem sentido a partir de um determinado contexto social, histórico e territorial. Em outras palavras, não é possível descrever ou avaliar a qualidade da mobilidade urbana sem considerar a experiência e a vivência das pessoas no seu cotidiano, porque seu conteúdo material e simbólico depende da maneira pela qual a sociedade se organiza e se reproduz.</p>
-                            <p>E isso não está relacionado somente às cidades ditas urbanizadas. As relações entre o rural e o urbano mudaram e são cada vez mais complexas e heterogêneas, sobretudo quando consideramos as singularidades ambientais, sociais, econômicas e culturais de cada uma das regiões do país. Mesmo nas regiões onde as cidades são pequenas ou nas localidades rurais ou ribeirinhas, as pessoas, de alguma maneira, vivenciam os feitos de um processo crescente de urbanização que, atualmente, alcança cerca de 85% da população do país.<sup>3</sup> </p>
-                            <p>Rurais ou urbanas, é a partir do processo de planejamento da cidade que são definidas as melhores localizações para a implantação de equipamentos e serviços urbanos básicos tais como: escolas, hospitais, postos de saúde, centros de atendimento social, praças, parques, áreas de lazer, centros comerciais etc. O direito de acesso a esses equipamentos e serviços de maneira eficiente, segura e ambientalmente sustentável é essencial para a qualidade de vida nas cidades, sem deixar de lado a preocupação com as gerações futuras.</p>
-                            <p>Para isso ocorrer, é necessário um espaço comum com foco nas pessoas, tornando a experiência urbana mais humana. Calçadas confortáveis sem obstáculos que prejudiquem o caminhar, rampas com declividades adequadas as diferentes necessidades das pessoas, arborização que crie zonas de sombreamento onde as pessoas circulam e sinalização que dê segurança no compartilhamento do espaço público são alguns desses cuidados. Um olhar atento sobre os espaços de uso comum facilmente revelará sob a ótica do cidadão aquilo que pode ser aprimorado para que a mobilidade urbana propicie uma experiência urbana inclusiva e democrática. </p>
-                            <p>Nesse sentido, foi criada a Lei de Mobilidade Urbana. A Lei Federal 12.587 de 2012 que institui a Política de Mobilidade Urbana foi construída a partir de um amplo debate junto aos diversos setores sociedade e é considerada um avanço no país. Prevê as responsabilidades dos três entes da Federação (União, Estados e Municípios), estabelecendo as diretrizes para que o poder público local crie seus sistemas de transportes acessíveis. A sustentabilidade e universalidade no acesso à cidade, a participação da sociedade nas decisões e definição de prioridades e integração dos diferentes modos de transporte, com prioridade para o pedestre, usuários de transporte coletivo e dos meios não motorizados (ciclista) são os princípios fundamentais que estruturam a política nacional. Essa visão se coaduna de forma complementar às diretrizes do Estatuto da Cidade (Lei Federal n. 10.257/01), que é o marco principal para o planejamento das cidades sob o paradigma da função social da cidade. </p>
-                            <p>A política nacional de mobilidade urbana prevê também que toda cidade com mais de 20 mil habitantes deve elaborar o seu plano de mobilidade urbana, considerando todo o território municipal, assim como prevê o Estatuto da Cidade em relação aos planos diretores municipais. Esses instrumentos de planejamento são fundamentais para que os municípios possam prever medidas de curto, médio e longo prazos, em um horizonte temporal de 10 anos. Portanto, os planos municipais de mobilidade urbana devem ser debatidos com a sociedade e estar alinhados com os planos diretores. </p>
+                            <p>A cidade enquanto lugar privilegiado para o exercício da cidadania é um campo vasto para experimentações e inovações capazes de alterar o <a href="pdf/padrao_urbanizacao.pdf" target="_blank"><strong>padrão de urbanização</strong></a> altamente excludente e segregador que vem se consolidando no Brasil.</p>
+
+                            <p>Consulte o <a href="ww2.ibge.gov.br/home/geociencias/geografia/espacos_rurais_e_urbanos/default.shtm" target="_blank"><strong>site do IBGE</strong></a>.</p>
+
+
+
 
                         </blockquote>
                     </div>
@@ -1817,7 +1827,7 @@ $(document).ready(function() {
 
             <div class="collapse">
 
-                <div class="tit_bloco"><strong>Módulo 2 - Educação, cidade e território</strong></div>
+                <div class="tit_bloco"><strong>2 &ndash; Educação, cidade e território</strong></div>
 
                 <div class="conteudobloco">
 
@@ -1831,7 +1841,7 @@ $(document).ready(function() {
                         <p>De acordo com o Art. 6°, da Constituição Federal, são direitos sociais:</p>
 
                         <div class="citacao2">
-                            <p><img src="imagens/aspas_e5.png" align="left" style="padding-right:6px;">a educação, a saúde, o trabalho, a moradia, o lazer, a segurança, a previdência social, a proteção à maternidade e à infância, a assistência aos desamparados.”)</p>
+                            <p><img src="imagens/aspas_e5.png" align="left" style="padding-right:6px;">a educação, a saúde, o trabalho, a moradia, o lazer, a segurança, a previdência social, a proteção à maternidade e à infância, a assistência aos desamparados.”</p>
                             <hr align="center" style="margin-top: 10px">
                         </div>
 
@@ -1847,15 +1857,29 @@ $(document).ready(function() {
                         </ul>
 
 
-                        <h3>Devemos nos perguntar sempre:</h3>
+                        <p>Devemos nos perguntar sempre:</p>
 
-                        <p>Os lugares onde moramos são acolhedores? (sejam nas cidades, nas vilas ou nas localidades rurais).</p>
+                        <p>Os lugares onde moramos são acolhedores? (Sejam nas cidades, nas vilas ou nas localidades rurais.)</p>
 
                         <p>E, qual o sentimento de identidade das pessoas com o seu lugar de moradia, sobretudo, quando esse lugar oferece o acesso a serviços básicos de água e esgoto e de coleta de lixo regular? </p>
 
                         <p>Como nos sentimos quando não contamos com transporte público de qualidade, nem com calçadas adequadas ao nosso caminhar cotidiano com segurança e conforto?</p>
 
-                        <p>Inserir audio</p>
+                        <p>Para grande parte dos estudantes da EJA, que vivenciaram de alguma maneira, os efeitos dos processos de exclusão social, seja na infância ou na adolescência, o exercício da cidadania e o direito à educação dependem da inserção desses jovens e adultos na sociedade. </p>
+
+                        <p>Por isso, quando abordamos as noções de cidadania (incluindo direitos e deveres) no processo educacional devemos refletir junto aos nossos estudantes, acerca das suas percepções e vivências na cidade.</p>
+
+                        <p>É importante lembrar sempre que esses jovens e adultos são portadores de saberes e conhecimentos construídos a partir de suas experiências no cotidiano. Esses conhecimentos e saberes transmitidos de geração em geração estão na base do nosso sentimento de pertencimento a um lugar, seja na cidade ou no campo. </p>
+
+                        <p>Morando nas cidades, nas vilas ou localidades rurais, os cidadãos devem ter acesso aos benefícios e recursos produzidos socialmente. No caso específico da EJA, o acesso de jovens e adultos a uma educação que contribua com sua inserção cidadã na sociedade. </p>
+
+                        <p>Adotar esses valores, sobretudo na EJA, envolve por um lado, a valorização de pessoas, que apesar da baixa escolaridade, são portadoras de saberes, culturas e experiências, e por outro lado, implica no aporte de novos conhecimentos e experiências a partir das suas expectativas e demandas.</p>
+
+                        <p>É importante refletir como os jovens e os adultos que estão nas escolas usufruem a cidade e os serviços de atendimento ao cidadão, distribuídos no território municipal. Como percebem os seus espaços e manifestam os seus interesses, desejos e ideias? </p>
+
+                        <p>Os jovens e os adultos que estão inseridos na EJA se sentem seguros, respeitados e valorizados no seu cotidiano?</p>
+
+
 
                         <p>Com essas respostas podemos trabalhar diferentes percepções sobre a cidade e sobre o território, tornando visível as desigualdades que demarcam fronteiras de acesso ao cidadão, seja em função do local de moradia, da renda familiar, da cor da pele, do gênero ou mesmo da opção sexual de cada indivíduo.</p>
 
@@ -1874,7 +1898,7 @@ $(document).ready(function() {
 
                         <div style="width: 100%;text-align: center;">
                             <div class="video" style="margin: 0 auto;">
-                                <p align="center"><iframe src="https://drive.google.com/file/d/1xD5hbNlLiUB29hfmJzwNmEuP2_ZQtDNc/preview" width="120%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block;margin-left: -10%;"></iframe></p>
+                                <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1xD5hbNlLiUB29hfmJzwNmEuP2_ZQtDNc/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block;margin-left: -10%;"></iframe></p>
 
                             </div>
                         </div>
@@ -1892,19 +1916,12 @@ $(document).ready(function() {
                         <p>Como contribuir para que os jovens e adultos percebam o seu papel na transformação da sociedade por meio da promoção de cidades e territórios mais acolhedores, com respeito às diferenças?</p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura: </h3>
+                            <h3><img src="imagens/e5book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura</h3>
 
-                            <p>Quando falamos em cidadania na escola estamos falando de algo que de alguma forma já é trabalhado. Isso acontece não só pelas diretrizes legais de valorização dos temas transversais, mas também por uma dimensão ética necessária ao exercício da profissão de professor, de educador.</p>
-                            <p>Entretanto, é mais raro observarmos uma reflexão do conjunto dos profissionais de educação sobre a formação para a cidadania desenvolvida na escola e sua relação com o currículo desenvolvido na EJA.
-                            </p>
-                            <p>Como projeto interdisciplinar da escola, a formação para a cidadania deve ser permanentemente planejada, avaliada e revisada. Nesse sentido, antes de refletir sobre o papel da escola, consideramos fundamental iniciar com uma necessária atualização do significado de cidadania.</p>
-                            <p>A expressão cidadania vem do latim “civitas”, que também significa cidade. Por isso, antigamente, definia-se o cidadão como aquele que fazia parte de uma cidade, adquirindo, assim, direitos e deveres. Atualmente, no Brasil, o conceito de cidadania extrapola os limites urbanos, compreendendo também a garantia de direitos daqueles que habitam as áreas rurais de um município. Nesse sentido, a cidadania está associada ao direito de ir e vir e de acesso aos bens e serviços que são produzidos socialmente, tais como acesso à saúde, moradia, alimentação e educação.</p>
-                            <p>O direito à cidade, o acesso à saúde, educação, moradia e ao lazer integram um conjunto de valores que geram o sentimento de pertencimento a um lugar na sociedade. Pertencer a um lugar na sociedade, na perspectiva da cidadania, quer dizer que os cidadãos têm direitos iguais a usufruir desse lugar. </p>
-                            <p>Morar com dignidade, num meio ambiente saudável significa ter acesso à educação, à cultura, ao esporte e ao lazer, ao saneamento básico, à mobilidade urbana, além de poder desfrutar das inúmeras possibilidades que a cidade e o uso do território oferecem, independente da classe social, etnia, gênero, credo ou qualquer identidade social singular.</p>
-                            <p>Nesse sentido, as relações entre educação, cidade e território estão de acordo com a diretriz da Lei de Diretrizes e Bases da Educação que preconiza, nos conteúdos curriculares da educação básica, “a difusão de valores fundamentais ao interesse social, aos direitos e deveres dos cidadãos, de respeito ao bem comum e à ordem democrática…” (Art. 27, I, Lei de Diretrizes e Bases da Educação – LDB, 1996).</p>
-                            <p>Sobre esse assunto, Moacir Gadotti, professor da Universidade de São Paulo, no artigo “A escola na cidade que educa” faz uma reflexão acerca do papel da escola cidadã e destaca que esta deve “contribuir para criar as condições que viabilizem a cidadania, por meio da socialização da informação, da discussão, da transparência, gerando uma nova mentalidade, uma nova cultura, em relação ao caráter público do espaço da cidade.” (Cadernos Cenpec, vol1. 2006).</p>
-                            <p>O desafio é criar processos de aprendizagem que propiciem ao aluno superar o senso comum que reifica preconceitos e intolerâncias, fomentando o desejo pela construção coletiva do conhecimento, a partir da introdução de novos “saberes”, sem deixar de lado o acúmulo de conhecimento e “saberes” adquiridos pelo aluno ao longo da sua trajetória de vida.</p>
-                            <p>Assim, o objetivo desse caderno é compartilhar reflexões e orientações pedagógicas que podem ser utilizadas em sala aula, abrindo as portas da escola para um olhar atento sobre a cidade e o território vivido no cotidiano.</p>
+                            <p><a href="pdf/formacao_para_cidadania.pdf" target="_blank"><strong>Formação para cidadania</strong></a></p>
+
+
+
 
                         </blockquote>
                         <p>&nbsp; </p>
@@ -1920,12 +1937,12 @@ $(document).ready(function() {
 
             <div class="collapse">
 
-                <div class="tit_bloco"><strong>Módulo 3 - Abordagem temática</strong></div>
+                <div class="tit_bloco"><strong>3 &ndash; Mobilidade Ativa</strong></div>
 
                 <div class="conteudobloco">
 
                     <div class="textos">
-                        <h3>Mobilidade Ativa</h3>
+
 
                         <p><br>A mobilidade ativa é um conceito, relativamente novo, que parte da <b>valorização da energia humana</b> utilizada como propulsora do movimento e do deslocamento, como <b>andar a pé</b> ou de <b>bicicleta</b>. A ênfase nos meios de transporte não motorizados está no centro desse debate global a partir do qual as pessoas devem ter prioridade sobre os veículos motorizados nas cidades. O velocípede não motorizado, patins, patinetes ou skate também se enquadram no conceito de mobilidade ativa.</p>
 
@@ -1961,7 +1978,7 @@ $(document).ready(function() {
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h2 class="modal-title" id="exampleModalLabel"> Sobretudo a partir do século XX </h2>
+                                        <h2 class="modal-title" id="exampleModalLabel">Mobilidade ativa </h2>
 
                                     </div>
                                     <div class="modal-body">
@@ -1978,13 +1995,23 @@ $(document).ready(function() {
                                 </div>
                             </div>
                         </div>
-                        <p>&nbsp; </p>
+
 
                         <p align="center" style="margin-left: -5%;"><img src="imagens/info12.png" style="display: inline-block"></p>
 
-                        <p>Inserir audio</p>
 
-                        <p>A reflexão sobre essas questões associadas, diretamente, ao conceito de mobilidade ativa é uma oportunidade de construir com o aluno uma visão crítica sobre os processos de reprodução das cidades. </p>
+                        <div class="box_audio">
+                            <div class="audio">
+                                <p style="padding-top: 10px;">Aperte o play e escute o áudio sobre custo <br>do uso dos veículos motorizados</p>
+                                <audio width="600" controls>
+                                    <source src="imagens/eixo5_Mod3_Loc1.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta esse formato de áudio.
+                                </audio>
+                            </div>
+                        </div>
+
+                        <p>&nbsp; </p>
+
 
                         <p>A reflexão sobre essas questões associadas, diretamente, ao conceito de mobilidade ativa é uma oportunidade de construir com o aluno uma visão crítica sobre os processos de reprodução das cidades. </p>
 
@@ -2004,7 +2031,7 @@ $(document).ready(function() {
                         <p align="center"><img src="imagens/info16.png" style="display: inline-block"></p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para Refletir:</h3>
+                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para refletir</h3>
                             <ul style="padding-left:20px;">
                                 <li>Como a mobilidade urbana se relaciona com a promoção da saúde? </li>
                                 <li>Quais são os hábitos urbanos podem ser associados à promoção da saúde?</li>
@@ -2013,28 +2040,17 @@ $(document).ready(function() {
                         </blockquote>
                         <p><br> </p>
 
-                        <h3>Ouça - “O Pulso” – Titãs</h3>
 
-                        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ko7DdJz0YCM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-                        <p align="center" style="font-size: 10px;margin-top:-20px;">Obs: Para assistir este conteúdo você precisa estar conectado à internet.</p>
+
+
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais</h3>
+                            <h3><img src="imagens/e5bookcinza.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais</h3>
 
-                            <p>A mobilidade ativa, associada ao planejamento da expansão das cidades, é conceito que tem repercussões sobre os padrões correntes de urbanização que não otimizam recursos necessários ao melhor aproveitamento do uso e ocupação do solo urbano. Conforme Castro (2017), atualmente, uma série de estudos mostram que os modos de vida na cidade influenciam a qualidade de vida e à saúde da população, a exemplo do artigo <em>Urban Sprawl and Risk for Being Overweight or Obese</em>, de Russ Lopez (2004).</p>
+                            <p>A <a href="pdf/mobilidade_ativa.pdf" target="_blank"><strong>mobilidade ativa</strong></a>, associada ao planejamento da expansão das cidades, é conceito que tem repercussões sobre os padrões correntes de urbanização que não otimizam recursos necessários ao melhor aproveitamento do uso e ocupação do solo urbano. Conforme Castro (2017), atualmente, uma série de estudos mostram que os modos de vida na cidade influenciam a qualidade de vida e à saúde da população, a exemplo do artigo <em>Urban Sprawl and Risk for Being Overweight or Obese</em>, de Russ Lopez (2004).</p>
 
-                            <div class="citacao2">
-                                <p><img src="imagens/aspas_e5.png" align="left" style="padding-right:6px;"><em>Cidades mais dispersas e espraiadas geram maiores distâncias e, consequentemente, deslocamentos mais longos, muitos dos quais não podem ser realizados a pé ou de bicicleta. A alternativa para esses deslocamentos é o uso do transporte público ou automóvel, onde o condutor e passageiros permanecem em inércia durante toda a viagem. Esse hábito diário e rotineiro contribui para o sedentarismo, contribuindo para o aparecimento de doenças cardiovasculares e aumento do número de pessoas obesas.”</em>(CASTRO, 2017)</p>
-                                <hr align="center" style="margin-top: 10px">
-                            </div>
 
-                            <p>A adoção do conceito mobilidade urbana ativa no processo de planejamento e gestão das cidades pode contribuir, efetivamente, para transformar a maneira de lidar com a oferta de solo urbano, uma vez que os modos de transporte são fundamentais para a organização interna das cidades e do território municipal. </p>
 
-                            <p>Essas preocupações devem estar presentes na hora de definir a morfologia das cidades por terem impactos diretos sobre a promoção da saúde dos cidadãos. Exercitar o corpo e reduzir possíveis doenças relacionadas ao sedentarismo não depende, exclusivamente, de uma atitude individual ou, simplesmente, correção comportamental. Enquanto as cidades crescem de maneira difusa e sem pactuação social em relação à sua forma final, resta ao cidadão arcar com os seus efeitos negativos e repercussões diretas sobre a sua qualidade de vida e sua saúde. Essas relações entre a morfologia das cidades e a qualidade de vida dos cidadãos nem sempre são explicitadas na educação de jovens e adultos. </p>
-
-                            <p>Assim, cidades com espaços públicos apropriados ao pedestre e ao ciclista melhoram a mobilidade urbana e promovem qualidade de vida aos seus usuários. Estudos e pesquisas indicam que caminhadas diárias, uso de bicicletas e meios não motorizados de deslocamento reduzem a incidência de doenças relacionadas ao sedentarismo. Caminhadas ou pedaladas de 20 minutos por dia já são suficientes para que sejam economizados recursos financeiros significativos na manutenção do sistema público de saúde.</p>
-
-                            <p>Muitas vezes a promoção da saúde é confundida com a construção de hospitais, com o tratamento das doenças. Na verdade, promoção da saúde está relacionada à promoção do nosso bem-estar físico e mental e, por isso, depende da qualidade do ambiente no qual vivemos. Saúde não é simplesmente estar sem doença. O conceito de Saúde segundo a “Organização Mundial de Saúde” (OMS) define a saúde como “um estado de completo bem-estar físico, mental e social e não somente ausência de afecções e enfermidades”.</p>
 
 
                         </blockquote>
@@ -2070,7 +2086,7 @@ $(document).ready(function() {
 
                                 <img src="imagens/galeria1__0003_3.png" alt="">
 
-                                <div class="desc">Roda de capoeira no Parque da Redenção, em Porto Alegre (RS)Semáforos equipados com mecanismo que emita sinal sonoro suave para orientação do pedestre.</div>
+                                <div class="desc">Roda de capoeira no Parque da Redenção, em Porto Alegre (RS).</div>
                             </div>
                         </div>
 
@@ -2102,12 +2118,45 @@ $(document).ready(function() {
                         </div>
 
                         <div class="clearfix"></div>
-                        <p>Algumas escolas também adotaram a prática de abrir suas portas para a realização de atividades nos fins de semana, permitindo maior integração com a comunidade e a utilização dos seus equipamentos de cultura, esporte e lazer. A abertura das escolas para a utilização dos seus equipamentos de esporte e cultura é uma alternativa quando há ausência desses equipamentos em determinados bairros da cidade.</p>
+                        <p>Essas iniciativas que tem caráter inclusivo não param por aí. Registram-se inúmeras experiências promovidas pelo poder público, pela iniciativa privada e pela sociedade, que partem da utilização de praças e parques públicos para a realização de aulas de ginástica, capoeira, tai chi entre outras modalidades de esporte e atividades de cultura voltadas para o lazer da população. O custo dessas atividades realizadas nos espaços públicos é relativamente mais baixo, sobretudo porque não envolvem custos adicionais com aluguel de imóveis privados.</p>
+
+                        <p>Uma cidade inclusiva, saudável e sustentável nas suas várias dimensões deve disponibilizar aos cidadãos, além dos equipamentos de esporte tradicionais, espaços públicos de uso comum que permitam diferentes possibilidades de uso. Espaços bem cuidados, arborizados e convidativos favorecem sociabilidade, contemplação, leitura de um livro na sombra de uma árvore, brincar, jogar damas ou simplesmente conversar, trocar ideias e experiências.</p>
+
+                        <p>Muitas cidades já contam inúmeros exemplos de conchas acústicas que permitem a realização de shows musicais e apresentações de teatro e dança ao ar livre. </p>
+
+
+
+                        <p>Algumas escolas também adotaram a prática de <a data-toggle="modal" data-target="#modal50" style="cursor: pointer"><strong><u>abrir suas portas</u></strong></a> para a realização de atividades nos fins de semana, permitindo maior integração com a comunidade e a utilização dos seus equipamentos de cultura, esporte e lazer. A abertura das escolas para a utilização dos seus equipamentos de esporte e cultura é uma alternativa quando há ausência desses equipamentos em determinados bairros da cidade.</p>
+
+
+                        <div class="modal fade" id="modal50" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h2 class="modal-title" id="exampleModalLabel">Abertura de escolas nos fins de semana</h2>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        A abertura das escolas nos fins de semana também pode produzir um efeito benéfico relacionado ao sentimento de pertencimento da comunidade que usa esses espaços. A experiência do programa Abrindo Espaços lançado pela UNESCO no ano 2000 e depois do programa Escola Aberta em 2004 em parceria com o governo federal apresentou resultados significativos. Ao permitir a utilização da escola pela comunidade nos finais de semana para a realização de oficinas e atividades de lazer, proporcionou maior cuidado das pessoas com os equipamentos da escola, reduzindo ou eliminando atos de vandalismo e de furtos nos equipamentos que passaram a ser utilizados pelas comunidades. (NOLETO, Marlova Jovchelovitch. Abrindo espaços: educação e cultura para a paz – 4. ed. rev. Brasília: UNESCO, Fundação Vale, 2008, p.62).
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
                         <p>No entanto, sabemos que nem todos os espaços destinados à prática de esporte, cultura e lazer podem estar presentes em todos os bairros de maneira equânime. Os parques e as florestas, a orla das praias e rios, assim como centros culturais e museus de grande porte, são alguns desses exemplos.</p>
                         <p>Esses espaços e equipamentos singulares que propiciam a realização de atividades físicas e de lazer para estarem acessíveis a todos dependem da qualidade da mobilidade urbana. A promoção da mobilidade ativa, assim como alternativas de transportes coletivos complementares, incluindo rotas de ciclovia ou ciclofaixa são essenciais para democratizar o acesso ao esporte, cultura e lazer nas cidades.</p>
                         <p>A reflexão crítica do aluno sobre a maneira como estão distribuídos os equipamentos públicos na cidade é importante para compreender como a mobilidade urbana pode garantir o acesso democrático a esses espaços. </p>
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para Refletir:</h3>
+                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para refletir</h3>
                             <ul style="padding-left:20px;">
                                 <li>Quais tipos de equipamentos e atividades de esporte, cultura e lazer existem na cidade? Eles satisfazem as diferentes demandas existentes na sociedade?</li>
                                 <li>Como estão distribuídos nos bairros? </li>
@@ -2118,94 +2167,11 @@ $(document).ready(function() {
                         </blockquote>
                         <p><br> </p>
 
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais</h3>
-
-                            <p>Há muito tempo que se preconiza que as cidades devem conter <a data-toggle="modal" data-target="#modal8" style="cursor: pointer"><strong><u>espaços destinados à prática de esporte, cultura e lazer</u></strong></a>. Essas atividades são fundamentais para o desenvolvimento e o bem-estar físico e psíquico das pessoas em qualquer faixa etária.</p>
-
-                            <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h2 class="modal-title" id="exampleModalLabel">Espaços destinados à prática de esporte, cultura e lazer</h2>
-
-                                        </div>
-                                        <div class="modal-body">
-                                            A abertura das escolas nos fins de semana também pode produzir um efeito benéfico relacionado ao sentimento de pertencimento da comunidade que usa esses espaços. A experiência do programa Abrindo Espaços lançado pela UNESCO no ano 2000 e depois do programa Escola Aberta em 2004 em parceria com o governo federal apresentou resultados significativos. Ao permitir a utilização da escola pela comunidade nos finais de semana para a realização de oficinas e atividades de lazer, proporcionou maior cuidado das pessoas com os equipamentos da escola, reduzindo ou eliminando atos de vandalismo e de furtos nos equipamentos que passaram a ser utilizados pelas comunidades. (NOLETO, Marlova Jovchelovitch. Abrindo espaços: educação e cultura para a paz – 4. ed. rev. Brasília: UNESCO, Fundação Vale, 2008, p.62).
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </blockquote>
-                        <p><br> </p>
-
-                        <p>Além de serem componentes obrigatórios da educação formal, a prática de esporte, a música, a dança, o teatro e diversas manifestações culturais que fazem parte da vida em sociedade, após a escolarização, se mantém no processo contínuo de aprendizagem e exercício da cidadania. </p>
-
-                        <p>Assim, pensar sobre a qualidade da mobilidade urbana das cidades é um convite para o aluno pensar sobre as oportunidades que estão disponíveis na sua cidade. O acesso à cultura, ao esporte e ao lazer está assegurado como direito de todos na Constituição Federal e no Estatuto da Criança e do Adolescente. E o acesso pleno aos diferentes equipamentos da cidade também está previsto como direito na Política Nacional de Mobilidade Urbana. </p>
-
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3>O que diz a Constituição Federal:</h3>
-
-                            <p>Art. 6º <b>São direitos sociais</b> a educação, a saúde, a alimentação, o trabalho, a moradia, o transporte, o lazer, a segurança, a previdência social, a proteção à maternidade e à infância, a assistência aos desamparados, na forma desta Constituição.</p>
-
-                            <p>Art. 215. <b>O Estado garantirá a todos o pleno exercício dos direitos culturais e acesso às fontes da cultura nacional</b>, e apoiará e incentivará a valorização e a difusão das manifestações culturais. </p>
-
-                            <p>Art. 217. <b>É dever do Estado fomentar práticas desportivas formais e não-formais, como direito de cada um</b>, observados:</p>
-
-                            <p>II – a destinação de recursos públicos para a <b>promoção prioritária do desporto educacional<sup>4</sup></b> e, em casos específicos, para a do desporto de alto rendimento;</p>
-
-                            <p>§ 3º <b>O Poder Público incentivará o lazer, como forma de promoção social</b>.</p>
-
-                        </blockquote>
-                        <p><br> </p>
-
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3>O que diz o Estatuto da Criança e do Adolescente (Lei Federal nº 8.069/1990)</h3>
-
-                            <p>Art. 4º <b>É dever</b> da família, da comunidade, da sociedade em geral e do poder público <b>assegurar, com absoluta prioridade, a efetivação dos direitos referentes</b> à vida, à saúde, à alimentação, à educação, <b>ao esporte, ao lazer</b>, à profissionalização, <b>à cultura</b>, à dignidade, ao respeito, à liberdade e à convivência familiar e comunitária. </p>
-
-                            <p>Art. 59. <b>Os municípios, com apoio dos estados e da União, estimularão e facilitarão a destinação de recursos e espaços para programações culturais, esportivas e de lazer</b> voltados para a infância e a juventude.</p>
-                        </blockquote>
-                        <p><br> </p>
-
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3>O que diz o Estatuto do Idoso (Lei Federal n° 10.741/2003)</h3>
-
-                            <p>As práticas desportivas formais são aquelas reguladas por normas e regras de cada modalidade esportiva e as informais são caracterizadas pelo caráter lúdico.</p>
-
-                            <p>O desporto educacional se diferencia do desporto de alto rendimento, pois enquanto o primeiro só está preocupado com a dimensão educacional, o de alto rendimento tem como finalidade a obtenção de resultados em competições, profissionais ou amadoras. </p>
-
-                            <p>Art. 1° É instituído o Estatuto do Idoso, destinado a regular <b>os direitos assegurados às pessoas com idade igual ou superior a 60</b> (sessenta) anos.</p>
-
-                            <p>Art. 2° O idoso goza de todos os direitos fundamentais inerentes à pessoa humana, sem prejuízo da <b>proteção integral</b> de que trata esta Lei, assegurando-se-lhe, por lei ou por outros meios, todas as oportunidades e facilidades, para <b>preservação de sua saúde física e mental e seu aperfeiçoamento moral, intelectual, espiritual e social, em condições de liberdade e dignidade</b>.</p>
-
-                            <p>Art. 3° É <b>obrigação da família, da comunidade, da sociedade e do Poder Público</b> assegurar ao idoso, com absoluta prioridade, a efetivação do direito à vida, à saúde, à alimentação, à educação, à cultura, ao esporte, ao lazer, ao trabalho, à cidadania, à liberdade, à dignidade, ao respeito e à convivência familiar e comunitária.</p>
+                        <p>Há muito tempo que se preconiza que as cidades devem conter espaços destinados à <a href="pdf/pratica_de_esporte_cultura_lazer.pdf" target="_blank"><strong>prática de esporte, cultura e lazer</strong></a>. Essas atividades são fundamentais para o desenvolvimento e o bem-estar físico e psíquico das pessoas em qualquer faixa etária.</p>
 
 
-                        </blockquote>
-                        <p><br> </p>
 
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3>O que diz a Política Nacional de Mobilidade Urbana (Lei nº 12.587/2012)</h3>
 
-                            <p>Art. 5 º. A Política Nacional de Mobilidade Urbana está fundamentada nos seguintes princípios: </p>
-
-                            <p>I – <b>acessibilidade</b> universal;</p>
-
-                            <p>VI – <b>segurança</b> nos deslocamentos das pessoas;</p>
-
-                            <p><br>Art. 7 º. A Política Nacional de Mobilidade Urbana possui os seguintes objetivos: </p>
-
-                            <p>I – reduzir as desigualdades e <b>promover a inclusão social</b>; </p>
-                            <p>II – promover <b>o acesso aos serviços básicos e equipamentos sociais</b>; </p>
-                            <p>III – proporcionar <b>melhoria nas condições urbanas</b> da população no que se refere à <b>acessibilidade e à mobilidade</b>; </p>
-                            <p>IV – promover o <b>desenvolvimento sustentável</b> com a mitigação dos custos ambientais e socioeconômicos dos deslocamentos de pessoas e cargas nas cidades; e </p>
-                            <p>V – consolidar a <b>gestão democrática</b> como instrumento e garantia da construção contínua do aprimoramento da mobilidade urbana.</p>
-
-                        </blockquote>
 
                         <h3>Acessibilidade universal</h3>
 
@@ -2320,7 +2286,7 @@ $(document).ready(function() {
                         <div class="clearfix"></div>
                         <p><br> </p>
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para Refletir:</h3>
+                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para refletir</h3>
                             <ul style="padding-left:20px;">
                                 <li>Na sua cidade ou bairro os equipamentos públicos estão adaptados para inclusão das pessoas com deficiência?</li>
                                 <li>Qual a qualidade das calçadas do seu trajeto cotidiano?</li>
@@ -2331,52 +2297,12 @@ $(document).ready(function() {
                         <p><br> </p>
 
 
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais:</h3>
 
-                            <h2>O conceito de acessibilidade universal significa:</h2>
-
-                            <div class="citacao2">
-                                <p><img src="imagens/aspas_e5.png" align="left" style="padding-right:6px;display:inline-block;">A possibilidade das pessoas com deficiência ou com mobilidade reduzida acessarem com segurança e autonomia os espaços públicos, as calçadas, as edificações, os equipamentos urbanos, os transportes e as informações e comunicações disponíveis."</p>
-                                <hr align="center" style="margin-top: 10px">
-                            </div>
-
-                            <p>Vários recursos e tecnologias estão disponíveis, tais como a padronização das calçadas com rampas com declividade adequada ao caminhar humano.
-                            </p>
-                            <p>Esses padrões são regulados pela Lei Federal n°. 10.098/2000 que estabelece normas gerais e critérios básicos para a promoção da acessibilidade das pessoas portadoras de deficiência ou com mobilidade reduzida.
-                            </p>
-                            <p>Conforme o Art. 2°, inciso II, são consideradas barreiras à acessibilidade:</p>
-
-                            <div class="citacao2">
-                                <p><img src="imagens/aspas_e5.png" align="left" style="padding-right:6px;display:inline-block;">qualquer entrave, obstáculo, atitude ou comportamento que limite ou impeça a participação social da pessoa, bem como o gozo, a fruição e o exercício de seus direitos à acessibilidade, à liberdade de movimento e de expressão, à comunicação, ao acesso à informação, à compreensão, à circulação com segurança, entre outros, classificadas em: (Redação dada pela Lei nº 13.146, de 2015)”</p>
-                                <hr align="center" style="margin-top: 10px">
-                            </div>
-
-                            <p>Essas <strong>barreiras</strong> são classificadas em quatro categorias: </p>
+                        <p>O conceito de <a href="pdf/acessibilidade_universal.pdf" target="_blank"><strong>acessibilidade universal</strong></a> significa:</p>
 
 
+                        <p>A possibilidade das pessoas com deficiência ou com mobilidade reduzida acessarem com segurança e autonomia os espaços públicos, as calçadas, as edificações, os equipamentos urbanos, os transportes e as informações e comunicações disponíveis.</p>
 
-                            <ul style="padding-left:20px;">
-                                <li>a) <strong>Urbanísticas</strong>: as existentes nas vias e nos espaços públicos e privados abertos ao público ou de uso coletivo;</li>
-                                <li>b) <strong>Arquitetônicas</strong>: as existentes nos edifícios públicos e privados;</li>
-                                <li>c) <strong>Nos transportes</strong>: as existentes nos sistemas e meios de transportes;</li>
-                                <li>d) <strong>Nas comunicações e na informação</strong>: qualquer entrave, obstáculo, atitude ou comportamento que dificulte ou impossibilite a expressão ou o recebimento de mensagens e de informações por intermédio de sistemas de comunicação e de tecnologia da informação.</li>
-                            </ul>
-
-
-                            <p>Essas orientações visam criar condições de acessibilidade para que uma pessoa com cadeira de rodas possa se locomover sozinha; assim como uma pessoa com carrinho de bebê possa trafegar com facilidade ou uma pessoa idosa não tenha que fazer tanto esforço para passar do nível da calçada para o nível da via.
-                            </p>
-
-                            <p>Outro recurso importante é a sinalização sonora para pessoas com deficiência visual para travessia de vias públicas com alto tráfego.</p>
-
-                            <p>Além da acessibilidade para caminhar e atravessar vias, é preciso garantir acessibilidade também para acessar e utilizar os equipamentos públicos. Para isso são necessárias rampas, piso tátil e banheiros adaptados. </p>
-
-                            <p>Os espaços de cultura, museu, teatro, cinema e esportes também devem ter a arquitetura adaptada, com lugares bem localizados e não segregados. </p>
-
-                            <p>Para isso, os municípios devem incorporar as diretrizes da lei federal de acessibilidade nos seus instrumentos de planejamento e gestão urbana, especialmente no Plano Diretor, nas leis municipais de zoneamento e controle do uso e ocupação do solo, nos códigos de postura e de obras.</p>
-
-                        </blockquote>
-                        <p><br> </p>
 
                         <h3>Barreiras simbólicas ou invisíveis de acesso à cidade</h3>
 
@@ -2422,7 +2348,17 @@ $(document).ready(function() {
 
                         <p>O preconceito racial e as atitudes homofóbicas também devem ser pensados como barreiras invisíveis à promoção de uma mobilidade urbana segura e inclusiva que garanta o direito à cidade. </p>
 
-                        <p>Inserir audio</p>
+                        <div class="box_audio">
+                            <div class="audio">
+                                <p style="padding-top: 10px;">Aperte o play e escute o áudio sobre <br>mobilidade urbana inclusiva.</p>
+                                <audio width="600" controls>
+                                    <source src="imagens/eixo5_Mod3_Loc2.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta esse formato de áudio.
+                                </audio>
+                            </div>
+                        </div>
+
+                        <p>&nbsp; </p>
 
                         <p>O combate à violência contra mulheres, negros e homossexuais deve estar entre as prioridades da agenda urbana, incluindo a mobilidade urbana, para que de fato o direito à cidade seja garantido, independente da cor da pele, do sexo, do gênero, da opção sexual ou da classe social. </p>
 
@@ -2438,7 +2374,7 @@ $(document).ready(function() {
                         <p>Portanto, qualquer preconceito e discriminação é crime no Brasil e deve ser denunciado e punido na forma da lei. </p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para Refletir:</h3>
+                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para refletir</h3>
                             <ul style="padding-left:20px;">
                                 <li>Promova o debate com alunos e alunas sobre as situações de discriminação vivenciadas no cotidiano que impedem a circulação plena e segura na cidade. </li>
                                 <li>Estimule o debate apresentando argumentos sólidos baseados nos direitos garantidos pelas leis brasileiras.</li>
@@ -2447,7 +2383,7 @@ $(document).ready(function() {
                         <p><br> </p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais: </h3>
+                            <h3><img src="imagens/e5bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja também</h3>
 
                             <p>A instituição da Lei Federal nº 11.340/2006, mais conhecida como “Lei Maria da Penha” representa um avanço da sociedade brasileira, especialmente, no reconhecimento de um problema generalizado que ameaça, permanentemente, a vida das mulheres no país. A lei cria mecanismos para coibir a violência doméstica e familiar contra a mulher, nos termos do § 8° do art. 226 da Constituição Federal, além de criminalizar todas as formas de discriminação contra as mulheres, adotando os princípios e diretrizes da “Convenção Interamericana para Prevenir, Punir e Erradicar a <strong>Violência contra a Mulher</strong>”. A lei dispõe também sobre a criação dos “Juizados de Violência Doméstica e Familiar contra a Mulher” e altera o Código de Processo Penal, o Código Penal e a Lei de Execução Penal.</p>
                             <p>Para abordar mais sobre a violência contra a mulher, sugerimos o filme <strong><a href="www.videocamp.com" target="_blank">Precisamos falar do assédio</a></strong> (2016) com duração de 82 minutos e direção de Paula Sacchetta, que foi realizado a partir de depoimentos das mulheres sobre situações de violência enfrentadas em casa e no espaço público. Os depoimentos foram filmados numa van que parou em nove pontos da cidade de São Paulo e do Rio de Janeiro. Mais de 100 mulheres se dispuseram a contar sua história, sendo que 26 foram selecionadas para integrar o filme.</p>
@@ -2469,14 +2405,22 @@ $(document).ready(function() {
 
                         <h3>Segurança no trânsito</h3>
 
-                        <p>Desde a disseminação das cidades e da proliferação dos veículos motorizados, que o trânsito é um dos fatores que mais causa mortes e provoca lesões e deficiências permanentes no mundo.</p>
+                        <p>Desde a disseminação das cidades e da proliferação dos veículos motorizados, o trânsito é um dos fatores que mais causa mortes e provoca lesões e deficiências permanentes no mundo.</p>
 
                         <p align="center"><img src="imagens/info18.png" style="display: inline-block"></p>
 
                         <p><img src="imagens/eixo5_img7.png" style="width: 100%; display: inline-block;padding-top:12px;padding-bottom: 0px;" align="right"></p>
                         <p>&nbsp; </p>
 
-                        <p>Inserir audio</p>
+                        <div class="box_audio">
+                            <div class="audio">
+                                <p style="padding-top: 10px;">Aperte o play e escute o áudio sobre segurança no trânsito.</p>
+                                <audio width="600" controls>
+                                    <source src="imagens/eixo5_Mod3_Loc3.mp3" type="audio/mpeg">
+                                    Seu navegador não suporta esse formato de áudio.
+                                </audio>
+                            </div>
+                        </div>
 
                         <p>Uma cidade pode expressar a prioridade ao pedestre e ao ciclista, sem excluir os motoristas, beneficiando a mobilidade urbana de todos. Para isso, deve-se ampliar as condições de caminhar e pedalar, preferencialmente criando pistas segregadas ou separadas de veículos motorizados. </p>
 
@@ -2531,7 +2475,7 @@ $(document).ready(function() {
                         <div class="clearfix"></div>
                         <p><br> </p>
 
-                        <p>Portanto, para alcançar a segurança no trânsito é preciso combinar várias ações: de educação, fiscalização, punição às infrações, melhoria da sinalização viária e condições de segurança para pedestres e ciclistas com calçadas amplas e acessíveis, ciclovias e ciclofaixas, além da prioridade ao transporte coletivo com faixas exclusivas, rapidez, conforto e segurança. </p>
+                        <p>Portanto, para alcançar a segurança no trânsito é preciso combinar várias ações: educação, fiscalização, punição às infrações, melhoria da sinalização viária e condições de segurança para pedestres e ciclistas com calçadas amplas e acessíveis, ciclovias e ciclofaixas, além da prioridade ao transporte coletivo com faixas exclusivas, rapidez, conforto e segurança. </p>
 
 
                         <p>Acidente? Por que continuamos a chamar de acidente o que pode ser evitado?</p>
@@ -2554,7 +2498,6 @@ $(document).ready(function() {
 
                         <p>A tabela abaixo sintetiza os resultados dos diversos estudos sobre a importância do uso do capacete para evitar mortes e lesões.</p>
 
-                        <p>A tabela abaixo sintetiza os resultados dos diversos estudos sobre a importância do uso do capacete para evitar mortes e lesões.</p>
 
                         <h2>Resumo da análise sistemática da eficácia dos capacetes para motociclistas</h2>
 
@@ -2650,30 +2593,18 @@ $(document).ready(function() {
                         <p align="center"><img src="imagens/info20.png" style="display: inline-block"></p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para Refletir:</h3>
+                            <h3><img src="imagens/e5Bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Para refletir</h3>
                             <ul style="padding-left:20px;">
                                 <li>E você, como avalia a segurança no trânsito na sua cidade?</li>
                                 <li>Você acha que tem muito acidente de trânsito? Você conhece alguém que foi vítima da violência no trânsito?</li>
                                 <li>Como funciona o transporte coletivo na sua cidade? É eficiente e acessível?</li>
-                                <li>E pedestres e ciclistas têm segurança e incentivo para caminharem e andarem de bicicleta? A sua cidade dá mais prioridade aos pedestres e ciclistas ou aos motoristas dos veículos individuais motorizados?</li>
+                                <li>E pedestres e ciclistas têm segurança e incentivo para caminharem e andarem de bicicleta? <a href="pdf/prioridade_no_transito.pdf" target="_blank">>A sua cidade dá mais prioridade aos pedestres e ciclistas ou aos motoristas dos veículos individuais motorizados?u</a></li>
                                 <li>O que você acha que deveria ser feito para promover a segurança no trânsito?</li>
                                 <li>Como você se classificaria? Mais sedentário ou mais ativo?</li>
                             </ul>
                         </blockquote>
                         <p><br> </p>
 
-                        <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais: </h3>
-
-                            <p>Quando abordamos o tema da mobilidade urbana relacionada à segurança no trânsito, enfatizamos a perspectiva do pedestre como elemento central no enfrentamento da violência no trânsito e na promoção da melhoria da qualidade dos deslocamentos das pessoas. Adotar essa perspectiva implica uma mudança de postura da sociedade e do poder público no sentido de garantir a redução da velocidade nas vias internas aos bairros e caminhos seguros e agradáveis para os pedestres com calçadas niveladas, largas e acessíveis, além da integração do caminhar com o transporte coletivo.</p>
-                            <p>A proliferação de automóveis trouxe também os congestionamentos nas médias e grandes cidades, contribuindo também para que a motocicleta aparecesse como alternativa ao trânsito caótico. Até mesmo nas áreas rurais e pequenas cidades, é possível verificar a substituição do cavalo pela moto.</p>
-                            <p>Mas, assim como cresceu a frota de motocicletas, cresceu igualmente o número de pessoas mortas ou com danos permanentes. Do ano 2000 a 2016, a frota de motocicletas cresceu 1.286,91%.</p>
-                            <p>Não é o caso de proibir a circulação das motocicletas, mas de reduzir a opção pela falta de alternativa. Seja porque o transporte coletivo não funciona ou tem o custo semelhante e é mais rápido, ou ainda porque a cidade não oferece segurança ao ciclista. Muitas pessoas optam pela motocicleta devido à ausência ou precariedade do transporte coletivo. </p>
-                            <p>Geralmente, o transporte coletivo apresenta uma alta tarifa, não oferece conforto e demora muito tempo para realizar o trajeto, seja pelo tempo de espera ou pelo percurso propriamente dito. A ausência de ciclovias e ciclofaixas ou de sinalização para compartilhamento da via não proporciona a segurança necessária para que mais pessoas façam uso da bicicleta como meio de transporte para o trabalho ou para estudo. Investimentos para corrigir essas ineficiências, além de melhorar a mobilidade urbana, podem reduzir a demanda pelos meios de transporte motorizados.</p>
-                            <p>O fato é que as motocicletas continuarão circulando e os motociclistas precisam adotar medidas simples de segurança para minorar os danos de uma colisão. A primeira questão básica é a velocidade do veículo. A velocidade é um fator fundamental para diminuir ou agravar a severidade de uma colisão ou de uma queda, podendo evitar a morte e o dano permanente. Mas, sem capacete, qualquer colisão, mesmo em velocidade baixa, pode ser fatal.</p>
-
-                        </blockquote>
-                        <p><br> </p>
 
 
 
@@ -2689,7 +2620,7 @@ $(document).ready(function() {
 
                 <div class="collapse">
 
-                    <div class="tit_bloco"><strong>Módulo 4 - Metodologia para a Formação Cidadã</strong></div>
+                    <div class="tit_bloco"><strong>4 &ndash; Metodologia para a Formação Cidadã</strong></div>
 
                     <div class="conteudobloco">
 
@@ -2704,7 +2635,7 @@ $(document).ready(function() {
 
                                         </div>
                                         <div class="modal-body">
-                                            Como vimos no capítulo 2 desse caderno, de acordo com o IBGE, cerca de 84% dos habitantes do Brasil vivem na área urbana e apenas 16% na área rural. Essa concentração da população nas cidades é uma tendência global, especialmente, porque são nas áreas urbanas que se localizam os principais serviços e equipamentos que se destinam ao atendimento de todos os habitantes que residem do município. Por isso, quando falamos em mobilidade urbana, não estamos excluindo a população que mora ou trabalha nas áreas rurais. Enfatizamos aqui a necessidade de pensar e construir cidades que permitam o deslocamento seguro das pessoas que buscam na cidade o atendimento de suas demandas, necessidades e desejos, sejam moradores urbanos ou moradores rurais.
+                                            De acordo com o IBGE, cerca de 84% dos habitantes do Brasil vivem na área urbana e apenas 16% na área rural. Essa concentração da população nas cidades é uma tendência global, especialmente, porque são nas áreas urbanas que se localizam os principais serviços e equipamentos que se destinam ao atendimento de todos os habitantes que residem do município. Por isso, quando falamos em mobilidade urbana, não estamos excluindo a população que mora ou trabalha nas áreas rurais. Enfatizamos aqui a necessidade de pensar e construir cidades que permitam o deslocamento seguro das pessoas que buscam na cidade o atendimento de suas demandas, necessidades e desejos, sejam moradores urbanos ou moradores rurais.
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -2878,7 +2809,15 @@ $(document).ready(function() {
                             </div>
 
 
-                            <p>Inserir audio</p>
+                            <div class="box_audio">
+                                <div class="audio">
+                                    <p style="padding-top: 10px;">Aperte o play e escute o áudio sobre o assunto.</p>
+                                    <audio width="600" controls>
+                                        <source src="imagens/eixo5_Mod%204.mp3" type="audio/mpeg">
+                                        Seu navegador não suporta esse formato de áudio.
+                                    </audio>
+                                </div>
+                            </div>
 
 
 
@@ -2897,42 +2836,7 @@ $(document).ready(function() {
 
                             <p>Em cidades mais violentas, individualistas, solitárias e insustentáveis ou em cidades mais justas, tolerantes, solidárias e humanas?</p>
 
-                            <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                                <h3><img src="imagens/e5bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja mais: </h3>
-
-                                <h2>Compartilhando conhecimentos, saberes e experiências para a construção de cidades mais humanas</h2>
-                                <p>Partimos do princípio de que jovens e adultos são portadores de conhecimento e saberes que adquiriram ao longo das suas trajetórias de vida. </p>
-                                <p>Por isso, não se trata de julgar práticas e atitudes, mas agregar conhecimentos e saberes que possam contribuir para a superação de obstáculos à inclusão social dos alunos (jovens e adultos). </p>
-                                <p>Formar para a cidadania deve ir além de explicações generalizantes que, muitas vezes, nos impedem de superar obstáculos que dificultam o acesso à cidade e aos serviços e equipamentos públicos.</p>
-                                <p>Frases feitas como: “todo político não presta”, “o ser humano é egoísta”, “pessoas com baixa escolaridade são ignorantes”, “a população não sabe votar”, “os pobres vendem seus votos por um saco de cimento”, por mais que possam encontrar exemplificações na realidade, não a explicam satisfatoriamente. A simplificação dos fenômenos sociais acaba contribuindo para a apatia e o desinteresse das pessoas na construção coletiva do bem comum.</p>
-                                <p>Essa abordagem está ancorada nos princípios constitucionais de justiça social, liberdade, solidariedade, equidade, combate aos preconceitos e discriminações, visando redução das desigualdades e erradicação da pobreza e da marginalização de populações vulneráveis socialmente (Art. 3º, CF, 1988).</p>
-                                <p>Obviamente que não devemos esperar a transformação das cidades para praticar e fomentar a adoção de práticas cidadãs, como a de respeitar as leis de trânsito, não jogar lixo na rua ou nos rios, não depredar a escola e ter cuidado com os seus equipamentos (carteira, banheiro, paredes) etc. Mas não podemos negligenciar que uma cidade que se organiza priorizando as pessoas favorece as práticas cidadãs. A promoção de um trânsito mais humano, privilegiando o pedestre, o ciclista e o transporte coletivo desestimula o desrespeito das leis de trânsito. A regularidade da varrição e da coleta de lixo, associada à qualidade dos serviços de saneamento básico desestimula o descarte irregular de lixo. Também podemos dizer que é mais fácil conseguir a adesão dos estudantes e da comunidade escolar à conservação da escola se esta se encontra em bom estado.</p>
-                                <p>Entretanto, o contexto não é só a estrutura física da cidade e seus equipamentos e serviços, pois envolve os processos de integração existentes em determinada sociedade, seja na escola, na comunidade ou no mundo do trabalho, no caso de jovens e adultos.</p>
-                                <p>O livro Comunidade e Democracia do sociólogo Robert Putnam ao analisar o desenvolvimento desigual na Itália, entre o sul e o norte do país, associava essa desigualdade ao maior associativismo existente no Norte da Itália. As pessoas que participam de associações das mais diversas naturezas, esporte, cultura, lazer, grêmios estudantis, organizações comunitárias, sindicatos etc., estão mais aptas a se preocuparem e a se mobilizarem em torno de assuntos da coletividade. A importância dessa dinâmica para Putnam se expressa no conceito de <a data-toggle="modal" data-target="#modal14" style="cursor: pointer"><strong><u>capital social</u></strong></a> que tem o potencial de multiplicar as práticas cidadãs e influenciar até mesmo na qualidade dos governos e da democracia.</p>
-
-                                <div class="modal fade" id="modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h2 class="modal-title" id="exampleModalLabel">Capital social</h2>
-
-                                            </div>
-                                            <div class="modal-body">
-                                                Segundo Putnam (1993), “capital social refere-se a aspectos da organização social, tais como redes, normas e confiança que facilita coordenação e cooperação para benefícios mútuos.” Para ele, o grau de associativismo de uma sociedade indica que os cidadãos têm maior capacidade de confiar uns nos outros e de participar e cooperar com assuntos da coletividade.
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p>A escola como importante espaço de formação e integração social, pode contribuir para que este sonho não seja apenas um sonho individual e se coloque como sonho coletivo, como possibilidade. Para isso a escola deve estar aberta a aprender com a cidade e seus agentes, e ao mesmo tempo se comprometer com a abertura de possibilidades para que os estudantes, jovens e adultos, possam exercitar, no ambiente da escola, a reflexão crítica sobre o espaço comum a partir de vivências e dinâmicas no espaço público, a partir de experiências de outras cidades e países e a partir dos instrumentos fornecidos pelas disciplinas da Educação de Jovens e Adultos.</p>
-                                <p>Cabe ressaltar que a dimensão prospectiva de pensar uma nova realidade a partir da dimensão cidadã não é um sonho abstrato sem base na realidade. Intervir nas cidades na perspectiva da escola significa dar condições para que os estudantes exerçam uma reflexão crítica da realidade.</p>
-                                <p>Não é tarefa da escola dar uma única resposta aos problemas da coletividade, mas é sua tarefa contribuir na formação de cidadãos e de profissionais mais humanos, que possam utilizar o conhecimento obtido em prol do desenvolvimento pessoal e da coletividade, como dimensões indissociáveis.</p>
-
-                            </blockquote>
-                            <p><br> </p>
+                            <p>Vamos <a href="pdf/compartilhando_conhecimentos.pdf" target="_blank">compartilhar conhecimentos</a>, saberes e experiências para a construção de cidades mais humanas.</p>
 
 
 
@@ -2953,7 +2857,7 @@ $(document).ready(function() {
 
                 <div class="collapse">
 
-                    <div class="tit_bloco"><strong>Módulo 5 - Dinâmicas educativas</strong></div>
+                    <div class="tit_bloco"><strong>5 &ndash; Dinâmicas educativas</strong></div>
 
                     <div class="conteudobloco">
 
@@ -2961,7 +2865,7 @@ $(document).ready(function() {
 
                             <p>Neste anexo, sugerimos a realização de algumas dinâmicas educativas como forma de materializar a metodologia apresentada no módulo 4 deste material. Todas as dinâmicas devem ser adaptadas a cada contexto.</p>
 
-                            <p>Por uma opção didática, cada dinâmica tem um foco específico a fim de aprofundar uma dimensão do tema geral, sem deixar de solidificar uma visão mais ampla sobre o tema da mobilidade urbana e da cidadania. As dinâmicas estão organizadas em torno dos seguintes temas: </p>
+
 
                             <ol style="font-size: 22px;font-family: Caecilia;padding-left: 100px;margin-bottom: 20px;">
                                 <li>Acesso à cultura; </li>
@@ -2971,7 +2875,7 @@ $(document).ready(function() {
                                 <li>Segurança no trânsito. </li>
                             </ol>
 
-                            <p>Por uma opção didática, cada dinâmica tem um foco específico a fim de aprofundar uma dimensão do tema geral, sem deixar de solidificar uma visão mais ampla sobre o tema da mobilidade urbana e da cidadania. As dinâmicas estão organizadas em torno dos seguintes temas: </p>
+
 
                             <div style="width: 100%;">
                                 <div style="width:60%;margin: 0 auto;border-radius: 10px;background-color:#bb133e;color: #fff;line-height: 18px;padding: 12px 20px;margin-bottom: 30px;">
@@ -2984,6 +2888,8 @@ $(document).ready(function() {
 
                                 </div>
                             </div>
+
+                            <p>Por uma opção didática, cada dinâmica tem um foco específico a fim de aprofundar uma dimensão do tema geral, sem deixar de solidificar uma visão mais ampla sobre o tema da mobilidade urbana e da cidadania. As dinâmicas estão organizadas em torno dos seguintes temas:</p>
 
                             <div class="collapse2">
                                 <div class="tit_bloco2" align="center"><strong>Atividades iniciais para abordagem dos temas</strong></div>
@@ -3076,23 +2982,23 @@ $(document).ready(function() {
                                                     <p>Solicite um mapa da cidade à Secretaria Municipal de Planejamento ou de Urbanismo com a indicação dos bairros. Verifique se há possibilidade de incluir no mapa impresso a localização dos principais equipamentos culturais, esportivos e de lazer, existentes na cidade.</p>
                                                     <p>A dinâmica “Construindo o mapa da cidade” será desenvolvida em dois momentos, com todos os alunos e em grupos.</p>
 
-                                                    <<p align="center"><img src="imagens/info23_1.png" style="display: inline-block;max-width: 50%;"><img src="imagens/info23_2.png" style="display: inline-block;max-width: 50%;"></p>
+                                                    <p align="center"><img src="imagens/info23_1.png" style="display: inline-block;max-width: 50%;"><img src="imagens/info23_2.png" style="display: inline-block;max-width: 50%;"></p>
 
 
-                                                        <p>Baixe a orientação completa da dinâmica <a href="pdf/Dinamica%20Construindo%20o%20mapa%20da%20cidade.pdf" target="_blank">clicando aqui</a>.</p>
+                                                    <p>Baixe a orientação completa da dinâmica <a href="pdf/Dinamica%20Construindo%20o%20mapa%20da%20cidade.pdf" target="_blank">clicando aqui</a>.</p>
 
-                                                        <h2>Sugestão de conteúdos interdisciplinares:</h2>
-                                                        <ul style="padding-left:20px;">
-                                                            <li>Geografia: identificação dos pontos cardeais, leitura e interpretação de mapas.</li>
-                                                            <li>História: levantamento da história de três importantes equipamentos da cidade.</li>
-                                                        </ul>
-
-
-
+                                                    <h2>Sugestão de conteúdos interdisciplinares:</h2>
+                                                    <ul style="padding-left:20px;">
+                                                        <li>Geografia: identificação dos pontos cardeais, leitura e interpretação de mapas.</li>
+                                                        <li>História: levantamento da história de três importantes equipamentos da cidade.</li>
+                                                    </ul>
 
 
 
-                                                        <p><br> </p>
+
+
+
+                                                    <p><br> </p>
                                                 </div>
 
                                             </div>
@@ -3133,7 +3039,7 @@ $(document).ready(function() {
                             </div>
 
                             <div class="collapse2">
-                                <div class="tit_bloco2" align="center"><strong>Exercitando a mobilidade atividade</strong></div>
+                                <div class="tit_bloco2" align="center"><strong>Exercitando a mobilidade ativa</strong></div>
                                 <div class="conteudobloco2">
                                     <div class="textos3">
 
@@ -3328,6 +3234,7 @@ $(document).ready(function() {
                                             <div class="tit_bloco3" align="center" style="margin-bottom: 5px;"><strong>Preparação das dinâmicas no espaço público em sala de aula</strong></div>
                                             <div class="conteudobloco2" style="border-style: solid;border-width: 1px;background-color: c5c5c5;margin-bottom: 20px;">
                                                 <div class="textos3" style="padding-left: 20px;">
+                                                    <p>&nbsp; </p>
                                                     <p>Com o objetivo de avaliar as condições de acessibilidade do entorno da escola sugerimos a realização de uma dinâmica vivencial e a realização de entrevistas: a) uma vivência de se colocar no lugar do outro, onde os estudantes se colocarão na situação de pessoa com deficiência física, com deficiência visual ou de pessoa com criança de colo no carrinho de bebê; e b) realização de entrevistas com moradores sobre as condições de acessibilidade.</p>
                                                     <p>Sugerimos a formação de dois grupos, onde cada um ficará responsável em avaliar um quarteirão próximo à escola.</p>
                                                     <p>Cada grupo deve ser acompanhado por um profissional de educação e ser responsável por observar a qualidade das calçadas de um quarteirão próximo à escola. A observação da qualidade das calçadas deve ser realizada a partir de parâmetros definidos, anteriormente, com os alunos: tamanho, nivelamento, altura e condições de acessibilidade para pessoas com deficiência e com mobilidade reduzida.</p>
@@ -3351,6 +3258,7 @@ $(document).ready(function() {
                                                     </div>
                                                     <p>Oriente os alunos para a realização de entrevistas, onde devem se apresentar e apresentar os objetivos da atividade.</p>
                                                     <p>Por fim, dê orientações de organização e segurança para a realização da atividade.</p>
+                                                    <p>&nbsp; </p>
                                                 </div>
 
 
@@ -3381,6 +3289,7 @@ $(document).ready(function() {
                                                     </div>
                                                     <div class="conteudobloco2" style="border-style: solid;border-width: 1px;background-color: c5c5c5;margin-bottom: 20px;">
                                                         <div class="textos3" style="padding-left: 20px;">
+                                                            <p>&nbsp; </p>
 
                                                             <ul style="padding-left:20px;">
                                                                 <li>A mesma dupla que realizou a vivência deve estar junta para a realização de duas entrevistas. As entrevistas devem abordar pessoas que conheçam o local (moradores ou trabalhadores), e deve dar preferência para pessoas com deficiência ou com mobilidade reduzida (idosos, gestantes, pessoas com criança de colo).</li>
@@ -3395,7 +3304,7 @@ $(document).ready(function() {
                                                             <p>Baixe a orientação completa sobre a sistematização das informações para a avaliação <a href="pdf/sistematizacao_informacoes_avaliacao_condicoes_acessibilidade.pdf" target="_blank">clicando aqui</a>.</p>
                                                         </div>
 
-                                                        <h2>Sugestão de conteúdos interdisciplinares:</h2>
+                                                        <h2 style="padding-left: 20px;">Sugestão de conteúdos interdisciplinares:</h2>
                                                         <ul style="padding-left:20px;">
                                                             <li>Língua Portuguesa – Leitura e interpretação de texto. Tipos textuais: crônica, reportagem de jornal, poesia e música relacionadas à acessibilidade.</li>
                                                             <li>Matemática – Cálculo dos parâmetros de declividade da calçada. Porcentagem para análise da participação dos meios de transporte nas mortes e lesões causados por colisões de trânsito.</li>
@@ -3444,6 +3353,8 @@ $(document).ready(function() {
                                             <div class="tit_bloco3" align="center" style="margin-bottom: 5px;"><strong>Dinâmica de avaliação da segurança no trânsito do entorno da escola</strong></div>
                                             <div class="conteudobloco2" style="border-style: solid;border-width: 1px;background-color: c5c5c5;margin-bottom: 20px;">
                                                 <div class="textos3" style="padding-left: 20px;">
+                                                    <p>&nbsp; </p>
+
                                                     <h2>Técnicas utilizadas:</h2>
                                                     <p>registro das observações e entrevistas</p>
 
@@ -3524,94 +3435,96 @@ $(document).ready(function() {
 
         </div>
 
+    </div>
 
 
 
 
 
 
-        <div class="barra_logos">
 
-            <div class="iniciativa">
-                <p align="center"><strong>Iniciativa</strong></p>
-                <p align="center"><img src="imagens/Fundacao-Vale.png" style="display:inline-block;width:300px"></p>
-            </div>
+    <div class="barra_logos">
 
-            <div class="parceiros">
-                <p align="center"><strong>Parceiros investidores</strong></p>
-                <p align="center"><img src="imagens/logo_ght.png" style="display:inline-block"><img src="imagens/logo_global.png" style="display:inline-block"><img src="imagens/logo_michelin.png" style="display:inline-block"></p>
-            </div>
+        <div class="iniciativa">
+            <p align="center"><strong>Iniciativa</strong></p>
+            <p align="center"><img src="imagens/Fundacao-Vale.png" style="display:inline-block;width:300px"></p>
+        </div>
 
-
+        <div class="parceiros">
+            <p align="center"><strong>Parceiros investidores</strong></p>
+            <p align="center"><img src="imagens/logo_ght.png" style="display:inline-block"><img src="imagens/logo_global.png" style="display:inline-block"><img src="imagens/logo_michelin.png" style="display:inline-block"></p>
         </div>
 
 
-
-
-        <div class="rodape">
-            <p align="center" style="vertical-align: middle;">Fundação Vale @ 2018 Todos os direitos reservados</p>
-        </div>
+    </div>
 
 
 
 
+    <div class="rodape">
+        <p align="center" style="vertical-align: middle;">Fundação Vale @ 2018 Todos os direitos reservados</p>
+    </div>
 
-        <script language="JavaScript">
-            <!--
-            var TRange = null
 
-            function findString(str) {
-                if (parseInt(navigator.appVersion) < 4) return;
-                var strFound;
-                if (window.find) {
-                    // CODE FOR BROWSERS THAT SUPPORT window.find
-                    strFound = self.find(str);
-                    if (strFound && self.getSelection && !self.getSelection().anchorNode) {
-                        strFound = self.find(str)
-                    }
-                    if (!strFound) {
-                        strFound = self.find(str, 0, 1)
-                        while (self.find(str, 0, 1)) continue
-                    }
-                } else if (navigator.appName.indexOf("Microsoft") != -1) {
-                    // EXPLORER-SPECIFIC CODE
-                    if (TRange != null) {
-                        TRange.collapse(false)
-                        strFound = TRange.findText(str)
-                        if (strFound) TRange.select()
-                    }
-                    if (TRange == null || strFound == 0) {
-                        TRange = self.document.body.createTextRange()
-                        strFound = TRange.findText(str)
-                        if (strFound) TRange.select()
-                    }
-                } else if (navigator.appName == "Opera") {
-                    alert("Opera browsers not supported, sorry...")
-                    return;
+
+
+
+    <script language="JavaScript">
+        <!--
+        var TRange = null
+
+        function findString(str) {
+            if (parseInt(navigator.appVersion) < 4) return;
+            var strFound;
+            if (window.find) {
+                // CODE FOR BROWSERS THAT SUPPORT window.find
+                strFound = self.find(str);
+                if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+                    strFound = self.find(str)
                 }
-                if (!strFound) alert("String '" + str + "' not found!")
+                if (!strFound) {
+                    strFound = self.find(str, 0, 1)
+                    while (self.find(str, 0, 1)) continue
+                }
+            } else if (navigator.appName.indexOf("Microsoft") != -1) {
+                // EXPLORER-SPECIFIC CODE
+                if (TRange != null) {
+                    TRange.collapse(false)
+                    strFound = TRange.findText(str)
+                    if (strFound) TRange.select()
+                }
+                if (TRange == null || strFound == 0) {
+                    TRange = self.document.body.createTextRange()
+                    strFound = TRange.findText(str)
+                    if (strFound) TRange.select()
+                }
+            } else if (navigator.appName == "Opera") {
+                alert("Opera browsers not supported, sorry...")
                 return;
             }
-            //-->
+            if (!strFound) alert("String '" + str + "' not found!")
+            return;
+        }
+        //-->
 
-        </script>
+    </script>
 
 
-        <script src="code/jquery.min.js" type="text/javascript"></script>
-        <script src="code/popper.min.js" type="text/javascript"></script>
-        <script src="code/bootstrap-material-design.min.js" type="text/javascript"></script>
-        <script src="code/moment.min.js"></script>
-        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-        <script src="code/nouislider.min.js" type="text/javascript"></script>
-        <!--  Google Maps Plugin  -->
-        <script async defer src="code/buttons.js"></script>
-        <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-        <script src="code/material-kit.js" type="text/javascript"></script>
-        <script type="text/javascript" src="code/imageMapResizer.min.js"></script>
-        <script type="text/javascript">
-            $('map').imageMapResize();
+    <script src="code/jquery.min.js" type="text/javascript"></script>
+    <script src="code/popper.min.js" type="text/javascript"></script>
+    <script src="code/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="code/moment.min.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="code/nouislider.min.js" type="text/javascript"></script>
+    <!--  Google Maps Plugin  -->
+    <script async defer src="code/buttons.js"></script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="code/material-kit.js" type="text/javascript"></script>
+    <script type="text/javascript" src="code/imageMapResizer.min.js"></script>
+    <script type="text/javascript">
+        $('map').imageMapResize();
 
-        </script>
+    </script>
 
 
 

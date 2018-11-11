@@ -385,7 +385,7 @@ body #eixo3 a#ativo {
   width: 580px;
   box-shadow: 2px 2px 5px grey;
   margin-bottom: 30px;
-  margin-top:60px;
+  margin-top:20px;
   }
 	
 .audio audio{
@@ -548,8 +548,19 @@ body #eixo3 a#ativo {
   padding-bottom: 10px;
   font-size: 16px;
 }
+        
+.image_desc{
+    background-color:#bb133e;
+    color: #fff;
+    float:left;
+    margin-left: 28%;
+    margin-bottom: 40px;
+        }       
 	
-	
+.video_temp {
+    width: 720px; 
+    height: 380px;
+        }	
 
 	
 	
@@ -925,8 +936,19 @@ blockquote {
   padding-bottom: 10px;
   font-size: 16px;
 }
+    
+    .image_desc{
+    background-color:#bb133e;
+    color: #fff;
+    float:left;
+    margin-left: 5%;
+    margin-bottom: 40px;
+        }    
 	
-	
+.video_temp {
+    width: 360px; 
+    height: 190px;
+        }	
 	
 	
 	
@@ -1233,30 +1255,11 @@ $(document).ready(function(){
 
 
 
-    <div class="textos">
 
-        <div style="background-color:#bb133e;color: #fff;float:right;margin-left: 20px;margin-bottom: 20px;">
-            <div class="flip">
-                <img src="imagens/eixo4_img2.jpg" alt="Avatar" class="imageflip">
-                <div class="overlay">
-                    <div class="text">A falta de trabalho atinge mais de 27 milhões de pessoas no país, segundo <a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/22218-pnad-continua-tri-taxa-de-subutilizacao-da-forca-de-trabalho-e-de-24-6-no-segundo-trimestre-de-2018.html" target="_blank">dados do IBGE.</a></div>
-                </div>
-            </div>
-            <p align="center">Passe o mouse sobre a imagem.</p>
-        </div>
-
-        <p align="left">O trabalho é um tema altamente relevante para pessoas que retornam à escola em programas de Educação de Jovens e Adultos (EJA). A maior parte delas traz experiências de trabalho pouco qualificados em seu repertório. Assim como os jovens que buscam o primeiro emprego, costumam ter a expectativa de que a escola contribua de algum modo para sua formação profissional. Frequentemente, essa busca é o principal motivo para voltar a estudar.</p>
-    </div>
-
-    <div class="textos">
-        <p align="left">Em tempos recentes, o papel de formação profissional da EJA ganhou força. O contexto de instabilidade econômica, marcado por processos de exclusão social, tem se manifestado por fenômenos como o desemprego estrutural e a precarização do trabalho. Ao mesmo tempo, a incorporação da tecnologia tem provocado uma reestruturação da produção e dos serviços, tornando ainda mais vulneráveis aqueles que têm baixa escolaridade e pouca qualificação.</p>
-
-        <p align="left">Nesse cenário, é indispensável que o currículo da EJA assuma um compromisso com a educação profissional, contribuindo para a participação dos educandos no mundo do trabalho e, finalmente, para a configuração de uma sociedade mais justa.</p>
-    </div>
 
     <div style="width: 100%;text-align: center;">
         <div class="video" style="margin: 0 auto;">
-            <p align="center"><iframe src="https://drive.google.com/file/d/19y8E7YHvGmWbRA7BrgmPw3WKzxV234dp/preview" width="100%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+            <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/19y8E7YHvGmWbRA7BrgmPw3WKzxV234dp/preview"  style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
 
         </div>
     </div>
@@ -1272,14 +1275,23 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>Módulo 1 - Concepções de educação profissional </strong></div>
+            <div class="tit_bloco"><strong>1 &ndash; Concepções de educação profissional </strong></div>
 
             <div class="conteudobloco">
 
                 <div class="textos">
+
+                    <p><br>Vamos conhecer por meio da narração e dos dados históricos como se deu a articulação da Educação de Jovens e Adultos e a educação profissional.</p>
+
+                </div>
+
+
+
+
+                <div class="textos">
                     <div class="box_audio">
                         <div class="audio">
-                            <p style="color: #000;padding-top: 10px;">Aperte o play e escute o áudio sobre...</p>
+                            <p style="padding-top: 10px;">Aperte o play e escute o áudio sobre o histórico da educação profissional no Brasil.</p>
                             <audio width="600" controls>
                                 <source src="imagens/eixo4_mod1.mp3" type="audio/mpeg">
                                 Seu navegador não suporta esse formato de áudio.
@@ -1288,8 +1300,16 @@ $(document).ready(function(){
                     </div>
 
 
+                    <div class="image_desc" align="center">
+                        <div class="flip">
+                            <img src="imagens/eixo4_img2.jpg" alt="Avatar" class="imageflip">
+                            <div class="overlay">
+                                <div class="text">A falta de trabalho atinge mais de 27 milhões de pessoas no país, segundo <a href="https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/22218-pnad-continua-tri-taxa-de-subutilizacao-da-forca-de-trabalho-e-de-24-6-no-segundo-trimestre-de-2018.html" target="_blank">dados do IBGE.</a></div>
+                            </div>
+                        </div>
+                        <p align="center">Passe o mouse sobre a imagem.</p>
+                    </div>
 
-                    <p>Mas, além da comparação entre os dados, quando olhamos para números como esses precisamos também nos perguntar: como essas desigualdades impactam as condições de vida das brasileiras? Que tipo de sonhos, expectativas ou realidades nossa sociedade permite que elas vivam? E quais lhes são tiradas? Quais os efeitos das desigualdades de gênero entre os homens? E como essas desigualdades ameaçam o direito à educação?</p>
 
 
                     <div id="btempos" style="width: 100%;">
@@ -1358,7 +1378,7 @@ $(document).ready(function(){
                     <p><br> </p>
 
                     <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #BB133E;">
-                        <h3><img src="imagens/e4book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Texto para discussão: </h3>
+                        <h3><img src="imagens/e4book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Texto para discussão.</h3>
                         <p style="padding-left:20px;">SAVIANI, Dermeval. <strong><a href="pdf/a12v1234.pdf" target="_blank">Trabalho e educação: fundamentos ontológicos e históricos</a></strong>. Revista Brasileira de Educação. Rio de Janeiro, volume 12, número 34, pp. 152-180, jan/abr 2007.</p>
                         <p style="padding-left:20px;">O artigo faz uma retrospectiva histórica das relações entre educação e trabalho, mostrando sua separação por um longo período e as tentativas de reestabelecimento de vínculos no mundo contemporâneo.</p>
                     </blockquote>
@@ -1383,7 +1403,7 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>Módulo 2 - A definição de um programa de formação</strong></div>
+            <div class="tit_bloco"><strong>2 &ndash; A definição de um programa de formação</strong></div>
 
             <div class="conteudobloco">
 
@@ -1391,7 +1411,7 @@ $(document).ready(function(){
 
                     <p><br>A diversidade do público da EJA e de contextos nos quais a oferta desse segmento é relevante desafia gestores e educadores a planejar projetos pedagógicos diferenciados e específicos, inclusive no que diz respeito aos modelos de integração com a Educação Profissional. </p>
 
-                    <p>Um desses modelos é a <a href="pdf/Prefeitura_de_Santo_Andre.pdf" target="_blank">EJA integrada à Educação Profissional</a>. Nesse caso, os alunos cursam disciplinas da base comum e disciplinas voltadas à formação para o trabalho em uma determinada área ocupacional. Essa integração pode se dar por meio de duas propostas formativas, conforme a seguir.</p>
+                    <p>Um desses modelos é a EJA integrada à Educação Profissional. Nesse caso, os alunos cursam disciplinas da base comum e disciplinas voltadas à formação para o trabalho em uma determinada área ocupacional. Essa integração pode se dar por meio de duas propostas formativas, conforme a seguir.</p>
 
                     <p style="padding-left: 20px"><strong>a)</strong> Ensino fundamental e médio da EJA integrados à Formação Integral Continuada (EJA-FIC): oferece a base comum curricular e disciplinas de uma determinada área profissional, oferecendo uma certificação final.</p>
                     <p style="padding-left: 20px"><strong>b)</strong> Ensino Médio da EJA articulado à Educação Profissional Técnica de Nível Médio: também oferece a base comum curricular e as disciplinas do curso técnico em uma determinada área.</p>
@@ -1400,13 +1420,13 @@ $(document).ready(function(){
 
                     <p class="pButton"><a href="http://www.observatoriodopne.org.br/metas-pne/10-eja-integrada-a-educacao-profissional" class="myButton" target="_blank">Clique aqui e saiba mais</a></p>
 
-                    <p>Outro modelo de integração da EJA com a Educação profissional é aquele em que o ensino fundamental e o médio assumem o trabalho como eixo condutor do currículo das disciplinas convencionais (ver Módulo 3). Nesse caso existe uma certificação da formação geral, mas não da habilitação profissional. </p>
+                    <p>Outro modelo de integração da EJA com a Educação Profissional é aquele em que o ensino fundamental e o médio assumem o trabalho como eixo condutor do currículo das disciplinas convencionais (ver Módulo 3). Nesse caso existe uma certificação da formação geral, mas não da habilitação profissional. </p>
 
                     <p>A definição de um programa de formação que integre os conhecimentos gerais com os específicos do mundo do trabalho deve ser criteriosa, considerando as características do público e o contexto em que vive.</p>
 
                     <p>Os cursos podem ser planejados tendo em vista as demandas, por exemplo, de populações da periferia de grandes centros urbanos, comunidades itinerantes, rurais, indígenas, quilombolas ou privadas de liberdade. Para cada caso deve-se pensar como a escola pode contribuir para o desenvolvimento da cidadania e a ampliação das oportunidades profissionais dos educandos.</p>
 
-                    <p>A identificação das demandas formativas do público atendido pela escola precisa levar em conta sua trajetória profissional, as condições de trabalho que experimentam e seus projetos para o mundo do trabalho. Também é importante considerar a situação de desemprego e de procura de um primeiro emprego, como ocorre com os jovens que acedem à EJA.</p>
+                    <p>A identificação das demandas formativas do público atendido pela escola precisa levar em conta sua trajetória profissional, as condições de trabalho que experimentam e seus projetos para o mundo do trabalho. Também é importante considerar a situação de desemprego e de procura de um primeiro emprego, como ocorre com os jovens que aderem à EJA.</p>
 
                     <p>O planejamento deve ainda compreender um estudo do desenvolvimento econômico local, buscando conhecer as condições de vida da população e a esfera do trabalho, o que inclui as atividades econômicas e a oferta de ocupações na região.</p>
 
@@ -1513,15 +1533,7 @@ $(document).ready(function(){
 
 
 
-                    <div class="box_audio">
-                        <div class="audio">
-                            <p style="color: #fff;padding-top: 10px;">Aperte o play e escute o áudio sobre...</p>
-                            <audio width="600" controls>
-                                <source src="imagens/audio_eja.mp3" type="audio/mpeg">
-                                Seu navegador não suporta esse formato de áudio.
-                            </audio>
-                        </div>
-                    </div>
+
 
 
                     <p>Como outro exemplo, podemos supor uma escola frequentada por muitos estudantes que sejam trabalhadores da construção civil. Nesse caso, o currículo poderia reservar espaço para o trabalho com medidas, técnicas de edificações empregadas historicamente e os movimentos artísticos aos quais estão relacionadas, direitos da categoria, história da organização sindical e saúde do trabalhador.</p>
@@ -1548,7 +1560,7 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>Módulo 3 - O trabalho no currículo da EJA</strong></div>
+            <div class="tit_bloco"><strong>3 &ndash; O trabalho no currículo da EJA</strong></div>
 
             <div class="conteudobloco">
 
@@ -1591,10 +1603,10 @@ $(document).ready(function(){
 
 
                     <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #BB133E;">
-                        <h3><img src="imagens/e4book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura: </h3>
+                        <h3><img src="imagens/e4book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura</h3>
                         <p>SILVA, Mônica Ribeiro da. <strong><a href="pdf/a05v19n71.pdf" target="_blank">A política de integração curricular no âmbito do PROEJA: entre discursos, sujeitos e práticas. Ensaio: Avaliação e Políticas Públicas em Educação</a>.</strong> Rio de Janeiro, v. 19, n. 71, p. 307-326, abr./jun. 2011.</p>
 
-                        <p><em>O artigo analisa a construção de um currículo visando a integração entre educação geral e profissional no contexto de implantação do PROEJA no Estado do Paraná. Independente do contexto, as observações e relatos de campo apresentados pelo artigo são valiosos para pensar as diversas formas de integração curricular em torno do trabalho como princípio educativo. </em></p>
+                        <p>O artigo analisa a construção de um currículo visando a integração entre educação geral e profissional no contexto de implantação do PROEJA no Estado do Paraná. Independente do contexto, as observações e relatos de campo apresentados pelo artigo são valiosos para pensar as diversas formas de integração curricular em torno do trabalho como princípio educativo.</p>
 
                     </blockquote>
 
@@ -1618,7 +1630,7 @@ $(document).ready(function(){
 
         <div class="collapse">
 
-            <div class="tit_bloco"><strong>Módulo 4 - Eixos norteadores para o planejamento</strong></div>
+            <div class="tit_bloco"><strong>4 &ndash; Eixos norteadores para o planejamento</strong></div>
 
             <div class="conteudobloco">
 
@@ -1635,11 +1647,18 @@ $(document).ready(function(){
 
 
 
-                    <p align="center"><iframe src="https://drive.google.com/file/d/1hohhK_LW4j9_DYTyKk-gMb8hCn4OiHJn/preview" width="70%" height="380px" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+                    <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1hohhK_LW4j9_DYTyKk-gMb8hCn4OiHJn/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
 
 
 
                     <p>Uma situação-problema não é uma situação previsível, que possa ser realizada com instrumentos imediatamente acessíveis ao aluno, mas consiste em uma tarefa cuja realização promove aprendizagem. </p>
+
+                    <div style="width: 100%;text-align: center;">
+                        <div class="video" style="margin: 0 auto;">
+                            <p align="center"><iframe class="video_temp" src="https://drive.google.com/drive/folders/1ec12YTFI970Om0YgRos6CxykAhS0O5W2?ogsrc=32" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+
+                        </div>
+                    </div>
 
                     <p>Outra estratégia didática relevante para a formação profissional é o trabalho em pequenos grupos. Esse tipo de organização, frequente em muitas escolas, valoriza o diálogo e, por esta razão, favorece a aprendizagem frente a diversas atividades. Ocorre que a capacidade para o trabalho em grupo costuma ser tomada como pressuposto para a realização das atividades, sem que seja, ela mesma, considerada objeto de trabalho pedagógico.</p>
                     <p>As mudanças na organização do trabalho ocorridas nas últimas décadas deram ênfase ao trabalho colaborativo, lembrando-nos, uma vez mais, que trabalhar em grupo não significa justapor alunos e alunas, mas criar condições para a reflexão sobre o modo como cada um toma parte nas relações interpessoais.</p>
@@ -1659,12 +1678,12 @@ $(document).ready(function(){
 
 
                     <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #BB133E;float:left;">
-                        <h3><img src="imagens/e4book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura: </h3>
-                        <p>SILVA, Mônica Ribeiro da. <strong><a href="pdf/a05v19n71.pdf" target="_blank">A política de integração curricular no âmbito do PROEJA: entre discursos, sujeitos e práticas. Ensaio: Avaliação e Políticas Públicas em Educação</a>.</strong> Rio de Janeiro, v. 19, n. 71, p. 307-326, abr./jun. 2011.</p>
+                        <h3><img src="imagens/e4book.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Sugestões de leitura</h3>
+
 
                         <p><em>O artigo analisa a construção de um currículo visando a integração entre educação geral e profissional no contexto de implantação do PROEJA no Estado do Paraná. Independente do contexto, as observações e relatos de campo apresentados pelo artigo são valiosos para pensar as diversas formas de integração curricular em torno do trabalho como princípio educativo. </em></p>
 
-                        <p>MACEDO, L.. <strong>Situação-problema: Forma e recurso de avaliação, desenvolvimento de competências e aprendizagem escolar</strong>. In: Philippe Perrenoud; Monica Gather Thurler; Lino de Macedo; Nilson José Machado; Cristina Dias Allessandrini. (Org.). As competências para ensinar no século XXI: A formação dos professores e o desafio da avaliação. 01 ed.Porto Alegre: Artmed Editora, 2002, p. 113-135.</p>
+                        <p>MACEDO, L. <strong>Situação-problema: Forma e recurso de avaliação, desenvolvimento de competências e aprendizagem escolar</strong>. In: Philippe Perrenoud; Monica Gather Thurler; Lino de Macedo; Nilson José Machado; Cristina Dias Allessandrini. (Org.). As competências para ensinar no século XXI: A formação dos professores e o desafio da avaliação. 01 ed.Porto Alegre: Artmed Editora, 2002, p. 113-135.</p>
 
                     </blockquote>
 
