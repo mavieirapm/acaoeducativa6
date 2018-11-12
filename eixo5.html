@@ -352,10 +352,9 @@ blockquote {
 	border-style: solid;
 	
 }
-body #eixo3 a#ativo {
-	background-color: #ecb11f;
-	color: #fff;
-	}
+.mobile-menu li .pgativa {
+	background: #007e7a;
+}
 /*Hover state for top level links*/
 .mobile-menu li:hover a {
 	color: #ffffff;
@@ -1562,13 +1561,13 @@ $(document).ready(function() {
                 <div class="lines"></div>
             </label>
             <input type="checkbox" id="show-menu">
-            <ul id="menu"><b>
-                    <li><a href="index.html">Início<br><br></a></li>
-                    <li><a href="eixo1.html">Fundamentos<br>da EJA</a></li>
-                    <li><a href="eixo2.html">Diversidade: gênero<br>e raça na EJA</a></li>
-                    <li><a href="eixo3.html">Uma metodologia <br>para os sujeitos da EJA</a></li>
-                    <li><a href="eixo4.html">Educação<br>profissional</a></li>
-                    <li><a href="#" id="ativo">Cidades, mobilidade<br>e sustentabilidade</a></li>
+            <ul id="menu" style="line-height: 1em;"><b>
+                    <li><a href="index.html"><br><br>Início<br><br><br></a></li>
+                    <li><a href="eixo1.html"><br><br>Fundamentos<br>da EJA<br><br></a></li>
+                    <li><a href="eixo2.html"><br><br>Diversidade: gênero<br>e raça na EJA<br><br></a></li>
+                    <li><a href="eixo3.html"><br><br>Uma metodologia <br>para os sujeitos da EJA<br><br></a></li>
+                    <li><a href="eixo4.html"><br><br>Educação<br>profissional<br><br></a></li>
+                    <li><a href="#" class="pgativa"><br><br>Cidades, mobilidade<br>e sustentabilidade<br><br></a></li>
                 </b>
             </ul>
         </nav>
@@ -1582,6 +1581,12 @@ $(document).ready(function() {
     </div>
 
 
+
+    <div class="textos">
+
+        <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1b5ygSIAGk3Z6dSnXRe5FvID7-lFqqQV7/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+
+    </div>
 
 
 
@@ -1859,11 +1864,13 @@ $(document).ready(function() {
 
                         <p>Devemos nos perguntar sempre:</p>
 
-                        <p>Os lugares onde moramos são acolhedores? (Sejam nas cidades, nas vilas ou nas localidades rurais.)</p>
+                        <ul style="padding-left: 40px;">
+                            <li>Os lugares onde moramos são acolhedores? (Sejam nas cidades, nas vilas ou nas localidades rurais.)</li>
+                            <li>E, qual o sentimento de identidade das pessoas com o seu lugar de moradia, sobretudo, quando esse lugar oferece o acesso a serviços básicos de água e esgoto e de coleta de lixo regular? </li>
 
-                        <p>E, qual o sentimento de identidade das pessoas com o seu lugar de moradia, sobretudo, quando esse lugar oferece o acesso a serviços básicos de água e esgoto e de coleta de lixo regular? </p>
+                            <li>Como nos sentimos quando não contamos com transporte público de qualidade, nem com calçadas adequadas ao nosso caminhar cotidiano com segurança e conforto?</li>
+                        </ul>
 
-                        <p>Como nos sentimos quando não contamos com transporte público de qualidade, nem com calçadas adequadas ao nosso caminhar cotidiano com segurança e conforto?</p>
 
                         <p>Para grande parte dos estudantes da EJA, que vivenciaram de alguma maneira, os efeitos dos processos de exclusão social, seja na infância ou na adolescência, o exercício da cidadania e o direito à educação dependem da inserção desses jovens e adultos na sociedade. </p>
 
@@ -2035,7 +2042,7 @@ $(document).ready(function() {
                             <ul style="padding-left:20px;">
                                 <li>Como a mobilidade urbana se relaciona com a promoção da saúde? </li>
                                 <li>Quais são os hábitos urbanos podem ser associados à promoção da saúde?</li>
-                                <li>Como os deslocamentos por meios não motorizados, como andar de bicicleta e caminhar pode contribuir para que as pessoas tenham uma vida saudável? </li>
+                                <li>Como os deslocamentos por meios não motorizados, como andar de bicicleta e caminhar podem contribuir para que as pessoas tenham uma vida saudável? </li>
                             </ul>
                         </blockquote>
                         <p><br> </p>
@@ -2301,7 +2308,7 @@ $(document).ready(function() {
                         <p>O conceito de <a href="pdf/acessibilidade_universal.pdf" target="_blank"><strong>acessibilidade universal</strong></a> significa:</p>
 
 
-                        <p>A possibilidade das pessoas com deficiência ou com mobilidade reduzida acessarem com segurança e autonomia os espaços públicos, as calçadas, as edificações, os equipamentos urbanos, os transportes e as informações e comunicações disponíveis.</p>
+                        <p><em>A possibilidade das pessoas com deficiência ou com mobilidade reduzida acessarem com segurança e autonomia os espaços públicos, as calçadas, as edificações, os equipamentos urbanos, os transportes e as informações e comunicações disponíveis.</em></p>
 
 
                         <h3>Barreiras simbólicas ou invisíveis de acesso à cidade</h3>
@@ -2383,7 +2390,7 @@ $(document).ready(function() {
                         <p><br> </p>
 
                         <blockquote style="background-color: #fff;padding:20px;border: dashed 4px #747678;">
-                            <h3><img src="imagens/e5bookmark.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja também</h3>
+                            <h3><img src="imagens/e5star.png" style="width: 42px;vertical-align: middle;">&nbsp;&nbsp;&nbsp;Veja também</h3>
 
                             <p>A instituição da Lei Federal nº 11.340/2006, mais conhecida como “Lei Maria da Penha” representa um avanço da sociedade brasileira, especialmente, no reconhecimento de um problema generalizado que ameaça, permanentemente, a vida das mulheres no país. A lei cria mecanismos para coibir a violência doméstica e familiar contra a mulher, nos termos do § 8° do art. 226 da Constituição Federal, além de criminalizar todas as formas de discriminação contra as mulheres, adotando os princípios e diretrizes da “Convenção Interamericana para Prevenir, Punir e Erradicar a <strong>Violência contra a Mulher</strong>”. A lei dispõe também sobre a criação dos “Juizados de Violência Doméstica e Familiar contra a Mulher” e altera o Código de Processo Penal, o Código Penal e a Lei de Execução Penal.</p>
                             <p>Para abordar mais sobre a violência contra a mulher, sugerimos o filme <strong><a href="www.videocamp.com" target="_blank">Precisamos falar do assédio</a></strong> (2016) com duração de 82 minutos e direção de Paula Sacchetta, que foi realizado a partir de depoimentos das mulheres sobre situações de violência enfrentadas em casa e no espaço público. Os depoimentos foram filmados numa van que parou em nove pontos da cidade de São Paulo e do Rio de Janeiro. Mais de 100 mulheres se dispuseram a contar sua história, sendo que 26 foram selecionadas para integrar o filme.</p>
@@ -2426,6 +2433,10 @@ $(document).ready(function() {
 
                         <p>Nas vias em que isso não seja possível, deve-se sinalizar o compartilhamento do carro com a bicicleta e a redução da velocidade.</p>
 
+
+
+
+
                         <div class="responsive">
                             <div class="gallery">
 
@@ -2463,7 +2474,7 @@ $(document).ready(function() {
                             </div>
                         </div>
 
-                        <div class="responsive">
+                        <div class="responsive" align="center">
                             <div class="gallery">
 
                                 <img src="imagens/galeria4_5.png" alt="">
@@ -2472,7 +2483,10 @@ $(document).ready(function() {
                             </div>
                         </div>
 
+
+
                         <div class="clearfix"></div>
+
                         <p><br> </p>
 
                         <p>Portanto, para alcançar a segurança no trânsito é preciso combinar várias ações: educação, fiscalização, punição às infrações, melhoria da sinalização viária e condições de segurança para pedestres e ciclistas com calçadas amplas e acessíveis, ciclovias e ciclofaixas, além da prioridade ao transporte coletivo com faixas exclusivas, rapidez, conforto e segurança. </p>
@@ -2598,7 +2612,7 @@ $(document).ready(function() {
                                 <li>E você, como avalia a segurança no trânsito na sua cidade?</li>
                                 <li>Você acha que tem muito acidente de trânsito? Você conhece alguém que foi vítima da violência no trânsito?</li>
                                 <li>Como funciona o transporte coletivo na sua cidade? É eficiente e acessível?</li>
-                                <li>E pedestres e ciclistas têm segurança e incentivo para caminharem e andarem de bicicleta? <a href="pdf/prioridade_no_transito.pdf" target="_blank">>A sua cidade dá mais prioridade aos pedestres e ciclistas ou aos motoristas dos veículos individuais motorizados?u</a></li>
+                                <li>E pedestres e ciclistas têm segurança e incentivo para caminharem e andarem de bicicleta? <a href="pdf/prioridade_no_transito.pdf" target="_blank">A sua cidade dá mais prioridade aos pedestres e ciclistas ou aos motoristas dos veículos individuais motorizados?u</a></li>
                                 <li>O que você acha que deveria ser feito para promover a segurança no trânsito?</li>
                                 <li>Como você se classificaria? Mais sedentário ou mais ativo?</li>
                             </ul>
@@ -2625,6 +2639,7 @@ $(document).ready(function() {
                     <div class="conteudobloco">
 
                         <div class="textos">
+                            <p>&nbsp; </p>
                             <p>A mobilidade urbana é uma dimensão essencial da vida cotidiana nas <a data-toggle="modal" data-target="#modal10" style="cursor: pointer"><strong><u>cidades</u></strong></a> e de integração do território municipal. </p>
 
                             <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2681,7 +2696,7 @@ $(document).ready(function() {
                                 </div>
                             </div>
 
-                            <p align="center"><img src="imagens/info21.png" style="display: inline-block"></p>
+                            <p align="center"><img src="imagens/info21.png" style="display: inline-block;max-width: 100%;"></p>
 
                             <p>Para isso, apresentaremos recursos didáticos que podem ser utilizados em sala de aula e também orientar atividades de pesquisa e reconhecimento dos espaços da cidade na perspectiva do aluno.</p>
 
@@ -2706,7 +2721,7 @@ $(document).ready(function() {
                                 </div>
                             </div>
 
-                            <p>Como promover esse contato com a diversidade, na perspectiva educacional?</p>
+                            <p>Como promover esse contato com a diversidade, na perspectiva educacional? Clique nos números abaixo e conheça algumas propostas. </p>
 
                             <ul class="nav nav-pills nav-pills-rose">
                                 <li class="nav-item"><a class="nav-link active" href="#pill1" data-toggle="tab">I</a></li>
@@ -2759,27 +2774,36 @@ $(document).ready(function() {
 
                             <h3>Mobilidade urbana como tema transversal nas escolas</h3>
 
-
-
-                            <div class="collapse2">
-                                <div class="tit_bloco2" align="center"><strong>De que maneira acessamos a cidade? Qual a qualidade da mobilidade urbana para que jovens e adultos usufruam das oportunidades e benefícios da cidade e do território, incluindo vilas e localidades rurais?</strong></div>
-                                <div class="conteudobloco2">
-                                    <div class="textos2">
-                                        <p>Os temas que integram o conceito de mobilidade urbana estão, diretamente, relacionados a diversas formas de acesso aos bens e serviços oferecidos na cidade e pelas diferentes modalidades de transporte que operam no território, fluxos constantes de pessoas e mercadorias. </p>
-                                    </div>
+                            <div style="width: 100%;text-align: center;">
+                                <div style="margin: 0 auto;border-style: solid;border-width: 1px;padding: 20px;font-size: 16px;width: 50%;float: left;border-color: #000;background-color: #747678;color: #fff;">
+                                    <strong>De que maneira acessamos a cidade? Qual a qualidade da mobilidade urbana para que jovens e adultos usufruam das oportunidades e benefícios da cidade e do território, incluindo vilas e localidades rurais?</strong><br><br>
+                                </div>
+                                <div style="margin: 0 auto;border-style: solid;border-width: 1px;padding: 20px;font-size: 16px;width:50%;float: left;border-color: #000;">
+                                    Os temas que integram o conceito de mobilidade urbana estão, diretamente, relacionados a diversas formas de acesso aos bens e serviços oferecidos na cidade e pelas diferentes modalidades de transporte que operam no território, fluxos constantes de pessoas e mercadorias.
 
                                 </div>
                             </div>
 
-                            <div class="collapse2">
-                                <div class="tit_bloco2" align="center"><strong>Posso acessar os equipamentos urbanos, sociais e comunitários a pé, de bicicleta, de transporte coletivo ou preciso utilizar veículos motorizados individuais?</strong></div>
-                                <div class="conteudobloco2">
-                                    <div class="textos2">
-                                        <p>O tema da mobilidade urbana também contribui para a construção de um olhar mais amplo sobre o território e a cidade, possibilitando que jovens e adultos façam correlações de vivências entre comunidades, bairros, cidades e território municipal.</p>
-                                    </div>
+
+                            <div style="width: 100%;text-align: center;">
+                                <div style="margin: 0 auto;border-style: solid;border-width: 1px;padding: 20px;font-size: 16px;width: 50%;float: left;border-color: #000;background-color: #747678;color: #fff;">
+                                    <strong>Posso acessar os equipamentos urbanos, sociais e comunitários a pé, de bicicleta, de transporte coletivo ou preciso utilizar veículos motorizados individuais?</strong><br><br>
+                                </div>
+                                <div style="margin: 0 auto;border-style: solid;border-width: 1px;padding: 20px;font-size: 16px;width:50%;float: left;border-color: #000;">
+                                    O tema da mobilidade urbana também contribui para a construção de um olhar mais amplo sobre o território e a cidade, possibilitando que jovens e adultos façam correlações de vivências entre comunidades, bairros, cidades e território municipal.
 
                                 </div>
                             </div>
+
+
+                            <p>&nbsp; </p>
+                            <p>&nbsp; </p>
+
+
+
+
+
+
 
                             <h3>Aprendendo com a cidade e com suas práticas educativas</h3>
 
@@ -2819,6 +2843,7 @@ $(document).ready(function() {
                                 </div>
                             </div>
 
+                            <p>&nbsp; </p>
 
 
                             <h3>Intervindo nas cidades: Compromisso da escola com cidades mais humanas</h3>
@@ -2862,6 +2887,7 @@ $(document).ready(function() {
                     <div class="conteudobloco">
 
                         <div class="textos">
+                            <p>&nbsp; </p>
 
                             <p>Neste anexo, sugerimos a realização de algumas dinâmicas educativas como forma de materializar a metodologia apresentada no módulo 4 deste material. Todas as dinâmicas devem ser adaptadas a cada contexto.</p>
 
