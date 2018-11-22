@@ -565,6 +565,299 @@ blockquote {
     width: 720px; 
     height: 380px;
         }	
+        
+        
+.modal-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -25%);
+}
+
+.modal.show .modal-dialog {
+    transform: translate(0, 0);
+}
+
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - (0.5rem * 2));
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+    outline: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000000;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.modal-backdrop.show {
+    opacity: 0.26;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem auto;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.modal-footer > :not(:first-child) {
+    margin-left: .25rem;
+}
+
+.modal-footer > :not(:last-child) {
+    margin-right: .25rem;
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+
+    .modal-dialog-centered {
+        min-height: calc(100% - (1.75rem * 2));
+    }
+
+    .modal-content {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-sm {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 800px;
+    }
+}
+    
+.modal-dialog .modal-content {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    border: none;
+}
+
+.modal-dialog .modal-content .card-signup {
+    margin: 0;
+}
+
+.modal-dialog .modal-content .card-signup .modal-header {
+    padding-top: 0;
+}
+
+.modal-dialog .modal-header {
+    border-bottom: none;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px;
+}
+
+.modal-dialog .modal-body {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+}
+
+.modal-dialog .modal-footer {
+    border-top: none;
+    padding: 24px;
+}
+
+.modal-dialog .modal-footer.text-center {
+    text-align: center;
+}
+
+.modal-dialog .modal-footer button {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+}
+
+.modal-dialog .modal-footer button.pull-left {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    left: -5px;
+}
+
+.modal-dialog .modal-body + .modal-footer {
+    padding-top: 0;
+}
+
+.modal-backdrop {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-dialog {
+    margin-top: 130px;
+}
+
+.modal .modal-header .close {
+    color: #999;
+}
+
+.modal .modal-header .close:hover,
+.modal .modal-header .close:focus {
+    opacity: 1;
+}
+
+.modal .modal-header .close i {
+    font-size: 16px;
+}
+
+.show:not(.modal) .dropdown-toggle:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+        
+        
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.50rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 10px;
+  
+}
+        
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+}
+
+.btn:focus,
+.btn.focus {
+  box-shadow: 0px 0px 5px #940026;
+}
+        
+.btn-primary {
+  color: #fff;
+  background-color: #bb133e;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #940026;
+}
+        
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #bb133e;
+}
+        
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #bb133e;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+} 
 
 	
 	
@@ -959,6 +1252,26 @@ blockquote {
     width: 360px; 
     height: 190px;
         }	
+    
+.modal{
+    width: 100%; 
+    padding-left: 0px;
+}
+
+.modal_content{
+    margin:0 auto;
+    height: auto;
+    background-color: #c5c5c5;
+    border-radius: 20px;
+    box-shadow: 5px 10px 8px #747678;
+    width: 85%;
+    color:#000;
+    padding: 20px;
+    z-index: 1;
+    display: none;
+    margin-bottom: 20px;
+    margin-left:0px;
+}
 	
 	
 	
@@ -1028,103 +1341,6 @@ $(document).ready(function() {
   });
 });
 // ]]></script>
-
-
-
-
-
-
-
-
-
-<script>
-    $(document).ready(function(){
- $("#braca").click(function(){
- $("#menuraca").hide();
- });
- $("#braca").click(function(){
- $("#raca").show();
- });
-});
-	
-$(document).ready(function(){
- $("#betnia").click(function(){
- $("#menuraca").hide();
- });
- $("#betnia").click(function(){
- $("#etnia").show();
- });
-});
-	
-$(document).ready(function(){
- $("#bracis").click(function(){
- $("#menuraca").hide();
- });
- $("#bracis").click(function(){
- $("#racismo").show();
- });
-});
-	
-$(document).ready(function(){
- $("#bprec").click(function(){
- $("#menuraca").hide();
- });
- $("#bprec").click(function(){
- $("#preconceito").show();
- });
-});
-	
-$(document).ready(function(){
- $("#bdisc").click(function(){
- $("#menuraca").hide();
- });
- $("#bdisc").click(function(){
- $("#discriminacao").show();
- });
-});
-	
-$(document).ready(function(){
- $("#fecharraca").click(function(){
- $("#raca").hide();
- });
- $("#fecharraca").click(function(){
- $("#menuraca").show();
- });
-});
-	
-$(document).ready(function(){
- $("#fecharetnia").click(function(){
- $("#etnia").hide();
- });
- $("#fecharetnia").click(function(){
- $("#menuraca").show();
- });
-});
-$(document).ready(function(){
- $("#fecharracis").click(function(){
- $("#racismo").hide();
- });
- $("#fecharracis").click(function(){
- $("#menuraca").show();
- });
-});
-$(document).ready(function(){
- $("#fecharprec").click(function(){
- $("#preconceito").hide();
- });
- $("#fecharprec").click(function(){
- $("#menuraca").show();
- });
-});
-$(document).ready(function(){
- $("#fechardisc").click(function(){
- $("#discriminacao").hide();
- });
- $("#fechardisc").click(function(){
- $("#menuraca").show();
- });
-});
-</script>
 
 
 
@@ -1271,6 +1487,32 @@ $(document).ready(function(){
         <div class="video" style="margin: 0 auto;">
             <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/19y8E7YHvGmWbRA7BrgmPw3WKzxV234dp/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
 
+        </div>
+    </div>
+
+    <div class="textos">
+        <div align="center" style="width: 100%;margin-top: 0px;">
+            <a data-toggle="modal" data-target="#modal_aut1" style="cursor: pointer">
+                <div align="center" class="btn btn-primary">Conheça o autor desse módulo, cique aqui</div>
+            </a>
+        </div>
+
+
+        <div class="modal fade" id="modal_aut1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body" style="line-height:150%;">
+                        <h2 class="modal-title" id="exampleModalLabel">Fernando Frochtengarten</h2>
+                        <img src="imagens/foto_fernando.png" align=left style="padding-right: 12px;padding-bottom: 5px;display: inline-block;max-width: 100%;">Graduado em Biologia e Psicologia, mestre e doutor em Psicologia Social.
+                        Autor do livro "Caminhando sobre fronteiras: o papel da educação na vida de adultos migrantes", publicado pela Summus em 2009. Trabalha no curso de Educação de Jovens e Adultos do Colégio Santa Cruz desde 1998 e é Diretor dos Cursos Noturnos, que abrangem a EJA e também a Educação Profissional.
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1814,6 +2056,12 @@ $(document).ready(function(){
         $('map').imageMapResize();
 
     </script>
+
+    <script src="code/jquery.min.js" type="text/javascript"></script>
+    <script src="code/popper.min.js" type="text/javascript"></script>
+    <script src="code/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="code/moment.min.js"></script>
+    <script src="code/material-kit.js" type="text/javascript"></script>
 
 
 

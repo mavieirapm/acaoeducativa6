@@ -502,18 +502,18 @@ blockquote {
 
 .btn:focus,
 .btn.focus {
-  box-shadow: 0px 0px 5px #c5c5c5;
+  box-shadow: 0px 0px 5px #d85b03;
 }
         
 .btn-primary {
   color: #fff;
-  background-color: #007e7a;
+  background-color: #e37222;
   box-shadow: none;
 }
 
 .btn-primary:hover {
-  color: #000;
-  background-color: #e37222;
+  color: #fff;
+  background-color: #d85b03;
 
 }
 
@@ -522,14 +522,14 @@ blockquote {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #ffffff;
-  background-color: #007e7a;
+  background-color: #e37222;
 }
         
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
-  color: #000;
-  background-color: #007e7a;
+  color: #fff;
+  background-color: #e37222;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -537,6 +537,7 @@ blockquote {
 .show>.btn-primary.dropdown-toggle:focus {
 }
     
+
 
 .modal-open {
     overflow: hidden;
@@ -585,7 +586,7 @@ blockquote {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 100%;
     pointer-events: auto;
     background-color: #ffffff;
     background-clip: padding-box;
@@ -593,13 +594,7 @@ blockquote {
     border-radius: 0.3rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
     outline: 0;
-    margin-left:16.666%;
-    margin-top:-100px;
 }
-        
-.modal-content img{
-    max-width: 100%;
-        }
 
 .modal-backdrop {
     position: fixed;
@@ -669,7 +664,30 @@ blockquote {
     overflow: scroll;
 }
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
 
+    .modal-dialog-centered {
+        min-height: calc(100% - (1.75rem * 2));
+    }
+
+    .modal-content {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-sm {
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 800px;
+    }
+}
     
 .modal-dialog .modal-content {
     box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
@@ -1364,6 +1382,36 @@ $(document).ready(function(){
 
         </div>
     </div>
+
+    <div class="textos">
+        <div align="center" style="width: 100%;margin-top: 0px;">
+            <a data-toggle="modal" data-target="#modal_aut1" style="cursor: pointer">
+                <div align="center" class="btn btn-primary">Conheça o autor desse módulo, cique aqui</div>
+            </a>
+        </div>
+
+
+        <div class="modal fade" id="modal_aut1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-body" style="line-height:150%;">
+                        <h2 class="modal-title" id="exampleModalLabel">Roberto Catelli Jr.</h2>
+                        <img src="imagens/foto_roberto.png" align=left style="padding-right: 12px;padding-bottom: 5px;display: inline-block;max-width: 100%;">Possui graduação em História pela Pontifícia Universidade Católica de São Paulo e mestrado em História Econômica pela Universidade de São Paulo. Doutor pela Faculdade de Educação da Universidade de São Paulo e coordenador do Programa Educação de Jovens e Adultos da Ação Educativa.
+
+                        Tem experiência na área de Educação, atuando principalmente nos seguintes temas: EJA, políticas públicas de educação, avaliação educacional e ensino de História.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
 
 
     <div class="modulos">

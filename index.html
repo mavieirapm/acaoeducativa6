@@ -245,19 +245,7 @@ h2 {
 	
 	
 	
-video{
-  border-style: solid;
-  border-color: #007e7a;
-  border-width: 4px;
-  float: left;
-  text-align: center;
-  width: 100%;
-}
-	
-	
-.video{
-	width:50%;
-	}
+
 hr {
 	border-color: #007e7a;
 	border-width: 1px;
@@ -622,6 +610,13 @@ blockquote {
 .animation-element.slide-left.testimonial:active{
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
 }
+        
+        
+.video_temp {
+    width: 720px; 
+    height: 380px;
+    display: inline-block;
+        }
 
 
 
@@ -880,16 +875,7 @@ h2 {
   min-height:auto;
 }
 	
-video{
-  border-style: solid;
-  border-color: #ECB11F;
-  border-width: 4px;
-  width: 100%;
-}
-	
-.video{
-	width:85%;
-	}
+
 	
 .box_audio{
 	width: 100%;
@@ -1136,6 +1122,13 @@ blockquote {
     visibility: visible;
     animation: cd-bounce-1 0.6s;
   }
+    
+.video_temp {
+    width: 360px; 
+    height: 190px;
+        }
+    
+    
 }
 
 @keyframes cd-bounce-1 {
@@ -1412,12 +1405,11 @@ $(document).ready(function() {
 
 
     <div class="textos">
-        <h3 align="center"></h3>
-        <p align="left"></p>
-
-
-
-
+        <div style="width: 100%;text-align: center;">
+            <div class="video" style="margin: 0 auto;">
+                <p align="center"><iframe class="video_temp" src="https://drive.google.com/file/d/1wuHKS--nUi8eGbAYw_2hSFJQfdrvxOD8/preview" style="border-style: solid;border-width: 4px;border-color: #ecb11f;display: inline-block"></iframe></p>
+            </div>
+        </div>
     </div>
 
 
